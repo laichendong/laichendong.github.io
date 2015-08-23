@@ -5,9 +5,32 @@
     <description></description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Aug 2015 23:06:15 +0800</pubDate>
-    <lastBuildDate>Wed, 19 Aug 2015 23:06:15 +0800</lastBuildDate>
+    <pubDate>Sun, 23 Aug 2015 23:52:59 +0800</pubDate>
+    <lastBuildDate>Sun, 23 Aug 2015 23:52:59 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>让你的shell更好</title>
+        <description>&lt;p&gt;码农们一定知道shell有多高效。但是linux和的版本很多，mac啊什么的。每个系统的shell都长的不太一样，我是说样子。
+今天配置我的mac时，发现一个很棒的项目。可以让你的shell变得很棒。&lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh&quot;&gt;on-my-zsh&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;/misc/QQ20150823-1@2x.png&quot; alt=&quot;安装过程截图&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;装完之后，shell长这样了！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/misc/QQ20150823-3@2x.png&quot; alt=&quot;oh-my-zsh效果图&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Aug 2015 00:00:00 +0800</pubDate>
+        <link>http://laichendong.com/mac/2015/08/23/%E8%AE%A9%E4%BD%A0%E7%9A%84shell%E6%9B%B4%E5%A5%BD.html</link>
+        <guid isPermaLink="true">http://laichendong.com/mac/2015/08/23/%E8%AE%A9%E4%BD%A0%E7%9A%84shell%E6%9B%B4%E5%A5%BD.html</guid>
+        
+        
+        <category>mac</category>
+        
+      </item>
     
       <item>
         <title>你的灯还亮着吗</title>
@@ -223,20 +246,21 @@
 &lt;p&gt;&lt;em&gt;如果人们真的开着灯，一个提醒可能比复杂的解决方案更有效。&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;section-15&quot;&gt;第五部分：问题来自哪里&lt;/h2&gt;
-&lt;p&gt;### 第十四章：詹尼特·贾沃斯基遇上了混蛋&lt;/p&gt;
+
+&lt;h3 id=&quot;section-16&quot;&gt;第十四章：詹尼特·贾沃斯基遇上了混蛋&lt;/h3&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;故事背景：&lt;/strong&gt;詹尼特·贾沃斯基在冷战后从美国去华沙，在转机的时候，办签证的人说应该有八份副本，而她只给了七份，贾沃斯基认为是在故意为难她。换句话说。那个官员——迈特兹锡恩是个混蛋。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;section-16&quot;&gt;第十五章：迈特兹锡恩先生解决了问题&lt;/h3&gt;
+&lt;h3 id=&quot;section-17&quot;&gt;第十五章：迈特兹锡恩先生解决了问题&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;就像某些大学校长，银行副总裁和其他中层干部一样。他被选出来，正是因为他能力不足。他在自己的工作范围内对自己的上级负责。同时又不至于威胁到他们的职位。&lt;/em&gt;
 &amp;gt; &lt;strong&gt;故事背景：&lt;/strong&gt;詹尼特·贾沃斯基思考她为什么会受到这样的无理待遇，想来想去，她想到，来找他办事的人的态度可能会决定他对办事的人的态度。所以，她用了很亲和的方式和他拉起了家常。然后还相谈甚欢。然后当然八份副本的问题当然也不是问题了。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;大多情况下，问题来自你自己！&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;section-17&quot;&gt;第十六章：找事儿让人做的人和领赏的人&lt;/h3&gt;
+&lt;h3 id=&quot;section-18&quot;&gt;第十六章：找事儿让人做的人和领赏的人&lt;/h3&gt;
 
 &lt;p&gt;不是所有官僚问题都能用微笑（充满人情味）的方式解决。因为官僚通常以书面形式出现。
 &amp;gt; &lt;strong&gt;故事背景：&lt;/strong&gt;你收到一封老总发的邮件。上面说的是征求如何正确使用分号的方法。（总之，就是一封让人看了就想笑的官僚文件。）这时，你该怎么办？&lt;/p&gt;
@@ -249,7 +273,7 @@
  &lt;strong&gt;世界上有两种人，一种人做事，一种人制造出事来让其他人做。远离那些找事儿让别人做的人。你就能好好的过日子了。&lt;/strong&gt;
 &lt;strong&gt;世界上有两种人，一种人做事，一种人领赏。做第一种人吧。那里的斗争比较少。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;section-18&quot;&gt;第十七章：考试和其他谜题&lt;/h3&gt;
+&lt;h3 id=&quot;section-19&quot;&gt;第十七章：考试和其他谜题&lt;/h3&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;举了一个考试的例子，所有的课后练习所用到的知识默认都是上节课所讲的内容。所以很容易应付。但是到期末的考试的时候，你不知道这道题到底是要用哪节课的知识来求解，所以比较难。所以，&lt;em&gt;问题是从哪里来的&lt;/em&gt;是解决问题的一个重要线索。
@@ -257,7 +281,7 @@
 但有时候，出题的人为了提高难度。会故意迷惑对方。比如在军事通信中。迷惑敌人的最简单的方法就是直接用明文发送信息。“黎明时发动进攻！”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;section-19&quot;&gt;第六部分：你真的想解决问题吗&lt;/h2&gt;
+&lt;h2 id=&quot;section-20&quot;&gt;第六部分：你真的想解决问题吗&lt;/h2&gt;
 &lt;p&gt;### 第十八章：不怕累的汤姆被玩具耍了&lt;/p&gt;
 
 &lt;p&gt;大多数人觉得自己绝大多数时候都在面对问题，因为问题只是理想状态和现实状态的差距。 如果一个人认为自己碰到问题了，那就肯定是碰到问题来。但要知道问题是什么。那就是另外一回事。很多觉得自己知道问题是什么，不过大部分情况下，他们是错的。
@@ -268,7 +292,7 @@
 
 &lt;p&gt;&lt;strong&gt;无论表面上表现得如何。在你提供他们所要求的东西之前，他们极少知道自己想要什么。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;section-20&quot;&gt;第十九章：佩欣丝的计谋&lt;/h3&gt;
+&lt;h3 id=&quot;section-21&quot;&gt;第十九章：佩欣丝的计谋&lt;/h3&gt;
 
 &lt;p&gt;有的时候，人们很清楚自己想要什么，但对那些“为解决方案找问题”的人来说。问题还没有结束。
 &amp;gt; 州长为了政绩，要求在官僚体制能掌控的范围内，有必要尽量的多的使用计算机。，佩欣丝被分配到财务部解决一个问题，（而财务部在之前从来不用计算机来解决问题）：将新修建道路的评估总额在可以从中收益的道路沿线各业主之间进行分配。本来估计程序用一周能够写完，但是最后延长到了三个月才完成。因为财政部长在过程中总是提出各种小修改。到最后，财政部长仍不满意。因为总额为1300万美元的结果中有一美分的误差。然后财政部长觉得为了遵守法律。必须搞定者一美分。然后佩欣丝使了一个计谋。问这个程序一年会运行几次。部长说10次。他的大部分时间都是用来计算这种评估了。然后佩欣丝说拿出一美元。说，我把这一美元捐给财政部。这够10年的由于我的程序的误差导致的损失了。等钱用完了，她还可以再捐。
@@ -276,7 +300,7 @@
 
 &lt;p&gt;&lt;strong&gt;从最后的情况看。想要真正解决问题的人并不是很多。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;section-21&quot;&gt;第二十章：一项优先任务&lt;/h3&gt;
+&lt;h3 id=&quot;section-22&quot;&gt;第二十章：一项优先任务&lt;/h3&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;一个问题解决者得到一个代号为“虚张声势”的任务：破译一个欧洲小国在外交工作中使用的密码。在前18个月，毫无进展。终于发现这是一个“书码”，然后又用两个月缩小密钥使用的书的范围。最后找出来书名。最后他抑制不住激动的心情。对密码进行了破译。结果发现，破译出来的信息全是“二十三瓶威士忌，五十九瓶葡萄酒”这样的无关紧要的账目。两周后，这个情报员觉得受到来打击，离开了情报机构，做了老师。&lt;/p&gt;
@@ -295,9 +319,11 @@
 &lt;p&gt;鱼总是最后一个看到水的（因为水是环境的一部分）&lt;/p&gt;
 </description>
         <pubDate>Wed, 19 Aug 2015 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2015/08/19/%E4%BD%A0%E7%9A%84%E7%81%AF%E8%BF%98%E4%BA%AE%E7%9D%80%E5%90%97.html</link>
-        <guid isPermaLink="true">http://laichendong.com/2015/08/19/%E4%BD%A0%E7%9A%84%E7%81%AF%E8%BF%98%E4%BA%AE%E7%9D%80%E5%90%97.html</guid>
+        <link>http://laichendong.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2015/08/19/%E4%BD%A0%E7%9A%84%E7%81%AF%E8%BF%98%E4%BA%AE%E7%9D%80%E5%90%97.html</link>
+        <guid isPermaLink="true">http://laichendong.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2015/08/19/%E4%BD%A0%E7%9A%84%E7%81%AF%E8%BF%98%E4%BA%AE%E7%9D%80%E5%90%97.html</guid>
         
+        
+        <category>读书笔记</category>
         
       </item>
     
