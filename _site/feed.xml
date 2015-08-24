@@ -5,9 +5,33 @@
     <description></description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 23 Aug 2015 23:58:02 +0800</pubDate>
-    <lastBuildDate>Sun, 23 Aug 2015 23:58:02 +0800</lastBuildDate>
+    <pubDate>Mon, 24 Aug 2015 22:02:56 +0800</pubDate>
+    <lastBuildDate>Mon, 24 Aug 2015 22:02:56 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Open Terminal Here In Mac Os Finder</title>
+        <description>&lt;p&gt;在windows中，可以配置“在当前位置打开命令行”，非常方便好用。所以想找一下在mac下有没有类似的功能。
+找来找去，很遗憾，没找到很perfect的方法。&lt;/p&gt;
+
+&lt;p&gt;1 可以通过“服务”实现“新建位于文件夹位置的终端标签/窗口”来实现。
+“系统偏好设置” 》 “键盘” 》 “快捷键” 》 “服务” 》 “新建位于文件夹位置的终端标签/窗口”
+甚至还可以设置快捷键，让我激动了一下。结果~~~
+这并不是像windows中那样在打开的文件夹中 on fly用的。
+而是要返回到上一级，选中这个文件夹才可以~&lt;/p&gt;
+
+&lt;p&gt;2 可以将文件夹的图标拖动到终端的图标上去。可是拖动还是不够方便&lt;/p&gt;
+
+&lt;p&gt;3 还可以执行 open -a terminal path/to/dir  的命令。 ~~~如果都已经开了命令行窗口，还要这干嘛，直接cd就ok啊。貌似这是第二条的原理。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 24 Aug 2015 00:00:00 +0800</pubDate>
+        <link>http://laichendong.com/mac/2015/08/24/open-terminal-here-in-mac-os-finder.html</link>
+        <guid isPermaLink="true">http://laichendong.com/mac/2015/08/24/open-terminal-here-in-mac-os-finder.html</guid>
+        
+        
+        <category>mac</category>
+        
+      </item>
     
       <item>
         <title>让你的shell更好</title>
