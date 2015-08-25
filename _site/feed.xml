@@ -5,9 +5,36 @@
     <description></description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Aug 2015 22:02:56 +0800</pubDate>
-    <lastBuildDate>Mon, 24 Aug 2015 22:02:56 +0800</lastBuildDate>
+    <pubDate>Tue, 25 Aug 2015 11:58:16 +0800</pubDate>
+    <lastBuildDate>Tue, 25 Aug 2015 11:58:16 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Mac下设置java_home</title>
+        <description>&lt;p&gt;应该是我装了xcode的原因，我没有显式安装java，mac里也有java的环境了。然后当我想在命令行下运行mvn的命令时。就提示我要设置JAVA_HOME了。
+当我去找JAVA_HOME在哪的时候。发现是“乱七八糟”的。高冷的mac怎么会那么烂？我肯定是错过了什么。于是求助于万能的google。果然：
+可以这样&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export JAVA_HOME=&quot;$(/usr/libexec/java_home)&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;甚至可以指定版本：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export JAVA_HOME=&quot;$(/usr/libexec/java_home -v 1.6)&quot;
+export JAVA_HOME=&quot;$(/usr/libexec/java_home -v 1.7)&quot;
+export JAVA_HOME=&quot;$(/usr/libexec/java_home -v 1.8)&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;牛了逼的。果然高冷！&lt;/p&gt;
+</description>
+        <pubDate>Tue, 25 Aug 2015 00:00:00 +0800</pubDate>
+        <link>http://laichendong.com/mac/2015/08/25/mac%E4%B8%8B%E8%AE%BE%E7%BD%AEJAVA_HOME.html</link>
+        <guid isPermaLink="true">http://laichendong.com/mac/2015/08/25/mac%E4%B8%8B%E8%AE%BE%E7%BD%AEJAVA_HOME.html</guid>
+        
+        
+        <category>mac</category>
+        
+      </item>
     
       <item>
         <title>Open Terminal Here In Mac Os Finder</title>
