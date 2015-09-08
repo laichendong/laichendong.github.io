@@ -25,9 +25,11 @@ category: jekyll
 
 第四步，提交，推到远端。
 
-	~ $ git add --all
-	~ $ git commit -m "Initial commit"
-	~ $ git push -u origin master
+{% highlight sh %}
+~ $ git add --all
+~ $ git commit -m "Initial commit"
+~ $ git push -u origin master
+{% endhighlight %}
 
 第五步，没有第五步了。浏览器里访问一下：http://username.github.io
 
