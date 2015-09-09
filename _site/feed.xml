@@ -5,9 +5,59 @@
     <description></description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 Sep 2015 13:32:28 +0800</pubDate>
-    <lastBuildDate>Tue, 08 Sep 2015 13:32:28 +0800</lastBuildDate>
+    <pubDate>Wed, 09 Sep 2015 23:13:03 +0800</pubDate>
+    <lastBuildDate>Wed, 09 Sep 2015 23:13:03 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Jekyll设置代码高亮</title>
+        <description>&lt;p&gt;使用jekyll的人，我想大部分都应该经常和代码打交道吧。那代码高亮自然少不了，今天就讲讲如何在jekyll中配置代码高亮。&lt;/p&gt;
+
+&lt;p&gt;代码高亮的工具有很多。jekyll原生支持的是&lt;a href=&quot;http://pygments.org/&quot;&gt;pygments&lt;/a&gt;.
+使的博客上的代码高亮的原理是用pygments生成一个css文件供页面引用，然后用jekyll的pygments插件将博客源文件中的代码处理成能使用该css的html代码。最后在浏览器的渲染下，代码就亮起来了。&lt;/p&gt;
+
+&lt;p&gt;看名字就应该知道这pygments是一个python写的东西了。那就可以用&lt;a href=&quot;https://pypi.python.org/pypi/pip&quot;&gt;pip&lt;/a&gt;来安装了。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;pip install Pygments&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;至于pip是什么，以及如何安装pip，就请自行google了。&lt;/p&gt;
+
+&lt;p&gt;安装完之后就应该用他来生成css文件了：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;blogRoot &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pygmentize -S default -f html &amp;gt; css/pygments.css&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;这条命令的两个参数分别指定的是默认的配色方案和目标格式是html。关于参数解释和其他可选参数请看&lt;a href=&quot;http://pygments.org/docs/cmdline/&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;有了这个css文件，要生效当然要在页面里引用。对于我这偷懒的人来说，就直接放在&lt;em&gt;_includes/head.html&lt;/em&gt;里了，这样做的好处和坏处都是每个页面都有这个css了。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/css/pygments.css&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;现在css已经具备了。接下来要做的就是将页面上的代码转换成符合这个css的html了。我们先用gem安装pygment.rb&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install pygments.rb&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;然后在配置文件&lt;em&gt;_config.yml&lt;/em&gt;中添加一行，告诉jekyll用pygment来处理高亮。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;highlighter&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;pygments&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;我们在源文件中，将代码放到  {% highlight language %} 和 {% endhighlight %} 之间就ok了。 其中language支持那些以及怎么写依然可以参照&lt;a href=&quot;http://pygments.org/docs/lexers/&quot;&gt;官网&lt;/a&gt;。
+如果官方提供的300多种语言都不够用的话，那你干脆自己写一个得了。反正pygments支持自定义。
+到这，你的代码就应该亮起来了！&lt;/p&gt;
+
+&lt;p&gt;说句题外话。jekyll的口号是：什么都不用管，只用关心你的博客内容。我觉得就是扯淡。会自己搭博客的人。这应该是最烂的广告了。如果什么都没得折腾。那还用你干嘛。直接oschina上注册一个账号不是更好？
+就是因为可以各种折腾，我才选用jekyll的。&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;生命不息，折腾不止。&lt;/h1&gt;
+
+</description>
+        <pubDate>Wed, 09 Sep 2015 00:00:00 +0800</pubDate>
+        <link>http://laichendong.com/jekyll/2015/09/09/jekyll%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE.html</link>
+        <guid isPermaLink="true">http://laichendong.com/jekyll/2015/09/09/jekyll%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>加班记（二）</title>
