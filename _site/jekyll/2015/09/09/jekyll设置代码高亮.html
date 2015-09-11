@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Jekyll设置代码高亮</title>
-  <meta name="description" content="使用jekyll的人，我想大部分都应该经常和代码打交道吧。那代码高亮自然少不了，今天就讲讲如何在jekyll中配置代码高亮。">
+  <meta name="description" content="2015年09月11日，重要更新：以下都是扯淡。现在jekyll已经原生支持语法高亮了。直接将代码放到  {% highlight language %} 和 {% endhighlight %} 之间就ok了。">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/pygments.css">
   <link rel="canonical" href="http://laichendong.com/jekyll/2015/09/09/jekyll%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE.html">
   <link rel="alternate" type="application/rss+xml" title="咖啡不苦" href="http://laichendong.com/feed.xml" />
   <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
@@ -38,7 +37,7 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/categories.html">分类</a>
+          <a class="page-link" href="/categories.html">分类索引</a>
           
         
           
@@ -67,7 +66,14 @@
   </header>
 
   <article class="post-content">
-    <p>使用jekyll的人，我想大部分都应该经常和代码打交道吧。那代码高亮自然少不了，今天就讲讲如何在jekyll中配置代码高亮。</p>
+    <pre><code>2015年09月11日，重要更新：
+以下都是扯淡。现在jekyll已经原生支持语法高亮了。
+直接将代码放到  {% highlight language %} 和 {% endhighlight %} 之间就ok了。
+</code></pre>
+
+<hr />
+
+<p>使用jekyll的人，我想大部分都应该经常和代码打交道吧。那代码高亮自然少不了，今天就讲讲如何在jekyll中配置代码高亮。</p>
 
 <p>代码高亮的工具有很多。jekyll原生支持的是<a href="http://pygments.org/">pygments</a>.
 使的博客上的代码高亮的原理是用pygments生成一个css文件供页面引用，然后用jekyll的pygments插件将博客源文件中的代码处理成能使用该css的html代码。最后在浏览器的渲染下，代码就亮起来了。</p>

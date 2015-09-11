@@ -5,13 +5,20 @@
     <description></description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Sep 2015 11:42:16 +0800</pubDate>
-    <lastBuildDate>Fri, 11 Sep 2015 11:42:16 +0800</lastBuildDate>
+    <pubDate>Fri, 11 Sep 2015 22:06:27 +0800</pubDate>
+    <lastBuildDate>Fri, 11 Sep 2015 22:06:27 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Jekyll设置代码高亮</title>
-        <description>&lt;p&gt;使用jekyll的人，我想大部分都应该经常和代码打交道吧。那代码高亮自然少不了，今天就讲讲如何在jekyll中配置代码高亮。&lt;/p&gt;
+        <description>&lt;pre&gt;&lt;code&gt;2015年09月11日，重要更新：
+以下都是扯淡。现在jekyll已经原生支持语法高亮了。
+直接将代码放到  {% highlight language %} 和 {% endhighlight %} 之间就ok了。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;使用jekyll的人，我想大部分都应该经常和代码打交道吧。那代码高亮自然少不了，今天就讲讲如何在jekyll中配置代码高亮。&lt;/p&gt;
 
 &lt;p&gt;代码高亮的工具有很多。jekyll原生支持的是&lt;a href=&quot;http://pygments.org/&quot;&gt;pygments&lt;/a&gt;.
 使的博客上的代码高亮的原理是用pygments生成一个css文件供页面引用，然后用jekyll的pygments插件将博客源文件中的代码处理成能使用该css的html代码。最后在浏览器的渲染下，代码就亮起来了。&lt;/p&gt;
