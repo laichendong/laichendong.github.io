@@ -4,7 +4,7 @@ title: 分类
 ---
 
   {% for category in site.categories %}
-  <h2><a href="/showCategroy.html?cat={{ category | first  }}">{{ category | first  }}</a> </i>({{ category | last | size  }})</i> </h2>
+  <h2><a href="/showCategory.html?cat={{ category | first  }}">{{ category | first  }}</a> </i>({{ category | last | size  }})</i> </h2>
   
   <ul class="arc-list">
           {% for post in category.last %}
