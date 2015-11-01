@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>咖啡不苦</title>
-  <meta name="description" content="">
+  <title>东东学python</title>
+  <meta name="description" content="这是我看a byte of python的笔记，如果你也是java程序员，希望你能感到亲切。">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://laichendong.com/">
+  <link rel="canonical" href="http://laichendong.com/python/2015/10/25/python.html">
   <link rel="alternate" type="application/rss+xml" title="咖啡不苦" href="http://laichendong.com/feed.xml" />
   <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
   <script src="/js/jquery.query.js"></script>
@@ -56,87 +56,38 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-  <h1 class="page-heading">文章</h1>
+  <header class="post-header">
+    <h1 class="post-title">东东学python</h1>
+    <p class="post-meta">Oct 25, 2015</p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Oct 25, 2015</span>
+  <article class="post-content">
+    <p>这是我看a byte of python的笔记，如果你也是java程序员，希望你能感到亲切。</p>
 
-        <h2>
-          <a class="post-link" href="/python/2015/10/25/python.html">东东学python</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 9, 2015</span>
+<ul>
+  <li>单引号和双引号都可以做字符串字面量，三引号更强，里面可以随意使用单引号和双引号，还可以换行，用于<code>文档字符串</code></li>
+  <li>格式化占位符用<code>{位置|名字}</code>，格式指定类似c，比如<code>'{0:.3f}'.format(1.0/3)</code></li>
+  <li>命名习惯用下划线连接，而非驼峰方式或其他</li>
+  <li>分号可以用来分割行（语句），但强烈建议直接换行。<code>在一个物理行内只写一个逻辑行</code></li>
+  <li>while循环可以配一个else，在循环结束时执行else块</li>
+  <li><code>for..in</code></li>
+  <li>函数用<code>def</code>定义</li>
+  <li>参数采用值传递，作用域在函数体内，改变值不会影响外部。如果想影响外部，采用<code>global</code>语句</li>
+  <li>函数参数可以设置默认值 <code>def func(a,b=1)</code></li>
+  <li>函数调用时，可以通过指定参数名字，改变传参顺序和个数</li>
+  <li>变长参数列表：<code>*param</code>用来声明普通的变长参数集合，<code>**param</code>用来声明带名字的变长参数集合</li>
+  <li>一个简单的py文件就是一个模块，运行时可以通过<code>if __name__=‘__main__’</code>来判断，当前程序是独立运行还是被当做模块被引用</li>
+  <li><code>from mymodule import *</code>可以引入模块里的所有公有names，但不引入<code>__</code>开头的私有names</li>
+  <li>list是一种基本的数据结构，比java的list和array都强哦。可以包含不同数据类型的元素，比如<code>l = [1, '2', (3,4)]</code></li>
+  <li>tuple是另一种数据结构，和list相似，但没有list那么多功能，且元组是“不可变”的</li>
+  <li>dictionary又是另一种数据结构了</li>
+  <li>sequence， list  tuple  string 这些都是sequence，他的主要功能是判断in 和 not in。还有按序号访问，最重要的是支持切片操作</li>
+  <li>用tuple可以实现“多个返回值”的效果</li>
+</ul>
 
-        <h2>
-          <a class="post-link" href="/jekyll/2015/09/09/set-syntax-highlight-in-jekyll.html">jekyll设置语法高亮</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 6, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2015/09/06/thinking-on-work-over-time-2.html">加班记（二）</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 29, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/2015/08/29/write-your-blog-with-jekyll-and-github-pages.html">用jekyll和github pages写博客</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 26, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2015/08/26/thinking-on-work-over-time.html">加班记</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 25, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/mac/2015/08/25/set-java-home-on-mac.html">mac下设置JAVA_HOME</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 24, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/mac/2015/08/24/open-terminal-here-in-mac-os-finder.html">Open Terminal Here In Mac Os Finder</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 23, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/mac/2015/08/23/get-the-better-shell.html">让你的shell更好</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 19, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2015/08/19/are-your-lights-on.html">你的灯还亮着吗？——发现问题的真正所在</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">订阅 <a href="/feed.xml">RSS</a></p>
+  </article>
 
 </div>
 

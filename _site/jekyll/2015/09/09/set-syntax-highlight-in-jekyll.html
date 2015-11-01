@@ -78,27 +78,27 @@
 
 <p>看名字就应该知道这pygments是一个python写的东西了。那就可以用<a href="https://pypi.python.org/pypi/pip">pip</a>来安装了。</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh">pip install Pygments</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">pip install Pygments</code></pre></figure>
 
 <p>至于pip是什么，以及如何安装pip，就请自行google了。</p>
 
 <p>安装完之后就应该用他来生成css文件了：</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh">blogRoot <span class="nv">$ </span>pygmentize -S default -f html &gt; css/pygments.css</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">blogRoot <span class="nv">$ </span>pygmentize -S default -f html &gt; css/pygments.css</code></pre></figure>
 
 <p>这条命令的两个参数分别指定的是默认的配色方案和目标格式是html。关于参数解释和其他可选参数请看<a href="http://pygments.org/docs/cmdline/">官方文档</a></p>
 
 <p>有了这个css文件，要生效当然要在页面里引用。对于我这偷懒的人来说，就直接放在<em>_includes/head.html</em>里了，这样做的好处和坏处都是每个页面都有这个css了。</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;/css/pygments.css&quot;</span><span class="nt">&gt;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/css/pygments.css"</span><span class="nt">&gt;</span></code></pre></figure>
 
 <p>现在css已经具备了。接下来要做的就是将页面上的代码转换成符合这个css的html了。我们先用gem安装pygment.rb</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>gem install pygments.rb</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="gp">$ </span>gem install pygments.rb</code></pre></figure>
 
 <p>然后在配置文件<em>_config.yml</em>中添加一行，告诉jekyll用pygment来处理高亮。</p>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">highlighter</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">pygments</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">highlighter</span><span class="pi">:</span> <span class="s">pygments</span></code></pre></figure>
 
 <p>我们在源文件中，将代码放到  {% highlight language %} 和 {% endhighlight %} 之间就ok了。 其中language支持那些以及怎么写依然可以参照<a href="http://pygments.org/docs/lexers/">官网</a>。
 如果官方提供的300多种语言都不够用的话，那你干脆自己写一个得了。反正pygments支持自定义。

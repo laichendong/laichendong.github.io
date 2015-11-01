@@ -5,9 +5,43 @@
     <description></description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Sep 2015 22:55:51 +0800</pubDate>
-    <lastBuildDate>Fri, 11 Sep 2015 22:55:51 +0800</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Sat, 31 Oct 2015 20:13:43 +0800</pubDate>
+    <lastBuildDate>Sat, 31 Oct 2015 20:13:43 +0800</lastBuildDate>
+    <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>东东学python</title>
+        <description>&lt;p&gt;这是我看a byte of python的笔记，如果你也是java程序员，希望你能感到亲切。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;单引号和双引号都可以做字符串字面量，三引号更强，里面可以随意使用单引号和双引号，还可以换行，用于&lt;code&gt;文档字符串&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;格式化占位符用&lt;code&gt;{位置|名字}&lt;/code&gt;，格式指定类似c，比如&lt;code&gt;&#39;{0:.3f}&#39;.format(1.0/3)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;命名习惯用下划线连接，而非驼峰方式或其他&lt;/li&gt;
+  &lt;li&gt;分号可以用来分割行（语句），但强烈建议直接换行。&lt;code&gt;在一个物理行内只写一个逻辑行&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;while循环可以配一个else，在循环结束时执行else块&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;for..in&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;函数用&lt;code&gt;def&lt;/code&gt;定义&lt;/li&gt;
+  &lt;li&gt;参数采用值传递，作用域在函数体内，改变值不会影响外部。如果想影响外部，采用&lt;code&gt;global&lt;/code&gt;语句&lt;/li&gt;
+  &lt;li&gt;函数参数可以设置默认值 &lt;code&gt;def func(a,b=1)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;函数调用时，可以通过指定参数名字，改变传参顺序和个数&lt;/li&gt;
+  &lt;li&gt;变长参数列表：&lt;code&gt;*param&lt;/code&gt;用来声明普通的变长参数集合，&lt;code&gt;**param&lt;/code&gt;用来声明带名字的变长参数集合&lt;/li&gt;
+  &lt;li&gt;一个简单的py文件就是一个模块，运行时可以通过&lt;code&gt;if __name__=‘__main__’&lt;/code&gt;来判断，当前程序是独立运行还是被当做模块被引用&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;from mymodule import *&lt;/code&gt;可以引入模块里的所有公有names，但不引入&lt;code&gt;__&lt;/code&gt;开头的私有names&lt;/li&gt;
+  &lt;li&gt;list是一种基本的数据结构，比java的list和array都强哦。可以包含不同数据类型的元素，比如&lt;code&gt;l = [1, &#39;2&#39;, (3,4)]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;tuple是另一种数据结构，和list相似，但没有list那么多功能，且元组是“不可变”的&lt;/li&gt;
+  &lt;li&gt;dictionary又是另一种数据结构了&lt;/li&gt;
+  &lt;li&gt;sequence， list  tuple  string 这些都是sequence，他的主要功能是判断in 和 not in。还有按序号访问，最重要的是支持切片操作&lt;/li&gt;
+  &lt;li&gt;用tuple可以实现“多个返回值”的效果&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 25 Oct 2015 00:00:00 +0800</pubDate>
+        <link>http://laichendong.com/python/2015/10/25/python.html</link>
+        <guid isPermaLink="true">http://laichendong.com/python/2015/10/25/python.html</guid>
+        
+        
+        <category>python</category>
+        
+      </item>
     
       <item>
         <title>jekyll设置语法高亮</title>
@@ -25,27 +59,27 @@
 
 &lt;p&gt;看名字就应该知道这pygments是一个python写的东西了。那就可以用&lt;a href=&quot;https://pypi.python.org/pypi/pip&quot;&gt;pip&lt;/a&gt;来安装了。&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;pip install Pygments&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;pip install Pygments&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;至于pip是什么，以及如何安装pip，就请自行google了。&lt;/p&gt;
 
 &lt;p&gt;安装完之后就应该用他来生成css文件了：&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;blogRoot &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pygmentize -S default -f html &amp;gt; css/pygments.css&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;blogRoot &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pygmentize -S default -f html &amp;gt; css/pygments.css&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;这条命令的两个参数分别指定的是默认的配色方案和目标格式是html。关于参数解释和其他可选参数请看&lt;a href=&quot;http://pygments.org/docs/cmdline/&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;有了这个css文件，要生效当然要在页面里引用。对于我这偷懒的人来说，就直接放在&lt;em&gt;_includes/head.html&lt;/em&gt;里了，这样做的好处和坏处都是每个页面都有这个css了。&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/css/pygments.css&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/css/pygments.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;现在css已经具备了。接下来要做的就是将页面上的代码转换成符合这个css的html了。我们先用gem安装pygment.rb&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install pygments.rb&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;gem install pygments.rb&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;然后在配置文件&lt;em&gt;_config.yml&lt;/em&gt;中添加一行，告诉jekyll用pygment来处理高亮。&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;highlighter&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;pygments&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;highlighter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;pygments&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;我们在源文件中，将代码放到  {% highlight language %} 和 {% endhighlight %} 之间就ok了。 其中language支持那些以及怎么写依然可以参照&lt;a href=&quot;http://pygments.org/docs/lexers/&quot;&gt;官网&lt;/a&gt;。
 如果官方提供的300多种语言都不够用的话，那你干脆自己写一个得了。反正pygments支持自定义。
@@ -119,9 +153,9 @@
 
 &lt;p&gt;第四步，提交，推到远端。&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add --all
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit -m &lt;span class=&quot;s2&quot;&gt;&amp;quot;Initial commit&amp;quot;&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push -u origin master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add --all
+~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;Initial commit&quot;&lt;/span&gt;
+~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push -u origin master&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;第五步，没有第五步了。浏览器里访问一下：http://username.github.io&lt;/p&gt;
 
@@ -263,8 +297,8 @@ export JAVA_HOME=&quot;$(/usr/libexec/java_home -v 1.8)&quot;
 &lt;p&gt;牛了逼的。果然高冷！&lt;/p&gt;
 </description>
         <pubDate>Tue, 25 Aug 2015 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/mac/2015/08/25/set-JAVA_HOME-on-mac.html</link>
-        <guid isPermaLink="true">http://laichendong.com/mac/2015/08/25/set-JAVA_HOME-on-mac.html</guid>
+        <link>http://laichendong.com/mac/2015/08/25/set-java-home-on-mac.html</link>
+        <guid isPermaLink="true">http://laichendong.com/mac/2015/08/25/set-java-home-on-mac.html</guid>
         
         
         <category>mac</category>
