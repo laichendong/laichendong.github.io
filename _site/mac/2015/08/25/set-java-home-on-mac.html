@@ -58,13 +58,14 @@
       <div class="wrapper">
         <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">mac下设置JAVA_HOME</h1>
-    <p class="post-meta">Aug 25, 2015</p>
-  </header>
+    <header class="post-header">
+        <h1 class="post-title">mac下设置JAVA_HOME</h1>
 
-  <article class="post-content">
-    <p>应该是我装了xcode的原因，我没有显式安装java，mac里也有java的环境了。然后当我想在命令行下运行mvn的命令时。就提示我要设置JAVA_HOME了。
+        <p class="post-meta">Aug 25, 2015</p>
+    </header>
+
+    <article class="post-content">
+        <p>应该是我装了xcode的原因，我没有显式安装java，mac里也有java的环境了。然后当我想在命令行下运行mvn的命令时。就提示我要设置JAVA_HOME了。
 当我去找JAVA_HOME在哪的时候。发现是“乱七八糟”的。高冷的mac怎么会那么烂？我肯定是错过了什么。于是求助于万能的google。果然：
 可以这样</p>
 
@@ -80,7 +81,31 @@ export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
 <p>牛了逼的。果然高冷！</p>
 
-  </article>
+    </article>
+
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+         * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+         */
+        /*
+         var disqus_config = function () {
+         this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+         this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+         };
+         */
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//laichendongcom.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments
+        powered by Disqus.</a></noscript>
 
 </div>
 
