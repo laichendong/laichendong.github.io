@@ -191,15 +191,17 @@
 当我去找JAVA_HOME在哪的时候。发现是“乱七八糟”的。高冷的mac怎么会那么烂？我肯定是错过了什么。于是求助于万能的google。果然：<br />
 可以这样</p>
 
-<pre><code>export JAVA_HOME="$(/usr/libexec/java_home)"
+<div class="highlighter-rouge"><pre class="highlight"><code>export JAVA_HOME="$(/usr/libexec/java_home)"
 </code></pre>
+</div>
 
 <p>甚至可以指定版本：</p>
 
-<pre><code>export JAVA_HOME="$(/usr/libexec/java_home -v 1.6)"
+<div class="highlighter-rouge"><pre class="highlight"><code>export JAVA_HOME="$(/usr/libexec/java_home -v 1.6)"
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.7)"
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 </code></pre>
+</div>
 
 <p>牛了逼的。果然高冷！</p>
 

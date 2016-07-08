@@ -10,9 +10,9 @@
     <meta name="keywords"  content="咖啡不苦, 赖晨东, laichendong, 博客, 个人网站, 互联网">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>jekyll设置语法高亮 - 咖啡不苦</title>
+    <title>咖啡不苦</title>
 
-    <link rel="canonical" href="http://laichendong.com/jekyll/2015/09/09/set-syntax-highlight-in-jekyll/">
+    <link rel="canonical" href="http://laichendong.com/page2/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -142,251 +142,166 @@
 </script>
 
 
-    <!-- Image to hack wechat -->
-<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
-
-<!-- Post Header -->
-<style type="text/css">
-    header.intro-header{
-        position: relative;
-        background-image: url('/img/home-bg.jpg')
-    }
-
-    
-</style>
-<header class="intro-header" >
-    <div class="header-mask"></div>
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="tags">
-                        
-                    </div>
-                    <h1>jekyll设置语法高亮</h1>
-                    
-                    
-                    <h2 class="subheading"></h2>
-                    
-                    <span class="meta">Posted by 咖啡不苦 on September 9, 2015</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>咖啡不苦</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading"></span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-
-    <!-- Post Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
-
-				<div class="highlighter-rouge"><pre class="highlight"><code>2015年09月11日，重要更新：
-以下都是扯淡。现在jekyll已经原生支持语法高亮了。
-直接将代码放到  {% highlight language %} 和 {% endhighlight %} 之间就ok了。
-</code></pre>
-</div>
-
-<hr />
-
-<p>使用jekyll的人，我想大部分都应该经常和代码打交道吧。那代码高亮自然少不了，今天就讲讲如何在jekyll中配置代码高亮。</p>
-
-<p>代码高亮的工具有很多。jekyll原生支持的是<a href="http://pygments.org/">pygments</a>.<br />
-使的博客上的代码高亮的原理是用pygments生成一个css文件供页面引用，然后用jekyll的pygments插件将博客源文件中的代码处理成能使用该css的html代码。最后在浏览器的渲染下，代码就亮起来了。</p>
-
-<p>看名字就应该知道这pygments是一个python写的东西了。那就可以用<a href="https://pypi.python.org/pypi/pip">pip</a>来安装了。</p>
-
-<figure class="highlight"><pre><code class="language-sh" data-lang="sh">pip install Pygments</code></pre></figure>
-
-<p>至于pip是什么，以及如何安装pip，就请自行google了。</p>
-
-<p>安装完之后就应该用他来生成css文件了：</p>
-
-<figure class="highlight"><pre><code class="language-sh" data-lang="sh">blogRoot <span class="nv">$ </span>pygmentize -S default -f html &gt; css/pygments.css</code></pre></figure>
-
-<p>这条命令的两个参数分别指定的是默认的配色方案和目标格式是html。关于参数解释和其他可选参数请看<a href="http://pygments.org/docs/cmdline/">官方文档</a></p>
-
-<p>有了这个css文件，要生效当然要在页面里引用。对于我这偷懒的人来说，就直接放在<em>_includes/head.html</em>里了，这样做的好处和坏处都是每个页面都有这个css了。</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/css/pygments.css"</span><span class="nt">&gt;</span></code></pre></figure>
-
-<p>现在css已经具备了。接下来要做的就是将页面上的代码转换成符合这个css的html了。我们先用gem安装pygment.rb</p>
-
-<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="gp">$ </span>gem install pygments.rb</code></pre></figure>
-
-<p>然后在配置文件<em>_config.yml</em>中添加一行，告诉jekyll用pygment来处理高亮。</p>
-
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">highlighter</span><span class="pi">:</span> <span class="s">pygments</span></code></pre></figure>
-
-<p>我们在源文件中，将代码放到  {% highlight language %} 和 {% endhighlight %} 之间就ok了。 其中language支持那些以及怎么写依然可以参照<a href="http://pygments.org/docs/lexers/">官网</a>。<br />
-如果官方提供的300多种语言都不够用的话，那你干脆自己写一个得了。反正pygments支持自定义。<br />
-到这，你的代码就应该亮起来了！</p>
-
-<p>说句题外话。jekyll的口号是：什么都不用管，只用关心你的博客内容。我觉得就是扯淡。会自己搭博客的人。这应该是最烂的广告了。如果什么都没得折腾。那还用你干嘛。直接oschina上注册一个账号不是更好？<br />
-就是因为可以各种折腾，我才选用jekyll的。</p>
-
-<h1 id="section">生命不息，折腾不止。</h1>
-
-
-
-                <hr>
-
-                
-                <!-- 多说 Share start -->
-                </style>
-                <div class="ds-share"
-                    style="text-align: right"
-                    data-thread-key="/jekyll/2015/09/09/set-syntax-highlight-in-jekyll"
-                    data-title="jekyll设置语法高亮"
-                    data-url="http://laichendong.com/jekyll/2015/09/09/set-syntax-highlight-in-jekyll/"
-                    data-images="http://laichendong.com/img/home-bg.jpg"
-                    data-content="2015年09月11日，重要更新：
-以下都是扯淡。现在jekyll已经原生支持语法高亮了。
-直接将代码放到  {% highlight language ... | 咖啡不苦 " >
-                    <div class="ds-share-inline">
-                      <ul  class="ds-share-icons-16">
-                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
-                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
-                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
-                      </ul>
-                      <div class="ds-share-icons-more">
-                      </div>
-                    </div>
-                <hr>
-                </div>
-                <!-- 多说 Share end-->
-                
-
-
-                <ul class="pager">
-                    
-                    <li class="previous">
-                        <a href="/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2015/09/06/thinking-on-work-over-time-2/" data-toggle="tooltip" data-placement="top" title="加班记（二）">
-                        Previous<br>
-                        <span>加班记（二）</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="next">
-                        <a href="/python/2015/10/25/python/" data-toggle="tooltip" data-placement="top" title="东东学python">
-                        Next<br>
-                        <span>东东学python</span>
-                        </a>
-                    </li>
-                    
-                </ul>
-
-
-                
-                <!-- 多说评论框 start -->
-                <div class="comment">
-                    <div class="ds-thread"
-                        data-thread-key="/jekyll/2015/09/09/set-syntax-highlight-in-jekyll"
-                        data-title="jekyll设置语法高亮"
-                        data-url="http://laichendong.com/jekyll/2015/09/09/set-syntax-highlight-in-jekyll/" >
-                    </div>
-                </div>
-                <!-- 多说评论框 end -->
-                
-
-                
-
-            </div>  
-
-    <!-- Side Catalog Container -->
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
         
 
+<!-- USE SIDEBAR -->
+    <!-- PostList Container -->
+    		<div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+    			
+<div class="post-preview">
+    <a href="/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2015/08/19/are-your-lights-on/">
+        <h2 class="post-title">
+            你的灯还亮着吗？——发现问题的真正所在
+        </h2>
+        
+        <div class="post-content-preview">
+            序言
+
+  问题 ：没人会读序言
+ 解决办法 ：把序言作为第一章
+ 解决方法带来新的问题 ：第一章很无聊
+ 新的解决方法 ：删了第一章，把第二章作为第一章
+
+
+第一部分：问题是什么
+
+第一章： 一个问题
+
+  __背景故事：__一个办公楼（雷龙大厦）的电梯不够用了。有的租户威胁说，如果不尽快改善电梯服务，他们就要退租。
+
+
+通过电梯不够用的场景，引出：
+&gt; * 问题是什么？
+&gt; ...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on August 19, 2015
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/">&larr; Newer Posts</a>
+    </li>
+    
+    
+</ul>
+
+
+    		</div>
     <!-- Sidebar Container -->
             <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
                 <!-- Featured Tags -->
                 
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-        				
-        			</div>
+                        
+                    </div>
                 </section>
                 
 
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        
+                            <img src="/img/avatar.jpg" />
+                        
+                        
+                            <p>世界那么大，我想去看看。</p>
+                        
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://www.zhihu.com/people/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa  fa-stack-1x fa-inverse">知</i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="http://weibo.com/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://github.com/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </section>
                 <!-- Friends Blog -->
                 
-            </div>
-        </div>
-    </div>
-</article>
-
-
-
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    // dynamic User by Hux
-    var _user = 'laichendong';
-
-    // duoshuo comment query.
-    var duoshuoQuery = {short_name: _user };
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-</script>
-<!-- 多说公共JS代码 end -->
-
-
-
-
-
-
-
-<!-- async load function -->
-<script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
-</script>
-<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
-<script>
-    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
-        anchors.options = {
-          visible: 'always',
-          placement: 'right',
-          icon: '#'
-        };
-        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
-    })
-</script>
-<style>
-    /* place left on bigger screen */
-    @media all and (min-width: 800px) {
-        .anchorjs-link{
-            position: absolute;
-            left: -0.75em;
-            font-size: 1.1em;
-            margin-top : -0.1em;
-        }
-    }
-</style>
+    		</div>
+        
+	</div>
+</div>
 
 
     <!-- Footer -->
