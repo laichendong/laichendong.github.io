@@ -6,3 +6,4 @@ jekyll clean
 jekyll b
 git add .
 git commit -a
+git push
