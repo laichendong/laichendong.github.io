@@ -5,9 +5,29 @@
     <description>赖晨东的博客 | 咖啡不苦</description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 11 Jul 2016 22:20:46 +0800</pubDate>
-    <lastBuildDate>Mon, 11 Jul 2016 22:20:46 +0800</lastBuildDate>
+    <pubDate>Tue, 12 Jul 2016 23:30:11 +0800</pubDate>
+    <lastBuildDate>Tue, 12 Jul 2016 23:30:11 +0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>失乐园</title>
+        <description>&lt;p&gt;看完的书需要有一些收获也好，有些念想也好。我想每看完一本，至少应该留下些什么吧。&lt;br /&gt;
+这次看完渡边淳一的《失乐园》，心情还是挺复杂的。不是很舒服，很虐心的感觉。&lt;br /&gt;
+两个人相爱，或者说被性吸引，以至于叛离现实生活，众叛亲离，最后一起自杀赴死！感觉人的感情实在太强大了。让人害怕。&lt;br /&gt;
+另外感觉日本小说都有一种魔力，能够构建起某种场，在阅读的时候一直是某种氛围或者某种情愫萦绕其上。&lt;br /&gt;
+很平实的词汇，很真实的细节，很有画面感，在阅读的时候甚至能想象出要是改编成电影的 话，男女主角的语气，甚至表情是什么样的。&lt;br /&gt;
+其中很多场景的描写也会让人想起自己的过去和经历过的女人们，有些不愿意，又不自觉的将自己往男主身上套。&lt;br /&gt;
+平 但 震撼人心，让我想起了也是一部日本的电影《入殓师》&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 12 Jul 2016 00:00:00 +0800</pubDate>
+        <link>http://laichendong.com/read/2016/07/12/paradise-lost/</link>
+        <guid isPermaLink="true">http://laichendong.com/read/2016/07/12/paradise-lost/</guid>
+        
+        
+        <category>read</category>
+        
+      </item>
     
       <item>
         <title>在服务端将HTML转成图片</title>
@@ -438,30 +458,6 @@ export JAVA_HOME=&quot;$(/usr/libexec/java_home -v 1.8)&quot;
         <pubDate>Tue, 25 Aug 2015 00:00:00 +0800</pubDate>
         <link>http://laichendong.com/mac/2015/08/25/set-java-home-on-mac/</link>
         <guid isPermaLink="true">http://laichendong.com/mac/2015/08/25/set-java-home-on-mac/</guid>
-        
-        
-        <category>mac</category>
-        
-      </item>
-    
-      <item>
-        <title>Open Terminal Here In Mac Os Finder</title>
-        <description>&lt;p&gt;在windows中，可以配置“在当前位置打开命令行”，非常方便好用。所以想找一下在mac下有没有类似的功能。&lt;br /&gt;
-找来找去，很遗憾，没找到很perfect的方法。&lt;/p&gt;
-
-&lt;p&gt;1 可以通过“服务”实现“新建位于文件夹位置的终端标签/窗口”来实现。&lt;br /&gt;
-“系统偏好设置” 》 “键盘” 》 “快捷键” 》 “服务” 》 “新建位于文件夹位置的终端标签/窗口”&lt;br /&gt;
-甚至还可以设置快捷键，让我激动了一下。结果~~~&lt;br /&gt;
-这并不是像windows中那样在打开的文件夹中 on fly用的。&lt;br /&gt;
-而是要返回到上一级，选中这个文件夹才可以~&lt;/p&gt;
-
-&lt;p&gt;2 可以将文件夹的图标拖动到终端的图标上去。可是拖动还是不够方便&lt;/p&gt;
-
-&lt;p&gt;3 还可以执行 open -a terminal path/to/dir  的命令。 ~~~如果都已经开了命令行窗口，还要这干嘛，直接cd就ok啊。貌似这是第二条的原理。&lt;/p&gt;
-</description>
-        <pubDate>Mon, 24 Aug 2015 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/mac/2015/08/24/open-terminal-here-in-mac-os-finder/</link>
-        <guid isPermaLink="true">http://laichendong.com/mac/2015/08/24/open-terminal-here-in-mac-os-finder/</guid>
         
         
         <category>mac</category>
