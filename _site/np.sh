@@ -12,4 +12,4 @@ echo "category: $2" >> $file_name
 echo "title: $1" >> $file_name
 echo "---" >> $file_name
 
-subl $file_name
+open -a /Applications/MacDown.app $file_name
