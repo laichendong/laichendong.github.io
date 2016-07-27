@@ -5,5 +5,10 @@
 jekyll clean
 jekyll b
 git add .
-git commit -a
+if [[ $1 ]]; then
+	git commit -a -m "$1"
+else
+	git commit -a
+fi
+
 git push
