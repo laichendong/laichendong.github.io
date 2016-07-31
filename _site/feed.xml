@@ -5,9 +5,34 @@
     <description>赖晨东的博客 | 咖啡不苦</description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 29 Jul 2016 11:43:45 +0800</pubDate>
-    <lastBuildDate>Fri, 29 Jul 2016 11:43:45 +0800</lastBuildDate>
+    <pubDate>Mon, 01 Aug 2016 00:00:23 +0800</pubDate>
+    <lastBuildDate>Mon, 01 Aug 2016 00:00:23 +0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>提升创新能力</title>
+        <description>&lt;p&gt;提升创新能力有三个方法：&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;犯错&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;剽窃&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;交配&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;犯错的意思是说要去试错，有创意的犯错，从犯错中发现创新想法。&lt;/p&gt;
+
+&lt;p&gt;剽窃的意思是借鉴别人的思路，别人的想法，形成自己的创新想法。&lt;/p&gt;
+
+&lt;p&gt;交配是指让多种不同的想法进行“交配”产生新的创新想法。&lt;/p&gt;
+
+&lt;p&gt;这三者和“创新的三大障碍”是一一对应的。如果不能认识到自己，那就不能意识到自己在犯错。更别提从犯错中发现创新想法了。&lt;/p&gt;
+
+&lt;p&gt;如果只相信自己，各种问题都给出自己习惯上的答案，就不可能去借鉴别人的想法。&lt;/p&gt;
+
+&lt;p&gt;如果认为所有的问题都有且仅有一个答案，那自然也不会去综合不同的想法，让想法相互交配产生新的想法了。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 31 Jul 2016 00:00:00 +0800</pubDate>
+        <link>http://laichendong.com/read/2016/07/31/improve-ability-of-innovating/</link>
+        <guid isPermaLink="true">http://laichendong.com/read/2016/07/31/improve-ability-of-innovating/</guid>
+        
+        
+        <category>read</category>
+        
+      </item>
     
       <item>
         <title>有效领导</title>
@@ -270,58 +295,6 @@ zsh会用&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.zsh-update&lt;/code&
         
         
         <category>不好分类的</category>
-        
-      </item>
-    
-      <item>
-        <title>东东学python</title>
-        <description>&lt;p&gt;这是我看&lt;a href=&quot;http://www.swaroopch.com/notes/python/&quot;&gt;a byte of python&lt;/a&gt;的笔记，如果你也是java程序员，希望你能感到亲切。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;单引号和双引号都可以做字符串字面量，三引号更强，里面可以随意使用单引号和双引号，还可以换行，用于&lt;code class=&quot;highlighter-rouge&quot;&gt;文档字符串&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;格式化占位符用&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;位置|名字&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;，格式指定类似c，比如&lt;code class=&quot;highlighter-rouge&quot;&gt;&#39;{0:.3f}&#39;.format(1.0/3)&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;命名习惯用下划线连接，而非驼峰方式或其他&lt;/li&gt;
-  &lt;li&gt;分号可以用来分割行（语句），但强烈建议直接换行。&lt;code class=&quot;highlighter-rouge&quot;&gt;在一个物理行内只写一个逻辑行&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;while循环可以配一个else，在循环结束时执行else块.for循环同理&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;for..in&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;函数用&lt;code class=&quot;highlighter-rouge&quot;&gt;def&lt;/code&gt;定义&lt;/li&gt;
-  &lt;li&gt;参数采用值传递，作用域在函数体内，改变值不会影响外部。如果想影响外部，采用&lt;code class=&quot;highlighter-rouge&quot;&gt;global&lt;/code&gt;语句&lt;/li&gt;
-  &lt;li&gt;函数参数可以设置默认值 &lt;code class=&quot;highlighter-rouge&quot;&gt;def func(a,b=1)&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;函数调用时，可以通过指定参数名字，改变传参顺序和个数&lt;/li&gt;
-  &lt;li&gt;变长参数列表：&lt;code class=&quot;highlighter-rouge&quot;&gt;*param&lt;/code&gt;用来声明普通的变长参数集合，&lt;code class=&quot;highlighter-rouge&quot;&gt;**param&lt;/code&gt;用来声明带名字的变长参数集合&lt;/li&gt;
-  &lt;li&gt;一个简单的py文件就是一个模块，运行时可以通过&lt;code class=&quot;highlighter-rouge&quot;&gt;if __name__=‘__main__’&lt;/code&gt;来判断，当前程序是独立运行还是被当做模块被引用&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;from mymodule import *&lt;/code&gt;可以引入模块里的所有公有names，但不引入&lt;code class=&quot;highlighter-rouge&quot;&gt;__&lt;/code&gt;开头的私有names&lt;/li&gt;
-  &lt;li&gt;list是一种基本的数据结构，比java的list和array都强哦。可以包含不同数据类型的元素，比如&lt;code class=&quot;highlighter-rouge&quot;&gt;l = [1, &#39;2&#39;, (3,4)]&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;tuple是另一种数据结构，和list相似，但没有list那么多功能，且元组是“不可变”的&lt;/li&gt;
-  &lt;li&gt;Dictionary类似map，&lt;code class=&quot;highlighter-rouge&quot;&gt;for k, v in dic.items()&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;dic[&#39;key&#39;]&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;sequence， list  tuple  string 这些都是sequence，他的主要功能是判断in 和 not in。还有按序号访问，最重要的是支持切片操作&lt;/li&gt;
-  &lt;li&gt;用tuple可以实现“多个返回值”的效果&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;os.sep&lt;/code&gt;路径分隔符&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;os.system&lt;/code&gt;调用系统命令，返回0标示成功，否则返回错误码&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Software is grown, not built.&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;self&lt;/code&gt;相当于this&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;myObject.method(arg1, arg2)&lt;/code&gt;会被python转换为&lt;code class=&quot;highlighter-rouge&quot;&gt;MyClass.method(myObject, arg1, arg2)&lt;/code&gt;调用。所以,如果一个方法没参数，最少都有一个参数是&lt;code class=&quot;highlighter-rouge&quot;&gt;self&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;class Person&lt;/code&gt; 不是用def&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pass&lt;/code&gt; 表示一个空块&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;__init__&lt;/code&gt;相当于构造方法&lt;/li&gt;
-  &lt;li&gt;类变量，共享给这个类的所有对象访问。类比静态变量&lt;/li&gt;
-  &lt;li&gt;对象变量，就是某个对象私有了，类比成员变量&lt;/li&gt;
-  &lt;li&gt;用两个下划线开头的 为私有变量名 &lt;code class=&quot;highlighter-rouge&quot;&gt;__privatevar&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;class Man(Person)&lt;/code&gt; 这样就声明了Man继承Person&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;raw_input()&lt;/code&gt; 等待用户输入&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;open(&#39;poem.txt&#39;, &#39;w&#39;)&lt;/code&gt;打开文件，模式有r读，w写，a追加，t文本，b二进制，记得&lt;code class=&quot;highlighter-rouge&quot;&gt;close()&lt;/code&gt; ^_^&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;try..except&lt;/code&gt;处理异常&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;class ShortInputException(Exception)&lt;/code&gt; 通过继承Exception来定义异常&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;raise ShortInputException(...)&lt;/code&gt;向上抛出异常&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 25 Oct 2015 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/python/2015/10/25/python/</link>
-        <guid isPermaLink="true">http://laichendong.com/python/2015/10/25/python/</guid>
-        
-        
-        <category>python</category>
         
       </item>
     
