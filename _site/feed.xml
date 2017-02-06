@@ -5,9 +5,38 @@
     <description>赖晨东的博客 | 咖啡不苦</description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 01 Aug 2016 00:00:23 +0800</pubDate>
-    <lastBuildDate>Mon, 01 Aug 2016 00:00:23 +0800</lastBuildDate>
+    <pubDate>Mon, 06 Feb 2017 16:33:42 +0800</pubDate>
+    <lastBuildDate>Mon, 06 Feb 2017 16:33:42 +0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>2017-OKR</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;目标1：锻炼 跑步1000公里&lt;/h1&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;目标2：完成旅行计划&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;KR1：出国一次，暂定巴厘岛&lt;/li&gt;
+  &lt;li&gt;KR2：自驾一次，5.1 达达线&lt;/li&gt;
+  &lt;li&gt;KR3：学习照片管理和处理软件LightRoom&lt;/li&gt;
+  &lt;li&gt;KR4：制作4本摄影集，以前的两本，17年的两本&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;目标3：完成学习计划&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;KR1：认真读10本书，再快快地读10本&lt;/li&gt;
+  &lt;li&gt;KR2：学完斯坦福的“机器学习”课程&lt;/li&gt;
+  &lt;li&gt;KR3：用Python实现这个玩意儿：https://xlzd.me/2016/03/05/sc-internet&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 06 Feb 2017 00:00:00 +0800</pubDate>
+        <link>http://laichendong.com/2017/02/06/2017-okr/</link>
+        <guid isPermaLink="true">http://laichendong.com/2017/02/06/2017-okr/</guid>
+        
+        
+      </item>
     
       <item>
         <title>提升创新能力</title>
@@ -258,40 +287,6 @@ UTF-8的BOM为&lt;code class=&quot;highlighter-rouge&quot;&gt;EF BB BF&lt;/code&
         <pubDate>Fri, 08 Jul 2016 00:00:00 +0800</pubDate>
         <link>http://laichendong.com/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/07/08/export-csv-and-open-in-ms-excel/</link>
         <guid isPermaLink="true">http://laichendong.com/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/07/08/export-csv-and-open-in-ms-excel/</guid>
-        
-        
-        <category>不好分类的</category>
-        
-      </item>
-    
-      <item>
-        <title>zsh等shell软件如何通过github实现自动更新功能</title>
-        <description>&lt;p&gt;我的shell装了&lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh&quot;&gt;zsh&lt;/a&gt;,不用说，这是一个很棒的shell增强软件。注意到他和其他一些基于github的软件一样，貌似直接把github当成更新服务器了。这让我觉得很cool啊。就看了下大概是怎么实现的。&lt;/p&gt;
-
-&lt;h1 id=&quot;section&quot;&gt;1、如何检测更新&lt;/h1&gt;
-&lt;p&gt;要自动更新自然就要先能检测到软件有更新。如果自动升级选项开启的话，zsh会首先执行&lt;code class=&quot;highlighter-rouge&quot;&gt;$ZSH/tools/check_for_upgrade.sh&lt;/code&gt;文件来检查是否有更新。&lt;br /&gt;
-zsh会用&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.zsh-update&lt;/code&gt;来存储最近一次更新的日期，如果当前日期和上次更新的日期差了一定天数（默认13天）则会提示为你是否要更新，不管选择是或否 都会更新&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.zsh-update&lt;/code&gt;文件的内容。如果具备其他的更新条件，比如有文件夹的鞋权限，比如git命令可用等等就具体执行更新动作了。&lt;/p&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;2、执行更新&lt;/h1&gt;
-&lt;p&gt;具体的更新动作是通过&lt;code class=&quot;highlighter-rouge&quot;&gt;$ZSH/tools/upgrade.sh&lt;/code&gt;完成的。看了下这个文件，so easy！ 大部分都是用来设置输出格式的。核心的就只有一句：&lt;code class=&quot;highlighter-rouge&quot;&gt;git pull --rebase --stat origin master&lt;/code&gt; ok，这就将要更新的东西更新下来了。&lt;/p&gt;
-
-&lt;h1 id=&quot;section-2&quot;&gt;3、扩展知识点&lt;/h1&gt;
-&lt;p&gt;在看zsh实现的过程中，做为一个shell门外的菜鸟，了解到了如下一些知识点：&lt;/p&gt;
-
-&lt;p&gt;1、 &lt;code class=&quot;highlighter-rouge&quot;&gt;$EPOCHSECONDS&lt;/code&gt;显示当前epoch时间（从1970年1月1日 0点到现在的时间）的秒数，这是一个内置环境变量？&lt;/p&gt;
-
-&lt;p&gt;2、 &lt;code class=&quot;highlighter-rouge&quot;&gt;[]&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;[[]]&lt;/code&gt;。代码中大量看到这两种结构，单中括号是shell的内部命令，和&lt;code class=&quot;highlighter-rouge&quot;&gt;test&lt;/code&gt;等同，可以用一些参数表示不同的测试功能，比如&lt;code class=&quot;highlighter-rouge&quot;&gt;-f&lt;/code&gt;测试文件是否存在，&lt;code class=&quot;highlighter-rouge&quot;&gt;-w&lt;/code&gt;测试文件是否可写，&lt;code class=&quot;highlighter-rouge&quot;&gt;-z&lt;/code&gt;测试字符串是否为空等等，更多参考&lt;a href=&quot;http://blog.csdn.net/king_on/article/details/7281341&quot;&gt;随便找的一篇文章&lt;/a&gt;.而双中括号是shell里的关键字，比前者更加通用，括起来的字符会发生“参数扩展”和“命令替换”——这句没看懂~&lt;/p&gt;
-
-&lt;p&gt;3、用&lt;code class=&quot;highlighter-rouge&quot;&gt;whence&lt;/code&gt;命令检查软件是否安装。whence xxx将显示xxx命令的路径或者别名定义。 如果一个命令的路径是 &lt;code class=&quot;highlighter-rouge&quot;&gt;/dev/null&lt;/code&gt; 那说明这个命令没有被正确安装，不可用！比如：&lt;code class=&quot;highlighter-rouge&quot;&gt;whence git &amp;gt;/dev/null || return 0&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;4、&lt;code class=&quot;highlighter-rouge&quot;&gt;tput&lt;/code&gt;他可以控制终端的光标文本等。zsh绚丽的终端界面就是用的这玩意儿，比如&lt;code class=&quot;highlighter-rouge&quot;&gt;RED=&quot;$(tput setaf 1)&quot;  NORMAL=&quot;$(tput sgr0)&quot;&lt;/code&gt;然后&lt;code class=&quot;highlighter-rouge&quot;&gt;${RED}我是红的${NORMAL}我又正常了&lt;/code&gt;，其他功能介绍看&lt;a href=&quot;http://blog.csdn.net/l1905/article/details/8994705&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;5、在命令行画画！相信很多人都见过纯文本的流程图，字符画什么的，觉得很cool。zsh也用了。我找了找，赠送两个装B网站：&lt;a href=&quot;http://asciiflow.com/&quot;&gt;asciiflow&lt;/a&gt; AND  &lt;a href=&quot;http://search.cpan.org/dist/App-Asciio/lib/App/Asciio.pm&quot;&gt;Asciio&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 20 Jun 2016 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/06/20/shell-software-how-to-auto-upgrade-with-github/</link>
-        <guid isPermaLink="true">http://laichendong.com/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/06/20/shell-software-how-to-auto-upgrade-with-github/</guid>
         
         
         <category>不好分类的</category>
