@@ -5,8 +5,8 @@
     <description>赖晨东的博客 | 咖啡不苦</description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 06 Feb 2017 16:34:34 +0800</pubDate>
-    <lastBuildDate>Mon, 06 Feb 2017 16:34:34 +0800</lastBuildDate>
+    <pubDate>Tue, 07 Feb 2017 13:35:20 +0800</pubDate>
+    <lastBuildDate>Tue, 07 Feb 2017 13:35:20 +0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -25,7 +25,11 @@
 &lt;h1 id=&quot;section-2&quot;&gt;目标3：完成学习计划&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;KR1：认真读10本书，再快快地读10本&lt;/li&gt;
+  &lt;li&gt;KR1：认真读10本书，再快快地读10本
+    &lt;ul&gt;
+      &lt;li&gt;《边城》&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;KR2：学完斯坦福的“机器学习”课程&lt;/li&gt;
   &lt;li&gt;KR3：用Python实现这个玩意儿：https://xlzd.me/2016/03/05/sc-internet&lt;/li&gt;
 &lt;/ul&gt;
