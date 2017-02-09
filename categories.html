@@ -5,7 +5,7 @@ title: 分类索引
 
 
 <ul id="cat"></ul>
-
+<script src="/js/jquery.query.js "></script>
 <script type="text/javascript">
 var dataStr = '{ {% for cat in site.categories %} {% if cat[0] != site.categories.first[0] %},{% endif %} "{{ cat[0] }}":[{% for post in cat[1] %} {% if post != cat[1].first %},{% endif %} {"url":"{{post.url}}", "title":"{{post.title}}", "date":"{{post.date | date:"%b %-d, %Y"}}"} {% endfor %}] {% endfor %} }', 
 	data = JSON.parse(dataStr), 
@@ -19,7 +19,7 @@ var dataStr = '{ {% for cat in site.categories %} {% if cat[0] != site.categorie
 	    });
     } else {
     	for (cat in data) {
-    		$("#cat").append("<li><a href=/categories.html?c=" + cat + ">" + cat + " <span  class='post-meta'>" + data[cat].length + "篇文章</span></a></li>");
+    		$("#cat").append("<li><a href=/categories/?c=" + cat + ">" + cat + " <span  class='post-meta'>" + data[cat].length + "篇文章</span></a></li>");
     	}
     }
     
