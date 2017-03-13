@@ -1,7 +1,8 @@
 ---
 layout: post
 category: python
-title: Python作业：慕课网分析
+title: 慕课网分析
+subtitle: Python作业
 tagline: 东东学python阶段性作业
 ---
 
