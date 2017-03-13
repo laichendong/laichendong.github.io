@@ -5,9 +5,51 @@
     <description>赖晨东的博客 | 咖啡不苦</description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 13 Mar 2017 13:11:10 +0800</pubDate>
-    <lastBuildDate>Mon, 13 Mar 2017 13:11:10 +0800</lastBuildDate>
+    <pubDate>Mon, 13 Mar 2017 18:39:15 +0800</pubDate>
+    <lastBuildDate>Mon, 13 Mar 2017 18:39:15 +0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>Python作业：慕课网分析</title>
+        <description>&lt;p&gt;学习能力应该是现代人最重要的一种能力没有之一了。而现在基于互联网的在线学习正方兴未艾。前两年，达内、传智播客这些培训机构基本上是干掉了计算机的本科教育。很多本科毕业的学生在找到“码农”工作之前都要去这些培训机构回一次炉。而通过这些机构速成出来的学生，就像练了“21天学会XXX”宝典一样。如果自身的再次学习能力不强，很容易沦为“搬砖汉”。而近几年，随着互联网的发展，各种在线教育网站层出不穷。内容创业或者说知识创业的人也很多。而慕课网就是这其中一家。&lt;/p&gt;
+
+&lt;p&gt;我学Python也是在网上自学。在慕课网上看了些教程，也就直接用他来练手了。现在交下作业^_^&lt;/p&gt;
+
+&lt;p&gt;目前慕课网上的课程涉及到前端，后端，设计，运维等8个方向。最热（课程数最多）的当然是前端，后端和移动三个了。云计算&amp;amp;大数据虽然也很热，但课程数方面，较之移动开发还是差了一大截。&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;580&quot; src=&quot;//jsfiddle.net/laichendong/24qLm0sw/13/embedded/result/&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;再细化到具体技术来看，最先映入眼球的居然是Android。像PHP也占据了很大的一片空间，国内哪些比较大的公司还在大面积的使用PHP？&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;580&quot; src=&quot;//jsfiddle.net/laichendong/sc6cbgbn/embedded/result/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;同样是具体的技术，从学习者的角度看，情况发生了一些有意思的小变化，并不是课程多的学习者就一定多。像前端工具，设计工具，Html5，css3等学习者的数量和课程的数量都形成了比较大的反差。这似乎在说，前端的技术，比你想象的还热！&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;580&quot; src=&quot;//jsfiddle.net/laichendong/qLwhprqj/embedded/result/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;最后，我们来关心一下技术方向，课程数量，难度，学习人数和评分这几个指标的关系如何。首先绝大部分的课程学习人数都在20W或更少以下，学习人数最多的两个课程分别是属于前端的《HTML + CSS基础课程》和属于后端开发的《Java入门第一季》。其次是难度，入门课程数量较多，学习的人数也较多。最后是评分，这玩意儿在慕课显然也是没玩太好，大多课程的评分相差都不大，因为每个圆圈的面积都差不多。&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;580&quot; src=&quot;//jsfiddle.net/laichendong/gvaLa6o3/embedded/result/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;现在再来说实现就比较简单了。首先是写个爬虫，依次访问课程详情页把数据爬回来存成文件。然后再写个脚本把抓回来的数据进行汇总计算。最终把计算结果用echarts这样的图表可视化出来。&lt;/p&gt;
+
+&lt;p&gt;在实现过程中学习到两个小技巧：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;现在很多页面都是js加载数据的，靠原来直接访问URL再直接从response的html里提取数据的做法已经不行了。通常的做法是使用selenium驱动一个浏览器，让这个浏览器去访问要抓取的url。回来的response也在浏览器里实际运行。等数据都load回来了之后后再从浏览器里获得想要的数据。本例中我直接使用的是chrome。在速度和资源要求更高的场景里，可以使用PhantomJs这种“无界面的浏览器”来替代chrome。也可以加上多线程，多进程抓取等等。这是一个合格的爬虫应有的素质。&lt;/li&gt;
+  &lt;li&gt;在将分析结果输出成图表的过程中，觉得如果这就用个模板引擎的话，有点牛刀杀鸡的味道了。于是就直接用了&lt;code class=&quot;highlighter-rouge&quot;&gt;&#39;&#39;.format()&lt;/code&gt;应急。但是模板里有js代码，js代码里有&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;,转义啊简直是噩梦！然后，机制的我就把所有带大括号的js代码都挪到外部js文件里，然后引入了。效果杠杠滴，机制如我啊^_^&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 13 Mar 2017 00:00:00 +0800</pubDate>
+        <link>http://laichendong.com/python/2017/03/13/imooc-analyse-by-python/</link>
+        <guid isPermaLink="true">http://laichendong.com/python/2017/03/13/imooc-analyse-by-python/</guid>
+        
+        
+        <category>python</category>
+        
+      </item>
     
       <item>
         <title>2017-OKR</title>
@@ -17,7 +59,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;KR1：出国一次，暂定巴厘岛&lt;/li&gt;
-  &lt;li&gt;KR2：自驾一次，5.1 达达线&lt;/li&gt;
+  &lt;li&gt;KR2：600公里以上自驾游一次，达达线&lt;/li&gt;
   &lt;li&gt;KR3：学习照片管理和处理软件LightRoom&lt;/li&gt;
   &lt;li&gt;KR4：制作4本摄影集，以前的两本，17年的两本&lt;/li&gt;
 &lt;/ul&gt;
@@ -27,7 +69,9 @@
 &lt;ul&gt;
   &lt;li&gt;KR1：认真读10本书，再快快地读10本
     &lt;ul&gt;
-      &lt;li&gt;《边城》&lt;/li&gt;
+      &lt;li&gt;&lt;del&gt;《边城》&lt;/del&gt;&lt;/li&gt;
+      &lt;li&gt;《像艺术家一样思考》&lt;/li&gt;
+      &lt;li&gt;《二手时间》&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;KR2：学完斯坦福的“机器学习”课程&lt;/li&gt;
@@ -250,50 +294,6 @@
         <link>http://laichendong.com/2016/07/11/server-side-html-to-image/</link>
         <guid isPermaLink="true">http://laichendong.com/2016/07/11/server-side-html-to-image/</guid>
         
-        
-      </item>
-    
-      <item>
-        <title>导出的CSV在excel中打开乱码</title>
-        <description>&lt;p&gt;在项目中经常会遇到需要到导出excel的场景，为了简化和兼容性，常常会变成“导出csv”。&lt;br /&gt;
-这其中发现一个怪现象：&lt;strong&gt;UTF-8编码的csv文件用excel打开会乱码，而GBK编码的不会。&lt;/strong&gt;&lt;br /&gt;
-作为高端大气的应用，显然不希望生成个GBK编码的文件啊。（GBK在我mac下用sublime打开也会是乱码的）&lt;br /&gt;
-在网上查到说excel是使用ANSI编码打开文件的。而ANSI在大陆就是GBK。so，貌似问题无解啊，就得用GBK！&lt;br /&gt;
-后来继续google，发现如果excel打开的是带BOM的UTF-8文件的话，是不会有问题的。&lt;br /&gt;
-于是，&lt;strong&gt;生成文件时，加上UTF-8的BOM头&lt;/strong&gt;，搞定！&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;absolutePath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;fos&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FileOutputStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;fos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]{(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xEF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xBB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xBF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;});&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 写U8 BOM 否则excel打开会乱码&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;fos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;flush&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;writer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CSVWriter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OutputStreamWriter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;writer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;writeAll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;writer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;flush&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;section&quot;&gt;扩展阅读&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;ANSI编码&lt;br /&gt;
-ANSI是美国国家标准学会（American National Standards Institute，ANSI）的缩写，他是国际标准化组织和国际电工委员会的成员。如果ANSI作为一种编码来说。不同的国家制定了不同的标准。&lt;br /&gt;
-比如：中国大陆的GBK，台湾的BIG5等等，不同地区的标准还互不兼容！&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E4%BD%8D%E5%85%83%E7%B5%84%E9%A0%86%E5%BA%8F%E8%A8%98%E8%99%9F&quot;&gt;BOM头&lt;/a&gt;&lt;br /&gt;
-BOM是字节顺序标记（byte-order mark）的缩写，如字面意思，他是用来标记文件里的字节的顺序的，告诉读文件的人如何解析。&lt;br /&gt;
-UTF-8的BOM为&lt;code class=&quot;highlighter-rouge&quot;&gt;EF BB BF&lt;/code&gt;, UTF-16 大端序的BOM为&lt;code class=&quot;highlighter-rouge&quot;&gt;FE FF&lt;/code&gt;, 小端序为&lt;code class=&quot;highlighter-rouge&quot;&gt;FF FE&lt;/code&gt;。&lt;br /&gt;
-一些编辑器能直接显示文件编码，比如windows下的Notepad++，而我用的sublime Text 2 则需要额外安装插件：Show Encoding.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Fri, 08 Jul 2016 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/07/08/export-csv-and-open-in-ms-excel/</link>
-        <guid isPermaLink="true">http://laichendong.com/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/07/08/export-csv-and-open-in-ms-excel/</guid>
-        
-        
-        <category>不好分类的</category>
         
       </item>
     

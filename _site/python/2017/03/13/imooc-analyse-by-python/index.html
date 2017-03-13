@@ -10,9 +10,9 @@
     <meta name="keywords"  content="咖啡不苦, 赖晨东, laichendong, 博客, 个人网站, 互联网">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>分类索引 - 咖啡不苦</title>
+    <title>Python作业：慕课网分析 - 咖啡不苦</title>
 
-    <link rel="canonical" href="http://laichendong.com/categories/">
+    <link rel="canonical" href="http://laichendong.com/python/2017/03/13/imooc-analyse-by-python/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -145,140 +145,226 @@
 </script>
 
 
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/home-bg.jpg')
+    }
+
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>分类索引</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading"></span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1>Python作业：慕课网分析</h1>
+                    
+                    
+                    <h2 class="subheading"></h2>
+                    
+                    <span class="meta">Posted by 咖啡不苦 on March 13, 2017</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<p>学习能力应该是现代人最重要的一种能力没有之一了。而现在基于互联网的在线学习正方兴未艾。前两年，达内、传智播客这些培训机构基本上是干掉了计算机的本科教育。很多本科毕业的学生在找到“码农”工作之前都要去这些培训机构回一次炉。而通过这些机构速成出来的学生，就像练了“21天学会XXX”宝典一样。如果自身的再次学习能力不强，很容易沦为“搬砖汉”。而近几年，随着互联网的发展，各种在线教育网站层出不穷。内容创业或者说知识创业的人也很多。而慕课网就是这其中一家。</p>
+
+<p>我学Python也是在网上自学。在慕课网上看了些教程，也就直接用他来练手了。现在交下作业^_^</p>
+
+<p>目前慕课网上的课程涉及到前端，后端，设计，运维等8个方向。最热（课程数最多）的当然是前端，后端和移动三个了。云计算&amp;大数据虽然也很热，但课程数方面，较之移动开发还是差了一大截。</p>
+
+<iframe width="100%" height="580" src="//jsfiddle.net/laichendong/24qLm0sw/13/embedded/result/" frameborder="0"></iframe>
+
+<p>再细化到具体技术来看，最先映入眼球的居然是Android。像PHP也占据了很大的一片空间，国内哪些比较大的公司还在大面积的使用PHP？</p>
+
+<iframe width="100%" height="580" src="//jsfiddle.net/laichendong/sc6cbgbn/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<p>同样是具体的技术，从学习者的角度看，情况发生了一些有意思的小变化，并不是课程多的学习者就一定多。像前端工具，设计工具，Html5，css3等学习者的数量和课程的数量都形成了比较大的反差。这似乎在说，前端的技术，比你想象的还热！</p>
+
+<iframe width="100%" height="580" src="//jsfiddle.net/laichendong/qLwhprqj/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<p>最后，我们来关心一下技术方向，课程数量，难度，学习人数和评分这几个指标的关系如何。首先绝大部分的课程学习人数都在20W或更少以下，学习人数最多的两个课程分别是属于前端的《HTML + CSS基础课程》和属于后端开发的《Java入门第一季》。其次是难度，入门课程数量较多，学习的人数也较多。最后是评分，这玩意儿在慕课显然也是没玩太好，大多课程的评分相差都不大，因为每个圆圈的面积都差不多。</p>
+
+<iframe width="100%" height="580" src="//jsfiddle.net/laichendong/gvaLa6o3/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<hr />
+
+<p>现在再来说实现就比较简单了。首先是写个爬虫，依次访问课程详情页把数据爬回来存成文件。然后再写个脚本把抓回来的数据进行汇总计算。最终把计算结果用echarts这样的图表可视化出来。</p>
+
+<p>在实现过程中学习到两个小技巧：</p>
+
+<ol>
+  <li>现在很多页面都是js加载数据的，靠原来直接访问URL再直接从response的html里提取数据的做法已经不行了。通常的做法是使用selenium驱动一个浏览器，让这个浏览器去访问要抓取的url。回来的response也在浏览器里实际运行。等数据都load回来了之后后再从浏览器里获得想要的数据。本例中我直接使用的是chrome。在速度和资源要求更高的场景里，可以使用PhantomJs这种“无界面的浏览器”来替代chrome。也可以加上多线程，多进程抓取等等。这是一个合格的爬虫应有的素质。</li>
+  <li>在将分析结果输出成图表的过程中，觉得如果这就用个模板引擎的话，有点牛刀杀鸡的味道了。于是就直接用了<code class="highlighter-rouge">''.format()</code>应急。但是模板里有js代码，js代码里有<code class="highlighter-rouge"><span class="p">{</span></code>和<code class="highlighter-rouge">}</code>,转义啊简直是噩梦！然后，机制的我就把所有带大括号的js代码都挪到外部js文件里，然后引入了。效果杠杠滴，机制如我啊^_^</li>
+</ol>
+
+
+                <hr>
+
+                
+                <!-- 多说 Share start -->
+                </style>
+                <div class="ds-share"
+                    style="text-align: right"
+                    data-thread-key="/python/2017/03/13/imooc-analyse-by-python"
+                    data-title="Python作业：慕课网分析"
+                    data-url="http://laichendong.com/python/2017/03/13/imooc-analyse-by-python/"
+                    data-images="http://laichendong.com/img/home-bg.jpg"
+                    data-content="学习能力应该是现代人最重要的一种能力没有之一了。而现在基于互联网的在线学习正方兴未艾。前两年，达内、传智播客这些培训机构基本上是干掉了计算机的本科教育。很... | 咖啡不苦 " >
+                    <div class="ds-share-inline">
+                      <ul  class="ds-share-icons-16">
+                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
+                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
+                      </ul>
+                      <div class="ds-share-icons-more">
+                      </div>
+                    </div>
+                <hr>
+                </div>
+                <!-- 多说 Share end-->
+                
+
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/02/06/2017-okr/" data-toggle="tooltip" data-placement="top" title="2017-OKR">
+                        Previous<br>
+                        <span>2017-OKR</span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+
+
+                
+                <!-- 多说评论框 start -->
+                <div class="comment">
+                    <div class="ds-thread"
+                        data-thread-key="/python/2017/03/13/imooc-analyse-by-python"
+                        data-title="Python作业：慕课网分析"
+                        data-url="http://laichendong.com/python/2017/03/13/imooc-analyse-by-python/" >
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+                
+
+            </div>  
+
+    <!-- Side Catalog Container -->
         
 
-<!-- USE SIDEBAR -->
-    <!-- PostList Container -->
-    		<div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                postlist-container
-            ">
-    			<ul id="cat"></ul>
-<script src="/js/jquery.query.js "></script>
-<script type="text/javascript">
-var dataStr = '{   "读书笔记":[  {"url":"/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2015/08/19/are-your-lights-on/", "title":"你的灯还亮着吗？——发现问题的真正所在", "date":"Aug 19, 2015"} ]  , "mac":[  {"url":"/mac/2015/08/25/set-java-home-on-mac/", "title":"mac下设置JAVA_HOME", "date":"Aug 25, 2015"}  , {"url":"/mac/2015/08/24/open-terminal-here-in-mac-os-finder/", "title":"Open Terminal Here In Mac Os Finder", "date":"Aug 24, 2015"}  , {"url":"/mac/2015/08/23/get-the-better-shell/", "title":"让你的shell更好", "date":"Aug 23, 2015"} ]  , "不好分类的":[  {"url":"/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/07/08/export-csv-and-open-in-ms-excel/", "title":"导出的CSV在excel中打开乱码", "date":"Jul 8, 2016"}  , {"url":"/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/06/20/shell-software-how-to-auto-upgrade-with-github/", "title":"zsh等shell软件如何通过github实现自动更新功能", "date":"Jun 20, 2016"}  , {"url":"/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2015/09/06/thinking-on-work-over-time-2/", "title":"加班记（二）", "date":"Sep 6, 2015"}  , {"url":"/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2015/08/26/thinking-on-work-over-time/", "title":"加班记", "date":"Aug 26, 2015"} ]  , "jekyll":[  {"url":"/jekyll/2015/09/09/set-syntax-highlight-in-jekyll/", "title":"jekyll设置语法高亮", "date":"Sep 9, 2015"}  , {"url":"/jekyll/2015/08/29/write-your-blog-with-jekyll-and-github-pages/", "title":"用jekyll和github pages写博客", "date":"Aug 29, 2015"} ]  , "python":[  {"url":"/python/2017/03/13/imooc-analyse-by-python/", "title":"Python作业：慕课网分析", "date":"Mar 13, 2017"}  , {"url":"/python/2015/10/25/python/", "title":"东东学python", "date":"Oct 25, 2015"} ]  , "read":[  {"url":"/read/2016/07/31/improve-ability-of-innovating/", "title":"提升创新能力", "date":"Jul 31, 2016"}  , {"url":"/read/2016/07/27/three-obstacles-of-innovating/", "title":"创新的三大障碍", "date":"Jul 27, 2016"}  , {"url":"/read/2016/07/16/i-cant-beacause/", "title":"《成为技术领导者》", "date":"Jul 16, 2016"}  , {"url":"/read/2016/07/12/paradise-lost/", "title":"失乐园", "date":"Jul 12, 2016"} ]  , "management":[  {"url":"/management/2016/07/29/effective-leadership/", "title":"有效领导", "date":"Jul 29, 2016"}  , {"url":"/management/2016/07/29/culture-is-air/", "title":"企业文化就是周围的空气", "date":"Jul 29, 2016"}  , {"url":"/management/2016/07/27/manager-leader-coach/", "title":"经理、领导、教练", "date":"Jul 27, 2016"} ]  }', 
-	data = JSON.parse(dataStr), 
-	curTag = $.query.get("c");
-
-	if (curTag) {
-	    archieves = data[curTag];
-		$("#cat").before("<h2>"+curTag+"</h2>");
-	    $.each(archieves, function (i, o) {
-	    	$("#cat").append("<li><a href='"+o.url+"'>"+o.title+"</a> <span  class='post-meta'>"+o.date+"</span></li>");
-	    });
-    } else {
-    	for (cat in data) {
-    		$("#cat").append("<li><a href='/categories/?c=" + cat + "'>" + cat + " <span  class='post-meta'>" + data[cat].length + "篇文章</span></a></li>");
-    	}
-    }
-    
-</script>
-
-    		</div>
     <!-- Sidebar Container -->
             <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
                 <!-- Featured Tags -->
                 
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-                        
-                    </div>
+        				
+        			</div>
                 </section>
                 
 
-                <!-- Short About -->
-                <section class="visible-md visible-lg">
-                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
-                    <div class="short-about">
-                        
-                            <img src="/img/avatar.jpg" />
-                        
-                        
-                            <p>世界那么大，我想去看看。</p>
-                        
-                        <!-- SNS Link -->
-                        <ul class="list-inline">
-                            
-                            
-                            
-                            <li>
-                                <a target="_blank" href="https://www.zhihu.com/people/laichendong">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa  fa-stack-1x fa-inverse">知</i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            
-                            <li>
-                                <a target="_blank" href="http://weibo.com/laichendong">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            
-                            <li>
-                                <a target="_blank" href="https://www.facebook.com/laichendong">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            
-                            <li>
-                                <a target="_blank" href="https://github.com/laichendong">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            
-                        </ul>
-                    </div>
-                </section>
                 <!-- Friends Blog -->
                 
-    		</div>
-        
-	</div>
-</div>
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'laichendong';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
 
     <!-- Footer -->
