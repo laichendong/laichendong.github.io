@@ -15,11 +15,11 @@ var dataStr = '{ {% for cat in site.categories %} {% if cat[0] != site.categorie
 	    archieves = data[curTag];
 		$("#cat").before("<h2>"+curTag+"</h2>");
 	    $.each(archieves, function (i, o) {
-	    	$("#cat").append("<li><a href="+o.url+">"+o.title+"</a> <span  class='post-meta'>"+o.date+"</span></li>");
+	    	$("#cat").append("<li><a href='"+o.url+"'>"+o.title+"</a> <span  class='post-meta'>"+o.date+"</span></li>");
 	    });
     } else {
     	for (cat in data) {
-    		$("#cat").append("<li><a href=/categories/?c=" + cat + ">" + cat + " <span  class='post-meta'>" + data[cat].length + "篇文章</span></a></li>");
+    		$("#cat").append("<li><a href='/categories/?c=" + cat + "'>" + cat + " <span  class='post-meta'>" + data[cat].length + "篇文章</span></a></li>");
     	}
     }
     
