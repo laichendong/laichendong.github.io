@@ -10,9 +10,9 @@
     <meta name="keywords"  content="咖啡不苦, 赖晨东, laichendong, 博客, 个人网站, 互联网">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>咖啡不苦</title>
+    <title>解决 IntelliJ IDEA Tomcat 控制台中文输出乱码问题 - 咖啡不苦</title>
 
-    <link rel="canonical" href="http://laichendong.com/page3/">
+    <link rel="canonical" href="http://laichendong.com/%E7%A0%94%E5%8F%91%E6%89%8B%E8%AE%B0/2017/06/22/fix-messy-code-in-idea-tomcat-output/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -145,250 +145,242 @@
 </script>
 
 
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/home-bg.jpg')
+    }
+
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>咖啡不苦</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading"></span>
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1>解决 IntelliJ IDEA Tomcat 控制台中文输出乱码问题</h1>
+                    
+                    
+                    <h2 class="subheading"></h2>
+                    
+                    <span class="meta">Posted by 咖啡不苦 on June 22, 2017</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-        
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
-<!-- USE SIDEBAR -->
-    <!-- PostList Container -->
-    		<div class="
-                col-lg-9 col-lg-offset-0
-                col-md-9 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                postlist-container
-            ">
-    			
-<div class="post-preview">
-    <a href="/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2015/08/26/thinking-on-work-over-time/">
-        <h2 class="post-title">
-            加班记
-        </h2>
-        
-        <div class="post-content-preview">
-            故事还得从一个需求说起。
-某一天，运营提出一个需求要对某些商家下的所有商品打上某一个特殊标识用于做某个维度的销量统计。
-今天，线上出现了一些价格极低的商品，被下了很多订单。出事故了！
-这两者之间有什么关联？对，这两者之间并没什么卵关系。
+    <!-- Post Container -->
+            <div class="
+                col-lg-10 col-lg-offset-1 
+                col-md-10 col-md-offset-1
+                post-container">
 
-一
-关于批量处理数据。我想这是一个不能避免的东西。在业务的发展过程中肯定会存在对历史数据的批量处理，迁移甚至是处理+迁移的需要。
-如果是一个小得系统。就是...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 咖啡不苦 on August 26, 2015
-    </p>
+				<p>先说办法，再说原理！</p>
+
+<h1 id="section">办法</h1>
+
+<p>修改tomcat启动脚本：catalina.sh文件，找到<code class="highlighter-rouge">JAVA_OPTS</code> 增加文件编码参数：</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="nv">JAVA_OPTS</span><span class="o">=</span><span class="s2">"</span><span class="nv">$JAVA_OPTS</span><span class="s2"> -Dfile.encoding=UTF-8"</span>
+</code></pre>
 </div>
-<hr>
 
-<div class="post-preview">
-    <a href="/mac/2015/08/25/set-java-home-on-mac/">
-        <h2 class="post-title">
-            mac下设置JAVA_HOME
-        </h2>
+<p>就ok了。</p>
+
+<p>或者，在idea启动tomcat时，设置这个参数：</p>
+
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fgu0dj6siwj31kw0rrwh9.jpg" alt="" /></p>
+
+<h1 id="section-1">原理</h1>
+
+<p>Idea控制台里的日志默认是从tomcat的localhost.log 和 catalina.log 两个文件读出来的。</p>
+
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fgu03qo44gj31820ngdh0.jpg" alt="" /></p>
+
+<p>一般，我们的IDEA配置的编码是UTF-8.</p>
+
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fgu06blyblj318e10qjtz.jpg" alt="" /></p>
+
+<p>如果tomcat输出的catalina日志文件不是UTF-8的，在console里看，就会出现乱码的情况，所以，应该将tomcat生成文件的编码改了。</p>
+
+<h1 id="section-2">扩展</h1>
+
+<h2 id="ideatomcatcatalinalog">idea启动的tomcat生成的catalina.log文件在哪呢？</h2>
+
+<p>在console中观察启动日志，其中一个参数叫 <code class="highlighter-rouge">CATALINA_BASE</code> 这个地址就是了。</p>
+
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fgu0h1snp7j318q0m243s.jpg" alt="" /></p>
+
+<p>找到下面的logs目录，文件就躺在那。看一下修改前和修改后，生成的问题编码有什么不同：</p>
+
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fgu0isa29tj30o005qaap.jpg" alt="" /></p>
+
+
+
+                <hr>
+
+                
+                <!-- 多说 Share start -->
+                </style>
+                <div class="ds-share"
+                    style="text-align: right"
+                    data-thread-key="/%E7%A0%94%E5%8F%91%E6%89%8B%E8%AE%B0/2017/06/22/fix-messy-code-in-idea-tomcat-output"
+                    data-title="解决 IntelliJ IDEA Tomcat 控制台中文输出乱码问题"
+                    data-url="http://laichendong.com/%E7%A0%94%E5%8F%91%E6%89%8B%E8%AE%B0/2017/06/22/fix-messy-code-in-idea-tomcat-output/"
+                    data-images="http://laichendong.com/img/home-bg.jpg"
+                    data-content="先说办法，再说原理！
+
+办法
+
+修改tomcat启动脚本：catalina.sh文件，找到JAVA_OPTS 增加文件编码参数：
+
+JAVA_OPTS="... | 咖啡不苦 " >
+                    <div class="ds-share-inline">
+                      <ul  class="ds-share-icons-16">
+                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
+                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
+                      </ul>
+                      <div class="ds-share-icons-more">
+                      </div>
+                    </div>
+                <hr>
+                </div>
+                <!-- 多说 Share end-->
+                
+
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/mac/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/" data-toggle="tooltip" data-placement="top" title="用快捷键在Finder里显示隐藏文件">
+                        Previous<br>
+                        <span>用快捷键在Finder里显示隐藏文件</span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+
+
+                
+                <!-- 多说评论框 start -->
+                <div class="comment">
+                    <div class="ds-thread"
+                        data-thread-key="/%E7%A0%94%E5%8F%91%E6%89%8B%E8%AE%B0/2017/06/22/fix-messy-code-in-idea-tomcat-output"
+                        data-title="解决 IntelliJ IDEA Tomcat 控制台中文输出乱码问题"
+                        data-url="http://laichendong.com/%E7%A0%94%E5%8F%91%E6%89%8B%E8%AE%B0/2017/06/22/fix-messy-code-in-idea-tomcat-output/" >
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+                
+
+            </div>  
+
+    <!-- Side Catalog Container -->
         
-        <div class="post-content-preview">
-            应该是我装了xcode的原因，我没有显式安装java，mac里也有java的环境了。然后当我想在命令行下运行mvn的命令时。就提示我要设置JAVA_HOME了。
-当我去找JAVA_HOME在哪的时候。发现是“乱七八糟”的。高冷的mac怎么会那么烂？我肯定是错过了什么。于是求助于万能的google。果然：
-可以这样
 
-export JAVA_HOME="$(/usr/libexec/java_...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 咖啡不苦 on August 25, 2015
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/mac/2015/08/24/open-terminal-here-in-mac-os-finder/">
-        <h2 class="post-title">
-            Open Terminal Here In Mac Os Finder
-        </h2>
-        
-        <div class="post-content-preview">
-            在windows中，可以配置“在当前位置打开命令行”，非常方便好用。所以想找一下在mac下有没有类似的功能。
-找来找去，很遗憾，没找到很perfect的方法。
-
-1 可以通过“服务”实现“新建位于文件夹位置的终端标签/窗口”来实现。
-“系统偏好设置” 》 “键盘” 》 “快捷键” 》 “服务” 》 “新建位于文件夹位置的终端标签/窗口”
-甚至还可以设置快捷键，让我激动了一下。结果~~~
-这并...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 咖啡不苦 on August 24, 2015
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/mac/2015/08/23/get-the-better-shell/">
-        <h2 class="post-title">
-            让你的shell更好
-        </h2>
-        
-        <div class="post-content-preview">
-            码农们一定知道shell有多高效。但是linux和的版本很多，mac啊什么的。每个系统的shell都长的不太一样，我是说样子。
-今天配置我的mac时，发现一个很棒的项目。可以让你的shell变得很棒。on-my-zsh
-
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 咖啡不苦 on August 23, 2015
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2015/08/19/are-your-lights-on/">
-        <h2 class="post-title">
-            你的灯还亮着吗？——发现问题的真正所在
-        </h2>
-        
-        <div class="post-content-preview">
-            序言
-
-  问题 ：没人会读序言
- 解决办法 ：把序言作为第一章
- 解决方法带来新的问题 ：第一章很无聊
- 新的解决方法 ：删了第一章，把第二章作为第一章
-
-
-第一部分：问题是什么
-
-第一章： 一个问题
-
-  __背景故事：__一个办公楼（雷龙大厦）的电梯不够用了。有的租户威胁说，如果不尽快改善电梯服务，他们就要退租。
-
-
-通过电梯不够用的场景，引出：
-&gt; * 问题是什么？
-&gt; ...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 咖啡不苦 on August 19, 2015
-    </p>
-</div>
-<hr>
-
-
-<!-- Pager -->
-
-<ul class="pager">
-    
-    <li class="previous">
-        <a href="/page2">&larr; Newer Posts</a>
-    </li>
-    
-    
-</ul>
-
-
-    		</div>
     <!-- Sidebar Container -->
             <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
                 <!-- Featured Tags -->
                 
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-                        
-                    </div>
+        				
+        			</div>
                 </section>
                 
 
-                <!-- Short About -->
-                <section class="visible-md visible-lg">
-                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
-                    <div class="short-about">
-                        
-                            <img src="/img/avatar.jpg" />
-                        
-                        
-                            <p>世界那么大，我想去看看。</p>
-                        
-                        <!-- SNS Link -->
-                        <ul class="list-inline">
-                            
-                            
-                            
-                            <li>
-                                <a target="_blank" href="https://www.zhihu.com/people/laichendong">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa  fa-stack-1x fa-inverse">知</i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            
-                            <li>
-                                <a target="_blank" href="http://weibo.com/laichendong">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            
-                            <li>
-                                <a target="_blank" href="https://www.facebook.com/laichendong">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            
-                            <li>
-                                <a target="_blank" href="https://github.com/laichendong">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            
-                        </ul>
-                    </div>
-                </section>
                 <!-- Friends Blog -->
                 
-    		</div>
-        
-	</div>
-</div>
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'laichendong';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
 
     <!-- Footer -->

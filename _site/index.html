@@ -176,6 +176,40 @@
             ">
     			
 <div class="post-preview">
+    <a href="/%E7%A0%94%E5%8F%91%E6%89%8B%E8%AE%B0/2017/06/22/fix-messy-code-in-idea-tomcat-output/">
+        <h2 class="post-title">
+            解决 IntelliJ IDEA Tomcat 控制台中文输出乱码问题
+        </h2>
+        
+        <div class="post-content-preview">
+            先说办法，再说原理！
+
+办法
+
+修改tomcat启动脚本：catalina.sh文件，找到JAVA_OPTS 增加文件编码参数：
+
+JAVA_OPTS="$JAVA_OPTS -Dfile.encoding=UTF-8"
+
+
+
+就ok了。
+
+或者，在idea启动tomcat时，设置这个参数：
+
+
+
+原理
+
+Idea控制台里的日志默认是从tomcat的localhost.log 和 catal...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on June 22, 2017
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     <a href="/mac/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/">
         <h2 class="post-title">
             用快捷键在Finder里显示隐藏文件
@@ -408,30 +442,6 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
             关于创新，总共有三大障碍，首当其冲的就是不能正确认知自己，看不到自己。这个怎么说？我们在做事时，往往不能跳出来审视自己正在做的事情是否值得，是否有足够的产出。比如作家一直在纠结写一个惊艳的开头，或者干脆对着稿纸发呆而不动笔；又比如程序员对一个问题调试跟踪了一周，也没想起来问问别人；再比如我们总是忙于开各种各样的会议却不知道是为了什么，会议的结果是什么。
 
 自己很难发现这些问题，越是效率低下时...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 咖啡不苦 on July 27, 2016
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/management/2016/07/27/manager-leader-coach/">
-        <h2 class="post-title">
-            经理、领导、教练
-        </h2>
-        
-        <h3 class="post-subtitle">
-            领导力进阶之角色转换
-        </h3>
-        
-        <div class="post-content-preview">
-            我们在自己的专业领域，一开始往往都是孤军奋战，一个人搞定各种事儿，对团队做出贡献。这时候叫 个人贡献者。然后我们从优秀的个人贡献者被提拔为 管理者
-
-我们作为管理者，每天所做的各种管理行为，其实背后是由3种角色来支撑的——经理，领导，教练。
-
-经理，对应的英文是 manager 是man+age+r， 哈哈，这貌似是说一个人上了年纪就可以当经理了！其实真的差不多。 经理关注的是事儿，关注的是...
         </div>
     </a>
     <p class="post-meta">
