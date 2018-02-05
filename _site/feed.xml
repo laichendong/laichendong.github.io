@@ -5,8 +5,8 @@
     <description>赖晨东的博客 | 咖啡不苦</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 05 Feb 2018 22:35:18 +0800</pubDate>
-    <lastBuildDate>Mon, 05 Feb 2018 22:35:18 +0800</lastBuildDate>
+    <pubDate>Mon, 05 Feb 2018 23:13:45 +0800</pubDate>
+    <lastBuildDate>Mon, 05 Feb 2018 23:13:45 +0800</lastBuildDate>
     <generator>Jekyll v3.7.0</generator>
     
       <item>
@@ -24,8 +24,8 @@
 &lt;p&gt;打分，只是绩效管理的一小部分，只打分是完全不能完成绩效管理的目标的。更重要的是绩效沟通。上面提到，我认为绩效本质上就是一个沟通工具。具体执行上沟通分两步，第一步是在季度之初，应该明确每位同学的目标与期望。第二步是季度末，结合目标期望和实际表现，对给出的分值做出解释。并提供下一步的行动建议。做的好的继续，哪里不够完美该怎么改进。对研发的管理，可以参考google的OKR。&lt;/p&gt;
 </description>
         <pubDate>Fri, 02 Feb 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/team%20management/2018/02/02/Performance/</link>
-        <guid isPermaLink="true">http://localhost:4000/team%20management/2018/02/02/Performance/</guid>
+        <link>http://localhost:4000/2018/02/02/Performance/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/02/Performance/</guid>
         
         
         <category>Team Management</category>
@@ -75,8 +75,8 @@
 
 </description>
         <pubDate>Thu, 22 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/programing/2017/06/22/fix-messy-code-in-idea-tomcat-output/</link>
-        <guid isPermaLink="true">http://localhost:4000/programing/2017/06/22/fix-messy-code-in-idea-tomcat-output/</guid>
+        <link>http://localhost:4000/2017/06/22/fix-messy-code-in-idea-tomcat-output/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/22/fix-messy-code-in-idea-tomcat-output/</guid>
         
         
         <category>Programing</category>
@@ -99,8 +99,8 @@
 &lt;p&gt;简直不能更方便。&lt;/p&gt;
 </description>
         <pubDate>Fri, 05 May 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/programing/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</link>
-        <guid isPermaLink="true">http://localhost:4000/programing/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</guid>
+        <link>http://localhost:4000/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</guid>
         
         
         <category>Programing</category>
@@ -118,8 +118,8 @@
 &lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/006tNbRwly1fer8lxv5hbj31kw2n07wh.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 18 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/reading/2017/04/18/jing-jin/</link>
-        <guid isPermaLink="true">http://localhost:4000/reading/2017/04/18/jing-jin/</guid>
+        <link>http://localhost:4000/2017/04/18/jing-jin/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/18/jing-jin/</guid>
         
         
         <category>Reading</category>
@@ -148,8 +148,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 27 Mar 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/programing/2017/03/27/some-tricks-for-finder-in-mac/</link>
-        <guid isPermaLink="true">http://localhost:4000/programing/2017/03/27/some-tricks-for-finder-in-mac/</guid>
+        <link>http://localhost:4000/2017/03/27/some-tricks-for-finder-in-mac/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/03/27/some-tricks-for-finder-in-mac/</guid>
         
         
         <category>Programing</category>
@@ -191,8 +191,8 @@
 
 </description>
         <pubDate>Mon, 13 Mar 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/programing/2017/03/13/imooc-analyse-by-python/</link>
-        <guid isPermaLink="true">http://localhost:4000/programing/2017/03/13/imooc-analyse-by-python/</guid>
+        <link>http://localhost:4000/2017/03/13/imooc-analyse-by-python/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/03/13/imooc-analyse-by-python/</guid>
         
         
         <category>Programing</category>
@@ -243,8 +243,8 @@
 
 </description>
         <pubDate>Mon, 06 Feb 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/others/2017/02/06/2017-OKR/</link>
-        <guid isPermaLink="true">http://localhost:4000/others/2017/02/06/2017-OKR/</guid>
+        <link>http://localhost:4000/2017/02/06/2017-OKR/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/02/06/2017-OKR/</guid>
         
         
         <category>Others</category>
@@ -268,8 +268,8 @@
 &lt;p&gt;如果认为所有的问题都有且仅有一个答案，那自然也不会去综合不同的想法，让想法相互交配产生新的想法了。&lt;/p&gt;
 </description>
         <pubDate>Sun, 31 Jul 2016 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/reading/2016/07/31/improve-ability-of-innovating/</link>
-        <guid isPermaLink="true">http://localhost:4000/reading/2016/07/31/improve-ability-of-innovating/</guid>
+        <link>http://localhost:4000/2016/07/31/improve-ability-of-innovating/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/07/31/improve-ability-of-innovating/</guid>
         
         
         <category>Reading</category>
@@ -306,8 +306,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 29 Jul 2016 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/team%20management/2016/07/29/effective-leadership/</link>
-        <guid isPermaLink="true">http://localhost:4000/team%20management/2016/07/29/effective-leadership/</guid>
+        <link>http://localhost:4000/2016/07/29/effective-leadership/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/07/29/effective-leadership/</guid>
         
         
         <category>Team Management</category>
@@ -327,8 +327,8 @@
 &lt;p&gt;其实最打动我的是她演讲完的一个小动作——&lt;strong&gt;她收起了她的录音笔&lt;/strong&gt; 她说每次她自己出去讲东西，都是录下来，回去第一时间复盘，找出能改进的地方。真是应了那句话：比你聪明的人还比你努力！&lt;/p&gt;
 </description>
         <pubDate>Fri, 29 Jul 2016 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/team%20management/2016/07/29/culture-is-air/</link>
-        <guid isPermaLink="true">http://localhost:4000/team%20management/2016/07/29/culture-is-air/</guid>
+        <link>http://localhost:4000/2016/07/29/culture-is-air/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/07/29/culture-is-air/</guid>
         
         
         <category>Team Management</category>
