@@ -1,6 +1,7 @@
 ---
 layout: post
-category: mac
+category: Programing
+tags: ["mac", "java"]
 title: mac下设置JAVA_HOME
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-category: mac
+category: Programing
 title: finder技巧若干
 ---
 

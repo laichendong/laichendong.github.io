@@ -1,6 +1,6 @@
 ---
 layout: post
-category: mac
+category: Programing
 title: 用快捷键在Finder里显示隐藏文件
 ---
 

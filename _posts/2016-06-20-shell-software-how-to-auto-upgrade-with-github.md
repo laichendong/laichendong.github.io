@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 不好分类的
+category: Programing
 title: zsh等shell软件如何通过github实现自动更新功能
 ---
 

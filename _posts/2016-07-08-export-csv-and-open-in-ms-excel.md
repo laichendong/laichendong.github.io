@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 不好分类的
+category: Programing
 title: 导出的CSV在excel中打开乱码
 ---
 

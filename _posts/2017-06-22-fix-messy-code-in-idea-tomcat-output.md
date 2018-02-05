@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 研发手记
+category: Programing
 title: 解决 IntelliJ IDEA Tomcat 控制台中文输出乱码问题
 ---
 

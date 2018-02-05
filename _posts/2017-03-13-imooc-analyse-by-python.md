@@ -1,6 +1,6 @@
 ---
 layout: post
-category: python
+category: Programing
 title: 慕课网分析
 subtitle: Python作业
 tagline: 东东学python阶段性作业

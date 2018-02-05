@@ -1,6 +1,6 @@
 ---
 layout: post
-category: mac
+category: Programing
 ---
 
 在windows中，可以配置“在当前位置打开命令行”，非常方便好用。所以想找一下在mac下有没有类似的功能。

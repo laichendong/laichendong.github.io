@@ -1,6 +1,6 @@
 ---
 layout: post
-category: mac
+category: Programing
 title: 让你的shell更好
 ---
 

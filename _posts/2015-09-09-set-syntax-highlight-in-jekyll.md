@@ -1,6 +1,6 @@
 ---
 layout: post
-category: jekyll
+category: Programing
 title: jekyll设置语法高亮
 ---
 

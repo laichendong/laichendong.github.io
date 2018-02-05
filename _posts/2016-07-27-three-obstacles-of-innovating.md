@@ -1,6 +1,6 @@
 ---
 layout: post
-category: read
+category: Reading
 title: 创新的三大障碍
 subtitle: 《成为技术领导者》笔记
 ---

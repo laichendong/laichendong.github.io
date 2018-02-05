@@ -22,8 +22,8 @@ facebook_username:  laichendong
 
 
 # Build settings
-highlighter: rouge
-permalink: pretty
+highlighter: rouge  # 语法高亮
+permalink: /:year/:month/:day/:title/  # pretty   # 页面url格式
 paginate: 10
 exclude: ["less","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
@@ -43,17 +43,6 @@ markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
   syntax_highlighter: rouge
-
-
-
-# Disqus settings
-#disqus_username: _your_disqus_short_name_
-
-# Duoshuo settings
-duoshuo_username: laichendong
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
 
 
 

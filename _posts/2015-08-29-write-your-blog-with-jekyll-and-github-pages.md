@@ -1,6 +1,6 @@
 ---
 layout: post
-category: jekyll
+category: Programing
 title: 用jekyll和github pages写博客
 ---
 

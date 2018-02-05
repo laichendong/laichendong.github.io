@@ -1,6 +1,6 @@
 ---
 layout: post
-category: read
+category: Reading
 title: 失乐园
 ---
 

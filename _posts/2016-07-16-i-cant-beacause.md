@@ -1,6 +1,6 @@
 ---
 layout: post
-category: read
+category: Reading
 title: 《成为技术领导者》
 sub-title: 我做不到，因为……
 ---

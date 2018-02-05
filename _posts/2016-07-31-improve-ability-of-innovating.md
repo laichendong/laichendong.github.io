@@ -1,6 +1,6 @@
 ---
 layout: post
-category: read
+category: Reading
 title: 提升创新能力
 subtitle: 《成为技术领导者》读书笔记
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-category: management
-title: 经理、领导、教练
+category: Team Management
+title: 经理、领导、教练 
 subtitle: 领导力进阶之角色转换
 ---
 

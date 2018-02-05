@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 
+category: Programing
 title: 在服务端将HTML转成图片
 ---
 

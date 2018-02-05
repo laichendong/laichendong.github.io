@@ -1,6 +1,6 @@
 ---
 layout: post
-category: management
+category: Team Management
 title: 有效领导
 subtitle: 领导力进阶之有效领导
 ---

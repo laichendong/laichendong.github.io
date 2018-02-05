@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 团队
+category: Team Management
 title: 绩效
 ---
 

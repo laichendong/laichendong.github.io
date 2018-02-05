@@ -1,6 +1,6 @@
 ---
 layout: post
-category: management
+category: Team Management
 title: 企业文化就是周围的空气
 subtitle: 领导力进阶之文化大讲堂
 ---
