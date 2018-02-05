@@ -3,23 +3,150 @@
   <channel>
     <title>咖啡不苦</title>
     <description>赖晨东的博客 | 咖啡不苦</description>
-    <link>http://laichendong.com/</link>
-    <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 13 Jul 2017 17:59:33 +0800</pubDate>
-    <lastBuildDate>Thu, 13 Jul 2017 17:59:33 +0800</lastBuildDate>
-    <generator>Jekyll v3.0.0</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 05 Feb 2018 14:39:41 +0800</pubDate>
+    <lastBuildDate>Mon, 05 Feb 2018 14:39:41 +0800</lastBuildDate>
+    <generator>Jekyll v3.7.0</generator>
+    
+      <item>
+        <title>iPhone痛点和解决方案</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;日历没有限制中国法定节假日，闹钟没法按法定节假日响铃&lt;/li&gt;
+  &lt;li&gt;​&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 05 Feb 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%9D%82%E8%AE%B0/2018/02/05/iPhone/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%9D%82%E8%AE%B0/2018/02/05/iPhone/</guid>
+        
+        
+        <category>杂记</category>
+        
+      </item>
+    
+      <item>
+        <title>绩效</title>
+        <description>&lt;p&gt;虽然18年都已经过去一个月又几天了，但国人还是更倾向于使用农历来定义一年。所以现在是年底，适合总结规划的年底，浮躁的年底，绩效考评的年底。&lt;/p&gt;
+
+&lt;p&gt;以前，我作为个人贡献者，心比较大。奉行的是 &lt;strong&gt;但行好事，莫问前程。&lt;/strong&gt; 的策略。一心只想着做好工作，老大不会亏待我的，事实也确实证明，这个世界总体上是趋于公平的。几年下来，绩效貌似也还不错。现在开始管理一个团队，开始要给别人打绩效了。才开始认真的思考这个问题。&lt;/p&gt;
+
+&lt;p&gt;首先，我认为绩效是一个工具。是管理者和员工的一个沟通工具。通过绩效成绩，和绩效沟通，管理者能够准确的告诉员工近期的表现在管理者看来是什么水平。员工也能准确的获知这个信息。固定的考核周期（我们是一个季度一次）也迫使管理者定期回顾和关注员工的表现，出现问题及时辅导修正。&lt;/p&gt;
+
+&lt;p&gt;绩效作为一个工具本身没有好坏，只有使用的人的使用方式有好坏。不好的使用方式会让员工觉得是个负担，就是老板克扣和剥削我的工具，而好的使用方式会让员工更有目标感，也能激励员工向前。&lt;/p&gt;
+
+&lt;p&gt;我们公司是一个季度考评一次，绩效分为A+， A， B， C， C-五个级别，其中A+和C-有严格的名额限制和需要充分的理由。每个级别对应一个绩效系数区间，最低0，最高3。团队初始值和考评之后平均值都归一。作为研发团队，很难有一个客观的评价体系，来确定这个系数的值。更多的还是靠主观。（这里面还是有很大问题的，需要努力加入一些客观指标）那具体打分操作的时就存在两种策略。一种先考虑哪些人做的不够好，需要被扣掉多少多少系数，然后再把这些&lt;strong&gt;抠出来&lt;/strong&gt;的系数补给那些表现好的同学。而我一开始就把大家全变成0.8，然后在思考每个人在这个季度的表现，哪些表现好的地方。把这些分加回去。第一种策略倾向于让管理者&lt;strong&gt;挑下属的毛病&lt;/strong&gt;。而第二种则让管理者&lt;strong&gt;想下属的好处&lt;/strong&gt;。这就是我选第二种的原因。&lt;/p&gt;
+
+&lt;p&gt;打分，只是绩效管理的一小部分，只打分是完全不能完成绩效管理的目标的。更重要的是绩效沟通。上面提到，我认为绩效本质上就是一个沟通工具。具体执行上沟通分两步，第一步是在季度之初，应该明确每位同学的目标与期望。第二步是季度末，结合目标期望和实际表现，对给出的分值做出解释。并提供下一步的行动建议。做的好的继续，哪里不够完美该怎么改进。对研发的管理，可以参考google的OKR。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 02 Feb 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E5%9B%A2%E9%98%9F/2018/02/02/Performance/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E5%9B%A2%E9%98%9F/2018/02/02/Performance/</guid>
+        
+        
+        <category>团队</category>
+        
+      </item>
+    
+      <item>
+        <title>Todo List</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;区块链
+    &lt;ul&gt;
+      &lt;li&gt;技术上&lt;/li&gt;
+      &lt;li&gt;应用上&lt;/li&gt;
+      &lt;li&gt;为什么现在火了？&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;图灵完备&lt;/li&gt;
+  &lt;li&gt;技术管理转型&lt;/li&gt;
+  &lt;li&gt;绩效
+    &lt;ul&gt;
+      &lt;li&gt;​&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;《女士品茶》：统计学 历史书  当故事读
+    &lt;ul&gt;
+      &lt;li&gt;一个品茶的女士说：往茶里加奶和往奶里加茶，出来的味道是不一样的。如何设计一个实验来验证这个问题？《实验设计》是一本这方面的著作，《数：科学的语言》&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;在给事情按 “重要”，“紧急”分类时，感觉所有事情都重要怎么办？
+    &lt;ul&gt;
+      &lt;li&gt;对自己价值越大的事情 越重要，区分对自己的价值和对别人的价值&lt;/li&gt;
+      &lt;li&gt;避免把 “紧急”当成“重要”&lt;/li&gt;
+      &lt;li&gt;关注“重要不紧急”的事儿&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;如何提升下属的“思维”？：&lt;/li&gt;
+  &lt;li&gt;《演讲的力量》&lt;/li&gt;
+  &lt;li&gt;《什么是数学》&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 02 Jan 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/01/02/todo-list/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/02/todo-list/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>the-elements-of-user-experience</title>
+        <description>&lt;p&gt;分层的思想：五个层面：表现层  框架层  结构层 范围层  战略层&lt;/p&gt;
+
+&lt;p&gt;网站 = 功能（应用程序） + 信息（报纸 媒体）  混合体&lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 Aug 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2017/08/03/the-elements-of-user-experience/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2017/08/03/the-elements-of-user-experience/</guid>
+        
+        
+        <category>读书笔记</category>
+        
+      </item>
+    
+      <item>
+        <title>把时间当作朋友</title>
+        <description>&lt;p&gt;时间不可管理
+任何事情（包括坏的）都是可以累积的&lt;/p&gt;
+
+&lt;p&gt;学这东西不知道有什么用？A：那学学看，总会有用的  B：算了，反正没啥用，不学了   不同的循环，
+开窍，心智（可能好，可能坏）&lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 Aug 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2017/08/03/take-time-as-friend/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2017/08/03/take-time-as-friend/</guid>
+        
+        
+        <category>读书笔记</category>
+        
+      </item>
+    
+      <item>
+        <title>鲁滨逊漂流记</title>
+        <description>&lt;p&gt;一个坚定的追求自己理想生活的人
+一个内心坚强，求生欲强的人
+一个&lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 Aug 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2017/08/03/robison/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2017/08/03/robison/</guid>
+        
+        
+        <category>读书笔记</category>
+        
+      </item>
     
       <item>
         <title>解决 IntelliJ IDEA Tomcat 控制台中文输出乱码问题</title>
         <description>&lt;p&gt;先说办法，再说原理！&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;办法&lt;/h1&gt;
+&lt;h1 id=&quot;办法&quot;&gt;办法&lt;/h1&gt;
 
 &lt;p&gt;修改tomcat启动脚本：catalina.sh文件，找到&lt;code class=&quot;highlighter-rouge&quot;&gt;JAVA_OPTS&lt;/code&gt; 增加文件编码参数：&lt;/p&gt;
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;JAVA_OPTS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$JAVA_OPTS&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; -Dfile.encoding=UTF-8&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;JAVA_OPTS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$JAVA_OPTS&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; -Dfile.encoding=UTF-8&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;就ok了。&lt;/p&gt;
 
@@ -27,7 +154,7 @@
 
 &lt;p&gt;&lt;img src=&quot;https://ws2.sinaimg.cn/large/006tNc79ly1fgu0dj6siwj31kw0rrwh9.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;原理&lt;/h1&gt;
+&lt;h1 id=&quot;原理&quot;&gt;原理&lt;/h1&gt;
 
 &lt;p&gt;Idea控制台里的日志默认是从tomcat的localhost.log 和 catalina.log 两个文件读出来的。&lt;/p&gt;
 
@@ -39,9 +166,9 @@
 
 &lt;p&gt;如果tomcat输出的catalina日志文件不是UTF-8的，在console里看，就会出现乱码的情况，所以，应该将tomcat生成文件的编码改了。&lt;/p&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;扩展&lt;/h1&gt;
+&lt;h1 id=&quot;扩展&quot;&gt;扩展&lt;/h1&gt;
 
-&lt;h2 id=&quot;ideatomcatcatalinalog&quot;&gt;idea启动的tomcat生成的catalina.log文件在哪呢？&lt;/h2&gt;
+&lt;h2 id=&quot;idea启动的tomcat生成的catalinalog文件在哪呢&quot;&gt;idea启动的tomcat生成的catalina.log文件在哪呢？&lt;/h2&gt;
 
 &lt;p&gt;在console中观察启动日志，其中一个参数叫 &lt;code class=&quot;highlighter-rouge&quot;&gt;CATALINA_BASE&lt;/code&gt; 这个地址就是了。&lt;/p&gt;
 
@@ -53,8 +180,8 @@
 
 </description>
         <pubDate>Thu, 22 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/%E7%A0%94%E5%8F%91%E6%89%8B%E8%AE%B0/2017/06/22/fix-messy-code-in-idea-tomcat-output/</link>
-        <guid isPermaLink="true">http://laichendong.com/%E7%A0%94%E5%8F%91%E6%89%8B%E8%AE%B0/2017/06/22/fix-messy-code-in-idea-tomcat-output/</guid>
+        <link>http://localhost:4000/%E7%A0%94%E5%8F%91%E6%89%8B%E8%AE%B0/2017/06/22/fix-messy-code-in-idea-tomcat-output/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E7%A0%94%E5%8F%91%E6%89%8B%E8%AE%B0/2017/06/22/fix-messy-code-in-idea-tomcat-output/</guid>
         
         
         <category>研发手记</category>
@@ -65,9 +192,8 @@
         <title>用快捷键在Finder里显示隐藏文件</title>
         <description>&lt;p&gt;在 macOS Sierra 之前，要在 Finder 中查看隐藏文件，都要输入一大坨命令：&lt;/p&gt;
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults write com.apple.finder AppleShowAllFiles -bool &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults write com.apple.finder AppleShowAllFiles &lt;span class=&quot;nt&quot;&gt;-bool&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;用完之后还要再输入一坨再隐藏起来，关键因为用的频率不高，所以每次要用之前还要把命令找出来，太过麻烦，以至于后面我都不用它看隐藏文件了，用&lt;code class=&quot;highlighter-rouge&quot;&gt;ls -a&lt;/code&gt;反而更方便些。&lt;/p&gt;
 
@@ -78,8 +204,8 @@
 &lt;p&gt;简直不能更方便。&lt;/p&gt;
 </description>
         <pubDate>Fri, 05 May 2017 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/mac/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</link>
-        <guid isPermaLink="true">http://laichendong.com/mac/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</guid>
+        <link>http://localhost:4000/mac/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</link>
+        <guid isPermaLink="true">http://localhost:4000/mac/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</guid>
         
         
         <category>mac</category>
@@ -97,8 +223,8 @@
 &lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/006tNbRwly1fer8lxv5hbj31kw2n07wh.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 18 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2017/04/18/jing-jin/</link>
-        <guid isPermaLink="true">http://laichendong.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2017/04/18/jing-jin/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2017/04/18/jing-jin/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2017/04/18/jing-jin/</guid>
         
         
         <category>读书笔记</category>
@@ -109,223 +235,29 @@
         <title>finder技巧若干</title>
         <description>&lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Command + Shift + G 跳转到指定路径。&lt;br /&gt;
- 类似windows在地址栏上直接输入地址&lt;br /&gt;
- &lt;img src=&quot;https://ww1.sinaimg.cn/large/006tNbRwly1fe1gfscb36j30jc094t95.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+    &lt;p&gt;Command + Shift + G 跳转到指定路径。
+ 类似windows在地址栏上直接输入地址
+ &lt;img src=&quot;https://ww1.sinaimg.cn/large/006tNbRwly1fe1gfscb36j30jc094t95.jpg&quot; alt=&quot;&quot; /&gt;
  &lt;img src=&quot;https://ww4.sinaimg.cn/large/006tNbRwly1fe1gh4siqkj30nu0703yf.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;文件直接拖动到shell获取改文件的完整路径&lt;br /&gt;
- &lt;img src=&quot;https://ww3.sinaimg.cn/large/006tNbRwly1fe1gkh7z13j30tc080wes.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+    &lt;p&gt;文件直接拖动到shell获取改文件的完整路径
+ &lt;img src=&quot;https://ww3.sinaimg.cn/large/006tNbRwly1fe1gkh7z13j30tc080wes.jpg&quot; alt=&quot;&quot; /&gt;
  &lt;img src=&quot;https://ww3.sinaimg.cn/large/006tNbRwly1fe1gjemx2rj30si050wem.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;安装go2shell 方便从finder跳转到shell&lt;br /&gt;
- 不是go to hell ^_^&lt;br /&gt;
+    &lt;p&gt;安装go2shell 方便从finder跳转到shell
+ 不是go to hell ^_^
  &lt;img src=&quot;https://ww2.sinaimg.cn/large/006tNbRwly1fe1gmhoiaqj30cu034a9v.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 27 Mar 2017 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/mac/2017/03/27/some-tricks-for-finder-in-mac/</link>
-        <guid isPermaLink="true">http://laichendong.com/mac/2017/03/27/some-tricks-for-finder-in-mac/</guid>
+        <link>http://localhost:4000/mac/2017/03/27/some-tricks-for-finder-in-mac/</link>
+        <guid isPermaLink="true">http://localhost:4000/mac/2017/03/27/some-tricks-for-finder-in-mac/</guid>
         
         
         <category>mac</category>
-        
-      </item>
-    
-      <item>
-        <title>慕课网分析</title>
-        <description>&lt;p&gt;学习能力应该是现代人最重要的一种能力没有之一了。现在基于互联网的在线学习正方兴未艾。前两年，达内、传智播客这些培训机构基本上是干掉了计算机的本科教育。很多本科毕业的学生在找到“码农”工作之前都要去这些培训机构回一次炉。通过这些机构速成出来的学生，就像练了“21天学会XXX”宝典一样。如果自身的再次学习能力不强，很容易沦为“搬砖汉”。近几年，随着互联网的发展，各种在线教育网站层出不穷。内容创业或者说知识创业的人也很多。慕课网就是这其中一家。&lt;/p&gt;
-
-&lt;p&gt;我学Python也是在网上自学。在慕课网上看了些教程，也就直接用他来练手了。现在交下作业^_^&lt;/p&gt;
-
-&lt;p&gt;目前慕课网上的课程涉及到前端，后端，设计，运维等8个方向。最热（课程数最多）的当然是前端，后端和移动三个了。云计算&amp;amp;大数据虽然也很热，但课程数方面，较之移动开发还是差了一大截。&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;580&quot; src=&quot;//jsfiddle.net/laichendong/24qLm0sw/13/embedded/result/&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;再细化到具体技术来看，最先映入眼球的居然是Android。像PHP也占据了很大的一片空间，国内哪些比较大的公司还在大面积的使用PHP？&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;580&quot; src=&quot;//jsfiddle.net/laichendong/sc6cbgbn/embedded/result/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;同样是具体的技术，从学习者的角度看，情况发生了一些有意思的小变化，并不是课程多的学习者就一定多。像前端工具，设计工具，Html5，css3等学习者的数量和课程的数量都形成了比较大的反差。这似乎在说，前端的技术，比你想象的还热！&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;580&quot; src=&quot;//jsfiddle.net/laichendong/qLwhprqj/embedded/result/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;最后，我们来关心一下技术方向，课程数量，难度，学习人数和评分这几个指标的关系如何。首先绝大部分的课程学习人数都在20W或更少以下，学习人数最多的两个课程分别是属于前端的《HTML + CSS基础课程》和属于后端开发的《Java入门第一季》。其次是难度，入门课程数量较多，学习的人数也较多。最后是评分，这玩意儿在慕课显然也是没玩太好，大多课程的评分相差都不大，因为每个圆圈的面积都差不多。&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;580&quot; src=&quot;//jsfiddle.net/laichendong/gvaLa6o3/embedded/result/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;现在再来说实现就比较简单了。首先是写个爬虫，依次访问课程详情页把数据爬回来存成文件。然后再写个脚本把抓回来的数据进行汇总计算。最终把计算结果用echarts这样的图表可视化出来。&lt;/p&gt;
-
-&lt;p&gt;在实现过程中学习到两个小技巧：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;现在很多页面都是js加载数据的，靠原来直接访问URL再直接从response的html里提取数据的做法已经不行了。通常的做法是使用selenium驱动一个浏览器，让这个浏览器去访问要抓取的url。回来的response也在浏览器里实际运行。等数据都load回来了之后后再从浏览器里获得想要的数据。本例中我直接使用的是chrome。在速度和资源要求更高的场景里，可以使用PhantomJs这种“无界面的浏览器”来替代chrome。也可以加上多线程，多进程抓取等等。这是一个合格的爬虫应有的素质。&lt;/li&gt;
-  &lt;li&gt;在将分析结果输出成图表的过程中，觉得如果这就用个模板引擎的话，有点牛刀杀鸡的味道了。于是就直接用了&lt;code class=&quot;highlighter-rouge&quot;&gt;&#39;&#39;.format()&lt;/code&gt;应急。但是模板里有js代码，js代码里有&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;,转义啊简直是噩梦！然后，机制的我就把所有带大括号的js代码都挪到外部js文件里，然后引入了。效果杠杠滴，机智如我啊^_^&lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Mon, 13 Mar 2017 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/python/2017/03/13/imooc-analyse-by-python/</link>
-        <guid isPermaLink="true">http://laichendong.com/python/2017/03/13/imooc-analyse-by-python/</guid>
-        
-        
-        <category>python</category>
-        
-      </item>
-    
-      <item>
-        <title>2017-OKR</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;目标1：锻炼&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;KR1：一年总共跑步1000公里&lt;/li&gt;
-  &lt;li&gt;&lt;del&gt;KR2：一次能跑10公里&lt;/del&gt;&lt;/li&gt;
-  &lt;li&gt;KR3：学会自由泳&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-1&quot;&gt;目标2：完成旅行计划&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;del&gt;KR1：出国一次，暂定巴厘岛&lt;/del&gt;&lt;/li&gt;
-  &lt;li&gt;KR2：600公里以上自驾游一次，达达线&lt;/li&gt;
-  &lt;li&gt;KR3：学习照片管理和处理软件LightRoom&lt;/li&gt;
-  &lt;li&gt;KR4：制作4本摄影集，以前的两本，17年的两本&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;section-2&quot;&gt;目标3：完成学习计划&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;KR1：认真读10本书，再快快地读10本
-    &lt;ul&gt;
-      &lt;li&gt;&lt;del&gt;《边城》&lt;/del&gt;&lt;/li&gt;
-      &lt;li&gt;《像艺术家一样思考》&lt;/li&gt;
-      &lt;li&gt;&lt;del&gt;《二手时间》&lt;/del&gt; 不了解白俄历史，没感觉，看不下去了&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://laichendong.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2017/04/18/jing-jin/&quot;&gt;&lt;del&gt;《精进》&lt;/del&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;《巨人的陨落》&lt;/li&gt;
-      &lt;li&gt;&lt;del&gt;《冰与火之歌 卷I 权力的游戏》&lt;/del&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;del&gt;《冰与火之歌 卷II 列王的纷争》&lt;/del&gt;&lt;/li&gt;
-      &lt;li&gt;《鲁冰逊漂流记》&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;del&gt;KR2：学完斯坦福的“机器学习”课程&lt;/del&gt; 不学这个了，和当前工作离得有些远，不如多看一些人文或网站技术架构方面的书&lt;/li&gt;
-  &lt;li&gt;&lt;del&gt;KR3：用Python实现这个玩意儿：https://xlzd.me/2016/03/05/sc-internet&lt;/del&gt; &lt;a href=&quot;http://laichendong.com/python/2017/03/13/imooc-analyse-by-python/&quot;&gt;慕课网分析&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Mon, 06 Feb 2017 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2017/02/06/2017-okr/</link>
-        <guid isPermaLink="true">http://laichendong.com/2017/02/06/2017-okr/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>提升创新能力</title>
-        <description>&lt;p&gt;提升创新能力有三个方法：&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;犯错&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;剽窃&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;交配&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;犯错的意思是说要去试错，有创意的犯错，从犯错中发现创新想法。&lt;/p&gt;
-
-&lt;p&gt;剽窃的意思是借鉴别人的思路，别人的想法，形成自己的创新想法。&lt;/p&gt;
-
-&lt;p&gt;交配是指让多种不同的想法进行“交配”产生新的创新想法。&lt;/p&gt;
-
-&lt;p&gt;这三者和“创新的三大障碍”是一一对应的。如果不能认识到自己，那就不能意识到自己在犯错。更别提从犯错中发现创新想法了。&lt;/p&gt;
-
-&lt;p&gt;如果只相信自己，各种问题都给出自己习惯上的答案，就不可能去借鉴别人的想法。&lt;/p&gt;
-
-&lt;p&gt;如果认为所有的问题都有且仅有一个答案，那自然也不会去综合不同的想法，让想法相互交配产生新的想法了。&lt;/p&gt;
-</description>
-        <pubDate>Sun, 31 Jul 2016 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/read/2016/07/31/improve-ability-of-innovating/</link>
-        <guid isPermaLink="true">http://laichendong.com/read/2016/07/31/improve-ability-of-innovating/</guid>
-        
-        
-        <category>read</category>
-        
-      </item>
-    
-      <item>
-        <title>有效领导</title>
-        <description>&lt;h2 id=&quot;section&quot;&gt;知识点&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;没有最好的药，只有对症的药。没有最好的领导方式，只有最有效的领导方式&lt;/li&gt;
-  &lt;li&gt;员工大都能放进 意愿和能力 两个维度组成的4个象限里&lt;/li&gt;
-  &lt;li&gt;领导方式大都能放进 支持和指导 两个维度组成的4个象限里&lt;/li&gt;
-  &lt;li&gt;低能力高意愿vs高指导低支持   低能力低意愿vs高指导高支持  高能力低意愿vs低指导高支持 高能力高意愿vs低指导低支持&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;section-1&quot;&gt;体会&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;不同阶段的员工应该用不同的领导风格对待&lt;/li&gt;
-  &lt;li&gt;安排工作时，在工作需要和员工意愿之间，应该先考虑工作需要&lt;/li&gt;
-  &lt;li&gt;授权应该循序渐进，防止授权过渡导致能力不匹配&lt;/li&gt;
-  &lt;li&gt;在不同的任务面前，同一个人是可能处在不同象限的&lt;/li&gt;
-  &lt;li&gt;领导力发展的过程就是“人格扭曲”的过程&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;section-2&quot;&gt;行动&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;分析每个员工所处的象限， 以及应该使用的领导风格，用不同的行为模式和话术进行领导&lt;/li&gt;
-  &lt;li&gt;尝试将不同象限里的员工进行组合，互相产生良性影响&lt;/li&gt;
-  &lt;li&gt;尝试识别和影响“非正式团体”&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 29 Jul 2016 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/management/2016/07/29/effective-leadership/</link>
-        <guid isPermaLink="true">http://laichendong.com/management/2016/07/29/effective-leadership/</guid>
-        
-        
-        <category>management</category>
-        
-      </item>
-    
-      <item>
-        <title>企业文化就是周围的空气</title>
-        <description>&lt;p&gt;领导力培训里有一个环节叫“文化大讲堂”，我听到这个名称的第一反应就是“这一定是这个培训中最无聊的部分了。”，做讲堂的老师是一个HR高管，由于时间冲突，第一天还没讲成。我心里还阴暗的想，“果不其然！”&lt;/p&gt;
-
-&lt;p&gt;但是听完智晖总一个小时的演讲。我已经被深深的折服了。&lt;strong&gt;这显然是这次培训中最精彩的部分&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;她首先从她个人经历出发，讲了她的家庭，她的职业经历，为什么在千橡最低谷的时候来北京，最后，她让我们猜，她这样的一个人，她的团队的文化会是怎么样的？进而引出说，文化到底是什么东西？文化是如何被人感知到的？这两个问题。她说，文化，不是写在墙上的标语，不是嘴里喊的口号，&lt;strong&gt;文化就是你周围的空气&lt;/strong&gt; 假设一个人来京东面试，他会用他的眼睛，用他的鼻子，用他的耳朵，皮肤等一切感官感受到京东的文化。而我们作为管理者，传递文化的方式就是去践行它。&lt;/p&gt;
-
-&lt;p&gt;另外，她提出了一个问题，你的职位从M2到M3，哪些东西是变了的，哪些东西是没变的？引发了每个人的思考。进而，她提到了提问的重要性，让我们要学习如何提问。&lt;/p&gt;
-
-&lt;p&gt;其实最打动我的是她演讲完的一个小动作——&lt;strong&gt;她收起了她的录音笔&lt;/strong&gt; 她说每次她自己出去讲东西，都是录下来，回去第一时间复盘，找出能改进的地方。真是应了那句话：比你聪明的人还比你努力！&lt;/p&gt;
-</description>
-        <pubDate>Fri, 29 Jul 2016 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/management/2016/07/29/culture-is-air/</link>
-        <guid isPermaLink="true">http://laichendong.com/management/2016/07/29/culture-is-air/</guid>
-        
-        
-        <category>management</category>
-        
-      </item>
-    
-      <item>
-        <title>创新的三大障碍</title>
-        <description>&lt;p&gt;关于创新，总共有三大障碍，首当其冲的就是&lt;strong&gt;不能正确认知自己，看不到自己。&lt;/strong&gt;这个怎么说？我们在做事时，往往不能跳出来审视自己正在做的事情是否值得，是否有足够的产出。比如作家一直在纠结写一个惊艳的开头，或者干脆对着稿纸发呆而不动笔；又比如程序员对一个问题调试跟踪了一周，也没想起来问问别人；再比如我们总是忙于开各种各样的会议却不知道是为了什么，会议的结果是什么。&lt;/p&gt;
-
-&lt;p&gt;自己很难发现这些问题，越是效率低下时越难以发现。我们必须借助其他人的帮助，但是当别人说你或者你在说别人时，一定要注意“别生气！”，别让你的老婆来做这件事！&lt;/p&gt;
-
-&lt;p&gt;很多能成为解决问题的领导者的人都在这个障碍中牺牲了！&lt;/p&gt;
-
-&lt;p&gt;第二个障碍是&lt;strong&gt;还没真正理解问题，就急于给出答案， 而且针对所有问题，给出的答案都是一样的！欺骗自己，以为早就知道所有问题的答案&lt;/strong&gt;每一个问题都有其特定的场景和条件，我们必须先理解问题，才有可能给出正确的解决方案。&lt;/p&gt;
-
-&lt;p&gt;最后一个障碍是&lt;strong&gt;认为所有问题都_有且仅有_一个答案。&lt;/strong&gt;不愿意相信还有别的解决办法。其实所有问题，都应该不止有一个解决方案。不是你的解决方案就绝对好，我的就绝对不好。 &lt;strong&gt;要学会包容不同和接受变通&lt;/strong&gt;。&lt;/p&gt;
-</description>
-        <pubDate>Wed, 27 Jul 2016 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/read/2016/07/27/three-obstacles-of-innovating/</link>
-        <guid isPermaLink="true">http://laichendong.com/read/2016/07/27/three-obstacles-of-innovating/</guid>
-        
-        
-        <category>read</category>
         
       </item>
     

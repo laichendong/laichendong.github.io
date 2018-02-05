@@ -12,7 +12,7 @@
 
     <title>zsh等shell软件如何通过github实现自动更新功能 - 咖啡不苦</title>
 
-    <link rel="canonical" href="http://laichendong.com/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/06/20/shell-software-how-to-auto-upgrade-with-github/">
+    <link rel="canonical" href="http://localhost:4000/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/06/20/shell-software-how-to-auto-upgrade-with-github/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -192,14 +192,14 @@
 
 				<p>我的shell装了<a href="https://github.com/robbyrussell/oh-my-zsh">zsh</a>,不用说，这是一个很棒的shell增强软件。注意到他和其他一些基于github的软件一样，貌似直接把github当成更新服务器了。这让我觉得很cool啊。就看了下大概是怎么实现的。</p>
 
-<h1 id="section">1、如何检测更新</h1>
-<p>要自动更新自然就要先能检测到软件有更新。如果自动升级选项开启的话，zsh会首先执行<code class="highlighter-rouge">$ZSH/tools/check_for_upgrade.sh</code>文件来检查是否有更新。<br />
+<h1 id="1如何检测更新">1、如何检测更新</h1>
+<p>要自动更新自然就要先能检测到软件有更新。如果自动升级选项开启的话，zsh会首先执行<code class="highlighter-rouge">$ZSH/tools/check_for_upgrade.sh</code>文件来检查是否有更新。
 zsh会用<code class="highlighter-rouge">~/.zsh-update</code>来存储最近一次更新的日期，如果当前日期和上次更新的日期差了一定天数（默认13天）则会提示为你是否要更新，不管选择是或否 都会更新<code class="highlighter-rouge">~/.zsh-update</code>文件的内容。如果具备其他的更新条件，比如有文件夹的鞋权限，比如git命令可用等等就具体执行更新动作了。</p>
 
-<h1 id="section-1">2、执行更新</h1>
+<h1 id="2执行更新">2、执行更新</h1>
 <p>具体的更新动作是通过<code class="highlighter-rouge">$ZSH/tools/upgrade.sh</code>完成的。看了下这个文件，so easy！ 大部分都是用来设置输出格式的。核心的就只有一句：<code class="highlighter-rouge">git pull --rebase --stat origin master</code> ok，这就将要更新的东西更新下来了。</p>
 
-<h1 id="section-2">3、扩展知识点</h1>
+<h1 id="3扩展知识点">3、扩展知识点</h1>
 <p>在看zsh实现的过程中，做为一个shell门外的菜鸟，了解到了如下一些知识点：</p>
 
 <p>1、 <code class="highlighter-rouge">$EPOCHSECONDS</code>显示当前epoch时间（从1970年1月1日 0点到现在的时间）的秒数，这是一个内置环境变量？</p>
@@ -217,30 +217,6 @@ zsh会用<code class="highlighter-rouge">~/.zsh-update</code>来存储最近一�
                 <hr>
 
                 
-                <!-- 多说 Share start -->
-                </style>
-                <div class="ds-share"
-                    style="text-align: right"
-                    data-thread-key="/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/06/20/shell-software-how-to-auto-upgrade-with-github"
-                    data-title="zsh等shell软件如何通过github实现自动更新功能"
-                    data-url="http://laichendong.com/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/06/20/shell-software-how-to-auto-upgrade-with-github/"
-                    data-images="http://laichendong.com/img/home-bg.jpg"
-                    data-content="我的shell装了zsh,不用说，这是一个很棒的shell增强软件。注意到他和其他一些基于github的软件一样，貌似直接把github当成更新服务器了。... | 咖啡不苦 " >
-                    <div class="ds-share-inline">
-                      <ul  class="ds-share-icons-16">
-                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
-                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
-                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
-                      </ul>
-                      <div class="ds-share-icons-more">
-                      </div>
-                    </div>
-                <hr>
-                </div>
-                <!-- 多说 Share end-->
-                
-
 
                 <ul class="pager">
                     
@@ -268,7 +244,7 @@ zsh会用<code class="highlighter-rouge">~/.zsh-update</code>来存储最近一�
                     <div class="ds-thread"
                         data-thread-key="/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/06/20/shell-software-how-to-auto-upgrade-with-github"
                         data-title="zsh等shell软件如何通过github实现自动更新功能"
-                        data-url="http://laichendong.com/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/06/20/shell-software-how-to-auto-upgrade-with-github/" >
+                        data-url="http://localhost:4000/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/06/20/shell-software-how-to-auto-upgrade-with-github/" >
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
@@ -421,7 +397,7 @@ zsh会用<code class="highlighter-rouge">~/.zsh-update</code>来存储最近一�
                     
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; 咖啡不苦 2017
+                    Copyright &copy; 咖啡不苦 2018
                     <br>
                     Theme by <a href="http://huangxuan.me">Hux</a> |
                     <iframe

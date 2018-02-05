@@ -12,7 +12,7 @@
 
     <title>慕课网分析 - 咖啡不苦</title>
 
-    <link rel="canonical" href="http://laichendong.com/python/2017/03/13/imooc-analyse-by-python/">
+    <link rel="canonical" href="http://localhost:4000/python/2017/03/13/imooc-analyse-by-python/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -218,7 +218,7 @@
 
 <ol>
   <li>现在很多页面都是js加载数据的，靠原来直接访问URL再直接从response的html里提取数据的做法已经不行了。通常的做法是使用selenium驱动一个浏览器，让这个浏览器去访问要抓取的url。回来的response也在浏览器里实际运行。等数据都load回来了之后后再从浏览器里获得想要的数据。本例中我直接使用的是chrome。在速度和资源要求更高的场景里，可以使用PhantomJs这种“无界面的浏览器”来替代chrome。也可以加上多线程，多进程抓取等等。这是一个合格的爬虫应有的素质。</li>
-  <li>在将分析结果输出成图表的过程中，觉得如果这就用个模板引擎的话，有点牛刀杀鸡的味道了。于是就直接用了<code class="highlighter-rouge">''.format()</code>应急。但是模板里有js代码，js代码里有<code class="highlighter-rouge"><span class="p">{</span></code>和<code class="highlighter-rouge">}</code>,转义啊简直是噩梦！然后，机制的我就把所有带大括号的js代码都挪到外部js文件里，然后引入了。效果杠杠滴，机智如我啊^_^</li>
+  <li>在将分析结果输出成图表的过程中，觉得如果这就用个模板引擎的话，有点牛刀杀鸡的味道了。于是就直接用了<code class="highlighter-rouge">''.format()</code>应急。但是模板里有js代码，js代码里有<code class="highlighter-rouge">{</code>和<code class="highlighter-rouge">}</code>,转义啊简直是噩梦！然后，机制的我就把所有带大括号的js代码都挪到外部js文件里，然后引入了。效果杠杠滴，机智如我啊^_^</li>
 </ol>
 
 
@@ -226,35 +226,11 @@
                 <hr>
 
                 
-                <!-- 多说 Share start -->
-                </style>
-                <div class="ds-share"
-                    style="text-align: right"
-                    data-thread-key="/python/2017/03/13/imooc-analyse-by-python"
-                    data-title="慕课网分析"
-                    data-url="http://laichendong.com/python/2017/03/13/imooc-analyse-by-python/"
-                    data-images="http://laichendong.com/img/home-bg.jpg"
-                    data-content="学习能力应该是现代人最重要的一种能力没有之一了。现在基于互联网的在线学习正方兴未艾。前两年，达内、传智播客这些培训机构基本上是干掉了计算机的本科教育。很多... | 咖啡不苦 " >
-                    <div class="ds-share-inline">
-                      <ul  class="ds-share-icons-16">
-                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
-                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
-                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
-                      </ul>
-                      <div class="ds-share-icons-more">
-                      </div>
-                    </div>
-                <hr>
-                </div>
-                <!-- 多说 Share end-->
-                
-
 
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2017/02/06/2017-okr/" data-toggle="tooltip" data-placement="top" title="2017-OKR">
+                        <a href="/2017/02/06/2017-OKR/" data-toggle="tooltip" data-placement="top" title="2017-OKR">
                         Previous<br>
                         <span>2017-OKR</span>
                         </a>
@@ -277,7 +253,7 @@
                     <div class="ds-thread"
                         data-thread-key="/python/2017/03/13/imooc-analyse-by-python"
                         data-title="慕课网分析"
-                        data-url="http://laichendong.com/python/2017/03/13/imooc-analyse-by-python/" >
+                        data-url="http://localhost:4000/python/2017/03/13/imooc-analyse-by-python/" >
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
@@ -430,7 +406,7 @@
                     
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; 咖啡不苦 2017
+                    Copyright &copy; 咖啡不苦 2018
                     <br>
                     Theme by <a href="http://huangxuan.me">Hux</a> |
                     <iframe

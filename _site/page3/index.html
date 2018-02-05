@@ -12,7 +12,7 @@
 
     <title>咖啡不苦</title>
 
-    <link rel="canonical" href="http://laichendong.com/page3/">
+    <link rel="canonical" href="http://localhost:4000/page3/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -176,6 +176,130 @@
             ">
     			
 <div class="post-preview">
+    <a href="/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/07/08/export-csv-and-open-in-ms-excel/">
+        <h2 class="post-title">
+            导出的CSV在excel中打开乱码
+        </h2>
+        
+        <div class="post-content-preview">
+            在项目中经常会遇到需要到导出excel的场景，为了简化和兼容性，常常会变成“导出csv”。
+这其中发现一个怪现象：UTF-8编码的csv文件用excel打开会乱码，而GBK编码的不会。
+作为高端大气的应用，显然不希望生成个GBK编码的文件啊。（GBK在我mac下用sublime打开也会是乱码的）
+在网上查到说excel是使用ANSI编码打开文件的。而ANSI在大陆就是GBK。so，貌似问题无...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on July 8, 2016
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2016/06/20/shell-software-how-to-auto-upgrade-with-github/">
+        <h2 class="post-title">
+            zsh等shell软件如何通过github实现自动更新功能
+        </h2>
+        
+        <div class="post-content-preview">
+            我的shell装了zsh,不用说，这是一个很棒的shell增强软件。注意到他和其他一些基于github的软件一样，貌似直接把github当成更新服务器了。这让我觉得很cool啊。就看了下大概是怎么实现的。
+
+1、如何检测更新
+要自动更新自然就要先能检测到软件有更新。如果自动升级选项开启的话，zsh会首先执行$ZSH/tools/check_for_upgrade.sh文件来检查是否有更新。
+...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on June 20, 2016
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/python/2015/10/25/python/">
+        <h2 class="post-title">
+            东东学python
+        </h2>
+        
+        <div class="post-content-preview">
+            这是我看a byte of python的笔记，如果你也是java程序员，希望你能感到亲切。
+
+
+  单引号和双引号都可以做字符串字面量，三引号更强，里面可以随意使用单引号和双引号，还可以换行，用于文档字符串
+  格式化占位符用{位置|名字}，格式指定类似c，比如'{0:.3f}'.format(1.0/3)
+  命名习惯用下划线连接，而非驼峰方式或其他
+  分号可以用来分割行（语句），但强...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on October 25, 2015
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/jekyll/2015/09/09/set-syntax-highlight-in-jekyll/">
+        <h2 class="post-title">
+            jekyll设置语法高亮
+        </h2>
+        
+        <div class="post-content-preview">
+            2015年09月11日，重要更新：
+以下都是扯淡。现在jekyll已经原生支持语法高亮了。
+直接将代码放到  {% highlight language %} 和 {% endhighlight %} 之间就ok了。
+
+
+
+
+使用jekyll的人，我想大部分都应该经常和代码打交道吧。那代码高亮自然少不了，今天就讲讲如何在jekyll中配置代码高亮。
+
+代码高亮的工具有很多。jekyll原生支...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on September 9, 2015
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2015/09/06/thinking-on-work-over-time-2/">
+        <h2 class="post-title">
+            加班记（二）
+        </h2>
+        
+        <div class="post-content-preview">
+            今天又去公司处理了一个线上问题：我们依赖的一个接口可用率为0了！
+
+故事大概是这样的：我们依赖的一个写接口，最早主键是int类型的。虽然我们的sequence工具生成的是long型的数，但是为了“适应”接口就强转成int后再调用接口了。某一天，接口提供方意识到用int类型做为主键，随着业务发展很可能突破上限而造成麻烦。于是接口提供方将入参类型改成了long。于是我们的某位码农又将int强转成...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on September 6, 2015
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/jekyll/2015/08/29/write-your-blog-with-jekyll-and-github-pages/">
+        <h2 class="post-title">
+            用jekyll和github pages写博客
+        </h2>
+        
+        <div class="post-content-preview">
+            题外话，在当今这个微博都还没来得及高兴一下就被朋友圈拉下神坛的年代，说如何搭建自己的博客系统似乎已经太过于过时了。
+如果你有这样的想法，恐怕这篇文章不是非常适合你了。建议你把它关了去刷朋友圈。如果你和我一样，还是愿意折腾，并且愿意将折腾记录下来。那么，我们交个朋友吧。一起去刷朋友圈。
+
+工欲善其事，必先利其器。介绍一下我们要用到的两个工具。
+首先登场的是：github pages是githu...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on August 29, 2015
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     <a href="/%E4%B8%8D%E5%A5%BD%E5%88%86%E7%B1%BB%E7%9A%84/2015/08/26/thinking-on-work-over-time/">
         <h2 class="post-title">
             加班记
@@ -199,7 +323,7 @@
 <hr>
 
 <div class="post-preview">
-    <a href="/mac/2015/08/25/set-java-home-on-mac/">
+    <a href="/mac/2015/08/25/set-JAVA_HOME-on-mac/">
         <h2 class="post-title">
             mac下设置JAVA_HOME
         </h2>
@@ -259,39 +383,6 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 </div>
 <hr>
 
-<div class="post-preview">
-    <a href="/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2015/08/19/are-your-lights-on/">
-        <h2 class="post-title">
-            你的灯还亮着吗？——发现问题的真正所在
-        </h2>
-        
-        <div class="post-content-preview">
-            序言
-
-  问题 ：没人会读序言
- 解决办法 ：把序言作为第一章
- 解决方法带来新的问题 ：第一章很无聊
- 新的解决方法 ：删了第一章，把第二章作为第一章
-
-
-第一部分：问题是什么
-
-第一章： 一个问题
-
-  __背景故事：__一个办公楼（雷龙大厦）的电梯不够用了。有的租户威胁说，如果不尽快改善电梯服务，他们就要退租。
-
-
-通过电梯不够用的场景，引出：
-&gt; * 问题是什么？
-&gt; ...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 咖啡不苦 on August 19, 2015
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -301,6 +392,10 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
         <a href="/page2">&larr; Newer Posts</a>
     </li>
     
+    
+    <li class="next">
+        <a href="/page4">Older Posts &rarr;</a>
+    </li>
     
 </ul>
 
@@ -446,7 +541,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
                     
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; 咖啡不苦 2017
+                    Copyright &copy; 咖啡不苦 2018
                     <br>
                     Theme by <a href="http://huangxuan.me">Hux</a> |
                     <iframe
