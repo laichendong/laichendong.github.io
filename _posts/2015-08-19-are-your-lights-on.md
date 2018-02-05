@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 读书笔记
+category: Reading
 title: 你的灯还亮着吗？——发现问题的真正所在
 ---
 
