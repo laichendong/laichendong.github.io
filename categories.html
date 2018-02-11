@@ -2,25 +2,30 @@
 layout: page
 title: Categories
 ---
+{% for category in site.categories %}
+<a href="/categories/#{{ category[0] }}">{{ category[0] }}</a>
+{% endfor %}
 
-
-<ul id="cat"></ul>
-<script src="/js/jquery.query.js "></script>
-<script type="text/javascript">
-var dataStr = '{ {% for cat in site.categories %} {% if cat[0] != site.categories.first[0] %},{% endif %} "{{ cat[0] }}":[{% for post in cat[1] %} {% if post != cat[1].first %},{% endif %} {"url":"{{post.url}}", "title":"{{post.title}}", "date":"{{post.date | date:"%b %-d, %Y"}}"} {% endfor %}] {% endfor %} }', 
-	data = JSON.parse(dataStr), 
-	curTag = $.query.get("c");
-
-	if (curTag) {
-	    archieves = data[curTag];
-		$("#cat").before("<h2>"+curTag+"</h2>");
-	    $.each(archieves, function (i, o) {
-	    	$("#cat").append("<li><a href='"+o.url+"'>"+o.title+"</a> <span  class='post-meta'>"+o.date+"</span></li>");
-	    });
-    } else {
-    	for (cat in data) {
-    		$("#cat").append("<li><a href='/categories/?c=" + cat + "'>" + cat + " <span  class='post-meta'>" + data[cat].length + "篇文章</span></a></li>");
-    	}
-    }
-    
-</script>
+{% for category in site.categories %}
+<div class="one-tag-list">
+    <h1 class="listing-seperator" id="{{ category[0] }}">
+        <span class="tag-text">{{ category[0] }}</span>
+    </h1>
+    {% for post in category[1] %}
+    <div class="post-preview">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <h2 class="post-title">
+                {{ post.title }}
+            </h2>
+            {% if post.subtitle %}
+            <h3 class="post-subtitle">
+                {{ post.subtitle }}
+            </h3>
+            {% endif %}
+        </a>
+        <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p>
+    </div>
+    <hr>
+    {% endfor %}
+</div>
+{% endfor %}
