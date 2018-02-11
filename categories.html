@@ -2,9 +2,11 @@
 layout: page
 title: Categories
 ---
-{% for category in site.categories %}
-<a href="/categories/#{{ category[0] }}">{{ category[0] }}</a>
-{% endfor %}
+<div id="tag_cloud" class="tags">
+    {% for category in site.categories %}
+    <a href="/categories/#{{ category[0] }}">{{ category[0] }}</a>
+    {% endfor %}
+</div>
 
 {% for category in site.categories %}
 <div class="one-tag-list">
