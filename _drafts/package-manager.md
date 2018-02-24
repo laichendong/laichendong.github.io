@@ -4,7 +4,7 @@ category: 学习
 title: 各种包管理
 ---
 
-java  maven
+java  maven  [Gradle](https://spring.io/guides/gs/gradle/)
 
 ruby  gem
 
