@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 work_dir=`pwd`
-# echo 
-# i=`index $work_dir "_drafts"`
-# echo $i
+
 if [[ ! ${work_dir: -8} == "/_drafts" ]]; then
 	echo "请把脚本放到_drafts目录下执行"
 	exit 0
@@ -20,6 +18,4 @@ else
 	fn=`date +%Y-%m-%d`-$f
 	mv $f "../_posts/$fn"
 	ls -l ../_posts/$fn
-	
 fi
-#ls -l ../_posts/$fn
