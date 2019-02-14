@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>咖啡不苦</title>
+    <description>赖晨东的博客 | 咖啡不苦</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 10 May 2018 17:27:46 +0800</pubDate>
+    <lastBuildDate>Thu, 10 May 2018 17:27:46 +0800</lastBuildDate>
+    <generator>Jekyll v3.8.1</generator>
+    
+      <item>
+        <title>收益率，年化收益率，年利率，日息，三分利傻傻分不清楚</title>
+        <description>&lt;p&gt;现在互联网理财的东西实在太多了，而各种概念对于我这种资质愚钝的人来说也是傻傻分不清楚，帮自己整理记录一下。&lt;/p&gt;
+
+&lt;h2 id=&quot;本金&quot;&gt;本金&lt;/h2&gt;
+
+&lt;p&gt;本金好说，就是你投进去的真金白银。一般计为&lt;code class=&quot;highlighter-rouge&quot;&gt;C&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;收益&quot;&gt;收益&lt;/h2&gt;
+
+&lt;p&gt;收益也好说，就是用投资结束时拿到的钱&lt;code class=&quot;highlighter-rouge&quot;&gt;V&lt;/code&gt;减去当初的本金。所以收益&lt;code class=&quot;highlighter-rouge&quot;&gt;P= V-C&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;收益率&quot;&gt;收益率&lt;/h2&gt;
+
+&lt;p&gt;所以收益率就比较好理解了，就是收益占本金的比例。收益率&lt;code class=&quot;highlighter-rouge&quot;&gt;K= P/C= (V-C)/C = V/C -1&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;这里注意，这个收益率前面是没有时间定语的。而像余额宝之类的产品里面说的“近七天年化收益率”则不是这个概念。&lt;/p&gt;
+
+&lt;h2 id=&quot;年化收益率&quot;&gt;年化收益率&lt;/h2&gt;
+
+&lt;p&gt;所谓年化收益率，是指的按现在的收益率来算（比如余额宝的7天），不出意外的话，一年投资下来，能获得的收益率。就是说，这个值是个大概的值，估计的值。举个例子来说，往余额宝里放了10000块，过了7天，赚了9块，那余额宝的&lt;code class=&quot;highlighter-rouge&quot;&gt;近七天年化收益率=((投资内收益/本金)/投资天数)*365×100%= ((9/10000)/7)*365*100%=4.69%&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;年收益率&quot;&gt;年收益率&lt;/h2&gt;
+
+&lt;p&gt;年收益率比刚才少了个化字。这个概念和收益率是一样的，不是估算，是事实。比如，存10000块到银行，5年定期，5年后得到12375块，那&lt;code class=&quot;highlighter-rouge&quot;&gt;年收益率= 收益率/N = (12375/10000 -1)/5=4.75%&lt;/code&gt;  这个4.75%就是银行5年定期的利率。&lt;/p&gt;
+
+&lt;h2 id=&quot;日息&quot;&gt;日息&lt;/h2&gt;
+
+&lt;p&gt;除了赚钱，还有借钱，比如京东金条说“1000借一天，利息0.25元”，那一天的利率=0.25/1000=万分之2.5 。按单利来算，一年的利率 = 日息 * 365 = 9.1%。如果是按复利计算，会更高。除了这种平台借钱，民间借钱说利息一般都说几分利或几厘利。&lt;strong&gt;1分=10厘，1元=10角=100分=1000厘&lt;/strong&gt;，如果说“三分利”换算成年利率是多少呢？如果没有特别说明的话，三分利指的是一块钱借一个月的利息为3分钱。即月利率3%。那年利率= 月利率 * 12 = 3% * 12 = 36%！真是高利贷啊！1分利就是年利率12%。&lt;/p&gt;
+
+&lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
+
+&lt;p&gt;互联网借款平台&lt;strong&gt;日息万3&lt;/strong&gt;，余额宝&lt;strong&gt;近七日年化5%&lt;/strong&gt;，民间借贷&lt;strong&gt;1分利&lt;/strong&gt;，央行5年以上贷款基准利率&lt;strong&gt;4.9%&lt;/strong&gt;。这几个谁搞谁低呢？首先，统一换算成年利率。年化！&lt;/p&gt;
+
+&lt;p&gt;日息万3 = 年化 3/10000 * 365 =  10.95%；余额宝直接就是年化5%； 1分利上面算过了，年化12%； 而央行贷款利率也就是指的年化利率4.9%。这就比较清楚了。这么看，央行的基准贷款利率其实还是挺低的，就是银行按基准利率把钱贷给你和你把钱放到余额宝的收益是差不多的。&lt;/p&gt;
+</description>
+        <pubDate>Sat, 24 Feb 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/02/24/interest-rate/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/24/interest-rate/</guid>
+        
+        <category>理财</category>
+        
+        <category>收益计算</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>2018 Okr</title>
+        <description>&lt;h1 id=&quot;objective-1-完成团队打造的目标&quot;&gt;Objective 1 ：完成团队打造的目标&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;KR 1：将“从Why出发”，“不设限”，“Be Professional”的理念传递到每一个团队成员心里。&lt;/li&gt;
+  &lt;li&gt;KR 2：丰富能力，补齐短板。团队拥有数据挖掘和AI建模的能力。&lt;/li&gt;
+  &lt;li&gt;KR 3：打造自驱型团队，能在没有我的情况下按预期的良好运转10天以上。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;objective-2--完成自我学习的目标&quot;&gt;Objective 2 ： 完成自我学习的目标&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;KR 1：看（听）书不少于20本，有体会，心得的不少于10本&lt;/li&gt;
+  &lt;li&gt;KR 2：博客更新不少于20篇&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;objective-3-完成关于生活的目标&quot;&gt;Objective 3 ：完成关于生活的目标&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;KR 1：10.1一家人去泰国&lt;/li&gt;
+  &lt;li&gt;KR 2：自驾草原天路 达达线&lt;/li&gt;
+  &lt;li&gt;KR 3：完成半马，年总跑量达到1000公里&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 21 Feb 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/02/21/2018-okr/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/21/2018-okr/</guid>
+        
+        <category>OKR</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>2017年总结：变化</title>
+        <description>&lt;h1 id=&quot;变化&quot;&gt;变化&lt;/h1&gt;
+
+&lt;p&gt;总说这个世界上，唯一不变的就是变化。2017年，我的关键词就是&lt;strong&gt;变化&lt;/strong&gt;。在这短短的一年里， 对我个人来说，发生了很多变化。为了跟上和适应这些变化，也收获良多。首先工作上，和大家一样经历了从（刚刚适应，或许还没完全适应的）事业部变到独立的一级部门平台生态部，又在年底从平台生态部升级成为现在的无界零售赋能事业部。部门变了，定位变了随着工作思路和方法也变化。和大家不一样的是从8月21号，我开始以“T带M”的形式负责一个三级部门。本以为差不多的角色不会有很多变化，没想到的是完全不同的角色带来了完全不同的视角。后来我和有存聊起来，我和他说：“以前真是不当家不知柴米贵啊”。其次，生活上变化也挺多。3月份第一次踏出国门，出去到这大大的世界走走，回来后决定每年都必须出去一次。住进了属于自己的小屋，后来觉得离公司太远又租到公司附近住下。“二胎”正在loading。即将呱呱坠地成为新的家庭成员。&lt;/p&gt;
+
+&lt;p&gt;回首17年的工作，要打分的话只能打个&lt;strong&gt;60分&lt;/strong&gt;的及格分数，没什么成绩，也就是保证了没出什么大篓子，一切都按部就班。如果把17年的工作分为两个阶段的话，应该以8月21日分界。第一个阶段在有存的保护下，显得尤其混乱而没有章法。整个工作并没有明显的主线，只是一些零散的片段。&lt;/p&gt;
+
+&lt;h2 id=&quot;crm&quot;&gt;CRM&lt;/h2&gt;
+
+&lt;p&gt;接手营销团队，CRM这个产品又一次回到我的手中。坦白说我对CRM还是有些感情的，毕竟它是我在京东从0到1做的第一个产品，在那个技术还比较蛮荒的年代（12，13年），那时初生牛犊不怕虎，做了很多开荒性质的工作，在京东第一实现了大数据平台运算过的数据回流到生产系统的mysql中（那时候连mysql都是稀罕玩意儿，CRM因为“不太重要”的项目，第一次试水mysql分库分表）。真的很感谢和怀念项目经理&lt;strong&gt;冰清&lt;/strong&gt;，帮助我成长很多，愿你在天国安息。扯远了，不过可能正是因为上述的情愫，让我有些“用力过猛”。非常深入到产品和研发的细节里，以至于亮哥觉得有些被“架空”而萌生了离职的想法。后来和亮哥吃了几顿饭喝了几顿酒聊了好几次，终于让他放下顾虑并放手让他干。而我转而将精力投回到商品基础线。随后CRM等来了他的风口，而亮哥也牢牢的抓住了它，成了现在的云CRM，无界零售的落地实例。后来有存问我：“当时把亮哥留下，你后悔吗？”我告诉他：“这是我最大的一次成长。不后悔”！&lt;strong&gt;这是我第一次感受到成就他人的快感，或许这才是做管理吧&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;图片空间&quot;&gt;图片空间&lt;/h2&gt;
+
+&lt;p&gt;那时候手里很多系统，图片空间就是其中最烂的一个（^_^）。由于这个系统和商品的关系很紧密，所以也算是比较熟悉的系统了。数据量特别大，连续几年重点备战但问题不断，界面操作N（N&amp;gt;=3）年没改各种反人类。随系统过来的一个研发叫刘洋。记得级别还算挺高的。刚开始因为大家都不熟悉，都听他说由他弄，后来发现完全不行。遂产生把系统翻一遍的想法。为了安全，先改界面！文鹏那会儿刚来不久，超级给力！几乎一人之力短时间高质量的完成了图片空间的前后端分离的改造。&lt;strong&gt;shop端的操作体验一直不太好，我个人觉得和我们团队里没有足够多足够专业的前端是很有关系的&lt;/strong&gt;。改完前端交互之后，又发现真正要有改善，还得动底层，于是让阳华入驻，真正大刀阔斧的对图片空间进行改造。把所有顽疾解决之时也是阳华提出要转岗之日。阳华的离开，确实很可惜，我觉得对团队是一个损失。作为一个技术团队，成员想要离开的理由是这里没有技术挑战，不好玩。而当亚新决定不转岗来我们部门时候告诉我的原因也是这个的时候。我意识到这问题真的很严重。&lt;strong&gt;必须要让团队的技术氛围好起来！优秀的人会吸引优秀的人，劣币会驱逐良币，而只有优秀的人才能创造优秀的产品&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;okr计划&quot;&gt;OKR计划&lt;/h2&gt;
+
+&lt;p&gt;为了让自己更有目标感一些，17年开始，我给自己制定了一些OKR目标。而当时团队里有几个“头疼的人”，为了帮助他们快一些成长，也将OKR理念推广给他们，让他们自己制定自己的目标，承诺达到的时间，定期跟进检查。后来有存的介入，把当时的实习生和T1的几个同学也纳入其中，感觉味道有了些变化。而我也就逐渐的淡出了这个计划的推进，只是跟随参加，中后期主要都是有存在推进的。整个计划取得了很好的结果，所有参与的人都有收获。而我的收获是，其实我应该坚持下来，一直主导这个项目，或许能收获更多。前段时间读到AirBnb朱赟的一篇文章说：“&lt;strong&gt;任何一件事情，都会有一个人对其负责，很多时候你是有机会对其负责的，只是你选择了不&lt;/strong&gt;”&lt;/p&gt;
+
+&lt;h2 id=&quot;七巧板&quot;&gt;七巧板&lt;/h2&gt;
+
+&lt;p&gt;正斌和我说：“感谢你留下了七巧板这个宝贵的遗产”。我很高兴，虽然不算是无心插柳吧，但柳成荫了总是一件令人高兴的事儿。当初做七巧板其实是&lt;strong&gt;动机不纯&lt;/strong&gt;的。有两个目的，一个是在当时的环境下为了体现“技术驱动”，一个是为了给阳华找点事儿干（那时候阳华就有退意了，我得给他找点他看得上的活）。但没有一个目的是为了商家，为了业务。现在回头看来，虽然七巧板获得了成功，但过程和结果都很讽刺。七巧板的成功，不是因为技术驱动，主要还是产品驱动，产品驱动业务，业务再反过来驱动研发，研发觉得这是个技术驱动的事儿，然后大家齐心一块干，事儿就成了。而在事儿将成未成的时候，阳华坚持的离开了。可能他也已经看到了其中的机巧吧。&lt;/p&gt;
+
+&lt;p&gt;第一个阶段都是这样的碎片。感觉挺多事儿的，但因为缺少主线和内在逻辑，穿不起来，一地鸡毛。某一天，有存和我说man端的交接，生态相关的系统也都会交过来。宝哥可能会成立单独一个部门来做。正阳门，商品审核这些都是我一手搭建起来的系统。而当时的我也有些迷茫（或者说定位不清晰）。于是就分别找有存和宝哥谈了自己想站出来对这个事情负责的想法。真的很感谢有存和宝哥都很信任我。于是就开始第二阶段的工作。&lt;/p&gt;
+
+&lt;h2 id=&quot;接盘&quot;&gt;接盘&lt;/h2&gt;
+
+&lt;p&gt;刚开始的感觉特别像“分田到户”。有了自己的一亩三分地，激情满满又有点小心翼翼。第一步是梳理有哪些人，哪些系统。了解到只有9个人但有40个应用而且很多都压了几个月的需求的时候还是挺紧张的。所以给自己立下的第一个目标是&lt;strong&gt;维稳&lt;/strong&gt;。首先挨个拜访了已知的各个业务方，告诉他们研发换了，有什么需求，有什么打算，我会逐一解决的，但最近请给一段时间。现在看这个动作并没有得到非常理想的效果，可能因为这些人几乎都是第一次接触，之间不存在信任关系。人家的工作被压几个月了，凭什么给你面子？（没有乘机猛压就是给面子了）。然后自己迅速了解每个应用都是做什么的，系统大概怎么实现的，和哪些应用有什么关系，压了哪些需求。陆陆续续的花了两个多月才把积压的需求干掉。千小心万小心还有出了一点纰漏。有一些商家的罚单开重了！邮件还直接发到了林老师那里。以至于后来给林老师介绍自己时林老师还半开玩笑的说：“哦，晨东，我知道，我还经常收到你的邮件呢”。&lt;/p&gt;
+
+&lt;h2 id=&quot;招人&quot;&gt;招人&lt;/h2&gt;
+
+&lt;p&gt;招人，是我今年做的最差的工作，没有之一。从数量上来说，接手团队时14人，目前22+5人。大部人数都翻了一番，而我就是那个“拖后腿”的小部门。总结下来主要是原因是没有发动全员。没有发动起全员的原因又有很多，重要的应该是招人的目标不够清晰，没有给大家明确描述出来我们现在团队成员情况是怎么样的，我们要做什么事所以缺什么样的人。二是大家没有这个意识，觉得招人是领导的事。不是我的事儿。18年还有一些机会的尾巴，这次要抓住，再抓不住就真的没了。好在从质量上来说，因为都是自己一一挑选的，整体还过得去，才能把这些事儿抗到现在。&lt;/p&gt;
+
+&lt;h2 id=&quot;dsr--奖惩--和-长城&quot;&gt;DSR  奖惩  和 长城&lt;/h2&gt;
+
+&lt;p&gt;三条产品线，三条完全不同的产品线。刚好也是三个状态，DSR已经初见成效，奖惩正在艰苦前行，而长城，似乎还没完全看清前方的道路。&lt;/p&gt;
+
+&lt;p&gt;2017已然过去，2018是成长的一年。在京东的第6个年头，希望能看到不一样的自己。&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 21 Feb 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/02/21/2017-summary/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/21/2017-summary/</guid>
+        
+        <category>总结</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>比特币与区块链</title>
+        <description>&lt;p&gt;现在的区块链，已经火到必须蹭一波热度的程度了。网上有太多的关于比特币和区块链的文章，但把事情说得通俗明白的没几个（可能是我太low看不懂？）下面我也来尝试说说看。一方面希望能说得更明白，另一方面也整理一下自己的思路。&lt;/p&gt;
+
+&lt;h1 id=&quot;基本原理&quot;&gt;基本原理&lt;/h1&gt;
+
+&lt;p&gt;首先明确两个概念：&lt;strong&gt;比特币它是一种电子货币&lt;/strong&gt;，你可以和人民币，美元什么的类比。不同的是他是去中心化的，人民币央行说印多少就印多少，而比特币没有一个“央行”来印钱。至于&lt;strong&gt;区块链，其实可以理解为印钱的纸&lt;/strong&gt;！它是支撑比特币系统运行的一种分布式数据库技术而已。&lt;/p&gt;
+
+&lt;p&gt;先说比特币。由于他是一种数字化的货币。没有实体的纸，那&lt;strong&gt;A要给B10个比特币&lt;/strong&gt;该怎么做呢？因为A不存在一张10块的比特纸币可以给到B，所以就用转账（记账）的方式进行。我们人民币的转账，首先A和B都需要一个属于自己的账户，然后需要一个银行，因为所有人都认银行记的帐。这时候银行就是这个中心节点。而比特币是一种去中心化的货币，没有银行这个中心节点。那怎么办呢？办法就是将这笔转账告诉所有人，让所有人都记住它发生过，这样它就成事实了（想想日本教科书告诉所有日本人，他们没有侵略过中国，是个多么邪恶的事情！）。可问题又来了，所有人都记录，如果有人和B关系好说A给了B15个而不是10个比特币，该怎么办？账目乱套了，有人说10个，有人说15个，不知道该信谁的。所以比特币就规定说所有人接到一个要记账的请求（交易）时，首先要验证一下这个交易的有效性，比如“A给B10个比特币”首先要验下这是不是A说的而不是B或其他人说的（用非对称加密 数字签名就能验证，这技术很成熟了），还要验一下A现在有没有10个比特币的余额（每个人手里都有有史以来所有的转账记录（账本），通过账本可以计算出每个人当前的余额），如果这些基本信息都没问题的话，那就开始&lt;strong&gt;做一道特别难的数学题&lt;/strong&gt;（不断做Hash计算，特别费CPU）。谁先算出这道题，就以谁记的为准，其他人的就都不算了。那问题又来了，又要验证这笔账的正确性，又要做特别难的题，那谁会愿意去记账呢？所以，比特币又规定说，只要谁记账成功了（最先验证完正确性和做出数学题）就给谁50个比特币做奖励（貌似还有一小部分A给的手续费）。而这个奖励的价值远大于解题所花的成本，这样就有人愿意来记账了。如果你从“记账员”的视角看一下这件事儿的话，就会发现记账员其实就是付出了一些劳动然后获得了一些报酬。这和&lt;strong&gt;挖矿&lt;/strong&gt;是一样的！&lt;/p&gt;
+
+&lt;p&gt;细心的你可能已经发现，上面说的还有一个严重的问题。就是最开始的比特币是从哪来的？所以在系统启动的时候，中本聪发布了第一笔交易记录（第一个区块——创世块），但其实这里面并不是谁给谁转账，因为谁的账户里都还没有钱，没办法转账，事实上，这条记录里面只是当天泰晤士时报里的头条新闻标题（里面是啥根本不重要，就算写“博主最帅”也是一样的）然后就有人通过挖矿（记录这笔交易）获得了第一个比特币。然后这个系统就启动了。&lt;/p&gt;
+
+&lt;h1 id=&quot;待解决的问题&quot;&gt;待解决的问题&lt;/h1&gt;
+
+&lt;p&gt;以上，就是比特币系统运行的最基本的原理。但实际运行中，还有很多问题需要解决。&lt;/p&gt;
+
+&lt;h2 id=&quot;怎么样将交易的信息告诉所有人&quot;&gt;怎么样将交易的信息告诉所有人？&lt;/h2&gt;
+
+&lt;p&gt;这个问题其实相对简单，并不用每个人都要认识所有人，只要认识身边的人就行，采用一传十，十传百的方法。过一段时间整个网络里的人就都知道了。技术上，这里可以了解一下IRC协议。&lt;/p&gt;
+
+&lt;h2 id=&quot;怎么防止有人记假账&quot;&gt;怎么防止有人记假账？&lt;/h2&gt;
+
+&lt;p&gt;首先，比特币是没办法100%保证不能作假的。但是他的机制可以让作假的成本非常非常高，高到几乎不可能。下面就来说说这个机制。首先，所有的账单（区块）都记录一下他的前一个账单的数字签名，这样整个账单（区块）就形成了一个链——&lt;strong&gt;区块链&lt;/strong&gt;。上面那个例子“A给B10块钱”，假设现在记账的是C。他改成了“A给C10块钱”。因为记账是要解数学题的，C如果要保证账记成“A给C10块钱”的化，就要提高他的计算能力，至少要超过51%的人才有概率上稳定的记假账成功率。因为这个链的存在，我们可以发现，要篡改链中越早的记录越难。因为改了，数字签名就变了，数字签名变了后面的区块就不认了，要后面的区块认的话得把后面的区块也一并改了。这要求的算力就加倍了，相当于需要全网100%的算力，再往前需要更多。&lt;/p&gt;
+
+&lt;h2 id=&quot;两个人同时解题成功怎么办&quot;&gt;两个人同时解题成功怎么办？&lt;/h2&gt;
+
+&lt;p&gt;如果有AB两个人同时解题成功，那以谁的为准呢？首先我们考虑下，当你解题成功，你就得告诉全世界你解题成功了，剩下的人都别浪费时间了。从我的基础上记下一笔账，开始新的一轮解题吧。ok，收到的人就开始新的解题。因为AB两人是同时解题成功并分别向全世界广播的（一传十 十传百的方式，不是所有人同时知道这件事儿），所以有一些人会在A的基础上接着解题，有些人会在B的基础上接着解题。并且肯定会有新的解题成功的人出来，这时就简单了，后来的C是在谁的基础上解题成功的，就以谁的为准。但是，还是可能会有C和D同时分别从A和B基础上解出来的情况（概率比之前小了很多）。那怎么办呢？比特币规定，谁先在后面攒够6个区块，谁的就真正生效并获得奖励！（所以，挖矿有很多空欢喜的情况~）&lt;/p&gt;
+
+&lt;h2 id=&quot;解题能力越来越高导致比特币发行越来越块进而导致通货膨胀怎么办&quot;&gt;解题能力越来越高，导致比特币发行越来越块，进而导致通货膨胀怎么办？&lt;/h2&gt;
+
+&lt;p&gt;我们知道，挖矿解的是Hash运算的题，就是耗CPU的题，而由于摩尔定律得知，计算能力肯定是呈指数级增长的。如果记一笔就给一定奖励的话。比特币会被迅速发行，迅速贬值。为了解决这个问题，比特币首先规定。比特币一共就只发行2100万枚。由于总量的控制，决定了不会再有通货膨胀的问题。为了延长可发行时间，挖矿的奖励会进行递减。比如09年是50块，现在是12.5块。另外一个重要的控制发行速度的是&lt;strong&gt;解题的难度&lt;/strong&gt;。比特币系统通过动态设置解题难度来达到每个区块产生的时间大约为10分钟。（如果发现区块产生越来越快（可能有庄家从CPU升级成了GPU^_^））就增大难度系数。反之的减小（可能庄家觉得没赚头，退场了）。通过这个规则可以计算出来（10分钟一个区块，产生区块的奖励递减）大概到2040年，挖矿将不能再获得新发行的比特币奖励。中本聪的设想是到那个时候，矿工们就靠手续费活着了。&lt;/p&gt;
+
+&lt;h1 id=&quot;区块链技术&quot;&gt;区块链技术&lt;/h1&gt;
+
+&lt;p&gt;从上面的分析可以看到，区块链本质上是一个分布式的数据库（区块链更多的是一种思想或者说协议），但世面上已经有很多分布式的数据库了，它有什么特点呢？&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;他是开放的，任何人都可以给这个数据库添加节点并成为这个数据库的一部分&lt;/strong&gt;。这点非常重要。决定了这个网络不会受任何一个人控制，因为任何一个人都控制不了别人通过往这个网络里增加节点来制衡你。&lt;/li&gt;
+  &lt;li&gt;由于&lt;strong&gt;挖矿难度的存在&lt;/strong&gt;，和上面一点的原因，决定了这个数据库里的数据不能被某个人恶意篡改，一旦加入区块链，就成历史了，发生了就发生了，谁也改变不了。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;区块&quot;&gt;区块&lt;/h2&gt;
+
+&lt;p&gt;区块链就是一个个区块连成的链，如果说区块链是数据库的话，区块就像数据库里面的存储单元。每一个区块分为两部分：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;区块头：存储区块本身的元信息，比如创建时间，&lt;strong&gt;上一个区块的Hash&lt;/strong&gt;，&lt;strong&gt;区块体的Hash&lt;/strong&gt; 等等&lt;/li&gt;
+  &lt;li&gt;区块体：就是这个区块里存储的数据了。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;稍微了解Hash算法的人应该知道，只要改变了原文，Hash值就会发生变化，而每个区块的区块头里都记录了上一个区块的Hash。所以如果上一个区块的内容（包括区块头和区块体）有任何篡改的话，Hash值就会变，这条链就断了。所以要篡改某个区块里的数据的话，得将他后面的所有区块都改了才行。由于挖矿难度的原因，这几乎不可能。&lt;/p&gt;
+
+&lt;h2 id=&quot;挖矿和难度系数&quot;&gt;挖矿和难度系数&lt;/h2&gt;
+
+&lt;p&gt;通过设置难度系数来降低区块生成的原因有两个重要意义：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;增加数据篡改难度&lt;/li&gt;
+  &lt;li&gt;降低区块的产生速度从而降低分叉（两个人同时挖矿成功导致的冲突）的概率&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这个难度系数从技术上来说是怎么实现的呢？挖矿其实就是计算Hash。这是CPU的基本工作，其实是很快的。难度系数就是规定不是计算出一个Hash就行，而是计算出的这个Hash要小于一个目标值才可以，而这个&lt;code class=&quot;highlighter-rouge&quot;&gt;目标值=一个常数/难度系数&lt;/code&gt;。所以难度系数越大，目标值越小，计算出的Hash符合标准的概率就越小。可能要计算10亿次才能有一次是符合标准的。真的是非常难。而且可以通过调节这个难度系数的大小来调节Hash符合标准的概率——也就是难度。&lt;/p&gt;
+
+&lt;h2 id=&quot;区块链的容量吞吐率和效率&quot;&gt;区块链的容量，吞吐率和效率&lt;/h2&gt;
+
+&lt;p&gt;区块链要求每一个节点都保存所有的数据，因为要验证交易有效性时需要追溯整个链条，计算余额。这点决定了这个数据库的容量不可能太大。目前比特币的大概是100G，但随着交易的大规模继续进行，这会是一个持续增加且不可逆转的过程，必然会有一天大到不可接受。（这点我现在还没想明白怎么解）&lt;/p&gt;
+
+&lt;p&gt;为了保证数据的一致性和不可篡改性，必须要让区块的产生维持在一个比较低的水平。那整个区块链作为数据库的写入效率就会很低。拿比特币来说，10分钟产生一个区块，一个区块1M，假设一笔交易需要1k。那这个数据库的&lt;code class=&quot;highlighter-rouge&quot;&gt;TPS=1024/10/60=1.7&lt;/code&gt; 这对一般互联网应用来说，简直是无法接受的。所以为了增加系统的吞吐率，只能增加每个区块的体积，比如从1M变成100M就提升了100倍的TPS。但这也不能无限提升啊，因为区块越大，在区块未生成阶段包含的记录就越多，而这部分记录的状态是不确定的（可以理解为写入了内存但还没落盘），这会严重降低整个系统的稳定性。&lt;/p&gt;
+
+&lt;p&gt;这就提到了效率，由于数据写入区块链要等区块生成才算持久化成功。为了保证安全，甚至是几个区块生成之后才算成功，这个时间是很长的，（比特币规定6个区块之后才算确定，10分钟一个区块，6个就过去一小时了）所以用区块链做数据库的应用，必须不要求数据写入后实时读取才行。&lt;/p&gt;
+
+&lt;h2 id=&quot;谁愿意加入区块链来挖矿&quot;&gt;谁愿意加入区块链来挖矿？&lt;/h2&gt;
+
+&lt;p&gt;在比特币的应用场景中，挖矿是由比特币作为奖励的，根据目前的奖励$20000*12.5，折合人民币也有几百万了。所以很多人愿意去挖矿。那其他应用场景呢？必须要有一个合适的奖励，才会有不同的人来加入到这个网络中。否则，用区块链作为数据库就完全没有意义了。&lt;/p&gt;
+
+&lt;h1 id=&quot;总结&quot;&gt;总结&lt;/h1&gt;
+
+&lt;p&gt;本文更多的是从技术层面去讨论比特币和区块链这个东西，并不涉及到比特币本身作为一种货币或金融工具的原理和价值。分析了一下区块链技术的思想和应用限制。最后有一个重要的事情我现在也没想通——为什么区块链就火了？很多人说他和互联网急速，AI技术这些东西是一样的存在，将是下一个能改变世界的东西。恕我眼拙没看到它潜力在哪！&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 12 Feb 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/02/12/blockchain/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/12/blockchain/</guid>
+        
+        <category>区块链</category>
+        
+        <category>分布式</category>
+        
+        
+        <category>Program</category>
+        
+      </item>
+    
+      <item>
+        <title>薪水，奖金，红包和股票</title>
+        <description>&lt;p&gt;公司给员工的金钱报酬中，大概可以分为常见四类形式：薪水，奖金，红包和股票。这些不同的形式是有不同的作用的。&lt;/p&gt;
+
+&lt;h1 id=&quot;薪水&quot;&gt;薪水&lt;/h1&gt;
+
+&lt;p&gt;薪水是最基本的。是公司付给员工当前工作的酬劳。说白了就是现在干的活值多少钱。钱多钱少基本是由所做的工作内容决定的。岗位+级别决定薪水范围。&lt;/p&gt;
+
+&lt;h1 id=&quot;奖金&quot;&gt;奖金&lt;/h1&gt;
+
+&lt;p&gt;奖金和薪水不同，是额外的，奖励给工作做得出色的人的。只有做得好的人才有，不能吃大锅饭。奖金可以作为公司价值观的指挥棒。&lt;/p&gt;
+
+&lt;h1 id=&quot;红包&quot;&gt;红包&lt;/h1&gt;
+
+&lt;p&gt;并不是所有公司都会有红包机制。红包和奖金一样都是除薪水以外的“现金”。但和奖金不同的是红包应该是全员的。触发点是公司本身遇到值得庆祝的事儿。比如提前超额完成业务目标等等。是为了感谢员工而设置的。&lt;/p&gt;
+
+&lt;h1 id=&quot;股票&quot;&gt;股票&lt;/h1&gt;
+
+&lt;p&gt;互联网公司一般都有股票期权机制了。一般都是一次授予，分若干次（年）到账，所以他的最大的特点在于延时性。所以激励的是员工未来的发展与潜力。另外股票的j价值和公司的业绩挂钩，也能激励员工忠诚和敬业。&lt;/p&gt;
+
+&lt;p&gt;所以，看起来不同类型的人，应该给不同的报酬组合。比如能力好潜力不高的给多薪水少股票，潜力好而能力还不行的给多股票少薪水。但在实际操作中，貌似能力好决定的是入职的薪水，然后能力好+价值观好，能同时得到奖金，股票和加薪。能力和潜力往往同时体现同一个人身上。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 11 Feb 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/02/11/offer/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/11/offer/</guid>
+        
+        
+        <category>Team Management</category>
+        
+      </item>
+    
+      <item>
+        <title>绩效</title>
+        <description>&lt;p&gt;虽然18年都已经过去一个月又几天了，但国人还是更倾向于使用农历来定义一年。所以现在是年底，适合总结规划的年底，浮躁的年底，绩效考评的年底。&lt;/p&gt;
+
+&lt;p&gt;以前，我作为个人贡献者，心比较大。奉行的是 &lt;strong&gt;但行好事，莫问前程。&lt;/strong&gt; 的策略。一心只想着做好工作，老大不会亏待我的，事实也确实证明，这个世界总体上是趋于公平的。几年下来，绩效貌似也还不错。现在开始管理一个团队，开始要给别人打绩效了。才开始认真的思考这个问题。&lt;/p&gt;
+
+&lt;p&gt;首先，我认为绩效是一个工具。是管理者和员工的一个沟通工具。通过绩效成绩，和绩效沟通，管理者能够准确的告诉员工近期的表现在管理者看来是什么水平。员工也能准确的获知这个信息。固定的考核周期（我们是一个季度一次）也迫使管理者定期回顾和关注员工的表现，出现问题及时辅导修正。&lt;/p&gt;
+
+&lt;p&gt;绩效作为一个工具本身没有好坏，只有使用的人的使用方式有好坏。不好的使用方式会让员工觉得是个负担，就是老板克扣和剥削我的工具，而好的使用方式会让员工更有目标感，也能激励员工向前。&lt;/p&gt;
+
+&lt;p&gt;我们公司是一个季度考评一次，绩效分为A+， A， B， C， C-五个级别，其中A+和C-有严格的名额限制和需要充分的理由。每个级别对应一个绩效系数区间，最低0，最高3。团队初始值和考评之后平均值都归一。作为研发团队，很难有一个客观的评价体系，来确定这个系数的值。更多的还是靠主观。（这里面还是有很大问题的，需要努力加入一些客观指标）那具体打分操作的时就存在两种策略。一种先考虑哪些人做的不够好，需要被扣掉多少多少系数，然后再把这些&lt;strong&gt;抠出来&lt;/strong&gt;的系数补给那些表现好的同学。而我一开始就把大家全变成0.8，然后在思考每个人在这个季度的表现，哪些表现好的地方。把这些分加回去。第一种策略倾向于让管理者&lt;strong&gt;挑下属的毛病&lt;/strong&gt;。而第二种则让管理者&lt;strong&gt;想下属的好处&lt;/strong&gt;。这就是我选第二种的原因。&lt;/p&gt;
+
+&lt;p&gt;打分，只是绩效管理的一小部分，只打分是完全不能完成绩效管理的目标的。更重要的是绩效沟通。上面提到，我认为绩效本质上就是一个沟通工具。具体执行上沟通分两步，第一步是在季度之初，应该明确每位同学的目标与期望。第二步是季度末，结合目标期望和实际表现，对给出的分值做出解释。并提供下一步的行动建议。做的好的继续，哪里不够完美该怎么改进。对研发的管理，可以参考google的OKR。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 02 Feb 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/02/02/Performance/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/02/Performance/</guid>
+        
+        
+        <category>Team Management</category>
+        
+      </item>
+    
+      <item>
+        <title>解决 IntelliJ IDEA Tomcat 控制台中文输出乱码问题</title>
+        <description>&lt;p&gt;先说办法，再说原理！&lt;/p&gt;
+
+&lt;h1 id=&quot;办法&quot;&gt;办法&lt;/h1&gt;
+
+&lt;p&gt;修改tomcat启动脚本：catalina.sh文件，找到&lt;code class=&quot;highlighter-rouge&quot;&gt;JAVA_OPTS&lt;/code&gt; 增加文件编码参数：&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;JAVA_OPTS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$JAVA_OPTS&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; -Dfile.encoding=UTF-8&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;就ok了。&lt;/p&gt;
+
+&lt;p&gt;或者，在idea启动tomcat时，设置这个参数：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ws2.sinaimg.cn/large/006tNc79ly1fgu0dj6siwj31kw0rrwh9.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;原理&quot;&gt;原理&lt;/h1&gt;
+
+&lt;p&gt;Idea控制台里的日志默认是从tomcat的localhost.log 和 catalina.log 两个文件读出来的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006tNc79ly1fgu03qo44gj31820ngdh0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;一般，我们的IDEA配置的编码是UTF-8.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ws3.sinaimg.cn/large/006tNc79ly1fgu06blyblj318e10qjtz.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果tomcat输出的catalina日志文件不是UTF-8的，在console里看，就会出现乱码的情况，所以，应该将tomcat生成文件的编码改了。&lt;/p&gt;
+
+&lt;h1 id=&quot;扩展&quot;&gt;扩展&lt;/h1&gt;
+
+&lt;h2 id=&quot;idea启动的tomcat生成的catalinalog文件在哪呢&quot;&gt;idea启动的tomcat生成的catalina.log文件在哪呢？&lt;/h2&gt;
+
+&lt;p&gt;在console中观察启动日志，其中一个参数叫 &lt;code class=&quot;highlighter-rouge&quot;&gt;CATALINA_BASE&lt;/code&gt; 这个地址就是了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ws4.sinaimg.cn/large/006tNc79ly1fgu0h1snp7j318q0m243s.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;找到下面的logs目录，文件就躺在那。看一下修改前和修改后，生成的问题编码有什么不同：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006tNc79ly1fgu0isa29tj30o005qaap.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 22 Jun 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/06/22/fix-messy-code-in-idea-tomcat-output/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/22/fix-messy-code-in-idea-tomcat-output/</guid>
+        
+        
+        <category>Programing</category>
+        
+      </item>
+    
+      <item>
+        <title>用快捷键在Finder里显示隐藏文件</title>
+        <description>&lt;p&gt;在 macOS Sierra 之前，要在 Finder 中查看隐藏文件，都要输入一大坨命令：&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults write com.apple.finder AppleShowAllFiles &lt;span class=&quot;nt&quot;&gt;-bool&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;用完之后还要再输入一坨再隐藏起来，关键因为用的频率不高，所以每次要用之前还要把命令找出来，太过麻烦，以至于后面我都不用它看隐藏文件了，用&lt;code class=&quot;highlighter-rouge&quot;&gt;ls -a&lt;/code&gt;反而更方便些。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;燃鹅&lt;/strong&gt;，现在不一样了。&lt;/p&gt;
+
+&lt;p&gt;在 macOS Sierra，我们可以使用快捷键&lt;code class=&quot;highlighter-rouge&quot;&gt;⌘⇧.&lt;/code&gt;(&lt;code class=&quot;highlighter-rouge&quot;&gt;Command + Shift + .&lt;/code&gt;) 来快速（在 Finder 中）显示和隐藏隐藏文件了。&lt;/p&gt;
+
+&lt;p&gt;简直不能更方便。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 05 May 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</guid>
+        
+        
+        <category>Programing</category>
+        
+      </item>
+    
+      <item>
+        <title>精进</title>
+        <description>&lt;p&gt;参加一个读书活动，10天读完一本书，今天第9天，昨天已将《精进》读完，做一个总结，把书中珠玑记录下来。明天最后一天，来个书评感悟，完美~ ^_^&lt;/p&gt;
+
+&lt;p&gt;开篇第一章讲的是，我们要立一个五年期的目标。在平时尽量少做半衰期短的事儿，找到并保持至少一项长期的爱好。然后说的关于选择的智慧，就是要通盘考虑，高要求，不凑合。把消费型兴趣变成生产型兴趣。第三章讲的是执行力。立即行动。“买房最好的时机是十年前，其次是现在”。第四章比较无聊。观点是要学以致用。然后介绍了一些具体的学习方法。接下来的第五章和第四章类似。说的是思维锻炼的方法。反角还不如看《暗时间》。到了第六章，这是本书剩下的最后一章干货了。说的是别傻努力，骗自己已经很努力了。其实没有效果。把木桶原理换个视角，变成长板原理。提出一件事，如果要“坚持”，那肯定长久不了。最后一章感觉挺水的。感觉像写给大学生的鸡汤。鸡精味太冲了！&lt;/p&gt;
+
+&lt;p&gt;这段时间悟出一个道理。其实，看一本书，如果能真正记住一句话。或者说影响你一个观点，就足够了。从这个层面来说。这本书还是挺值得一读的。推荐给广大“普通人”。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/006tNbRwly1fer8lxv5hbj31kw2n07wh.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 18 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/04/18/jing-jin/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/18/jing-jin/</guid>
+        
+        
+        <category>Reading</category>
+        
+      </item>
+    
+      <item>
+        <title>finder技巧若干</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Command + Shift + G 跳转到指定路径。
+ 类似windows在地址栏上直接输入地址
+ &lt;img src=&quot;https://ww1.sinaimg.cn/large/006tNbRwly1fe1gfscb36j30jc094t95.jpg&quot; alt=&quot;&quot; /&gt;
+ &lt;img src=&quot;https://ww4.sinaimg.cn/large/006tNbRwly1fe1gh4siqkj30nu0703yf.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;文件直接拖动到shell获取改文件的完整路径
+ &lt;img src=&quot;https://ww3.sinaimg.cn/large/006tNbRwly1fe1gkh7z13j30tc080wes.jpg&quot; alt=&quot;&quot; /&gt;
+ &lt;img src=&quot;https://ww3.sinaimg.cn/large/006tNbRwly1fe1gjemx2rj30si050wem.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;安装go2shell 方便从finder跳转到shell
+ 不是go to hell ^_^
+ &lt;img src=&quot;https://ww2.sinaimg.cn/large/006tNbRwly1fe1gmhoiaqj30cu034a9v.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 27 Mar 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/03/27/some-tricks-for-finder-in-mac/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/03/27/some-tricks-for-finder-in-mac/</guid>
+        
+        
+        <category>Programing</category>
+        
+      </item>
+    
+  </channel>
+</rss>
