@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="赖晨东的博客 | 咖啡不苦">
+    <meta name="keywords"  content="咖啡不苦, 赖晨东, laichendong, 博客, 个人网站, 互联网">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <title>咖啡不苦</title>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js "></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">咖啡不苦</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/">Categories</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>咖啡不苦</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading">世界那么大，我想去看看。</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+    <!-- PostList Container -->
+    		<div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+    			
+<div class="post-preview">
+    <a href="/2017/04/18/jing-jin/">
+        <h2 class="post-title">
+            精进
+        </h2>
+        
+        <div class="post-content-preview">
+            参加一个读书活动，10天读完一本书，今天第9天，昨天已将《精进》读完，做一个总结，把书中珠玑记录下来。明天最后一天，来个书评感悟，完美~ ^_^
+
+开篇第一章讲的是，我们要立一个五年期的目标。在平时尽量少做半衰期短的事儿，找到并保持至少一项长期的爱好。然后说的关于选择的智慧，就是要通盘考虑，高要求，不凑合。把消费型兴趣变成生产型兴趣。第三章讲的是执行力。立即行动。“买房最好的时机是十年前，其...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2017-04-18
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2017/03/27/some-tricks-for-finder-in-mac/">
+        <h2 class="post-title">
+            finder技巧若干
+        </h2>
+        
+        <div class="post-content-preview">
+            
+  
+    Command + Shift + G 跳转到指定路径。
+ 类似windows在地址栏上直接输入地址
+ 
+ 
+  
+  
+    文件直接拖动到shell获取改文件的完整路径
+ 
+ 
+  
+  
+    安装go2shell 方便从finder跳转到shell
+ 不是go to hell ^_^
+ 
+  
+
+
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2017-03-27
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2017/03/13/imooc-analyse-by-python/">
+        <h2 class="post-title">
+            慕课网分析
+        </h2>
+        
+        <h3 class="post-subtitle">
+            Python作业
+        </h3>
+        
+        <div class="post-content-preview">
+            学习能力应该是现代人最重要的一种能力没有之一了。现在基于互联网的在线学习正方兴未艾。前两年，达内、传智播客这些培训机构基本上是干掉了计算机的本科教育。很多本科毕业的学生在找到“码农”工作之前都要去这些培训机构回一次炉。通过这些机构速成出来的学生，就像练了“21天学会XXX”宝典一样。如果自身的再次学习能力不强，很容易沦为“搬砖汉”。近几年，随着互联网的发展，各种在线教育网站层出不穷。内容创业...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2017-03-13
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2017/02/06/2017-OKR/">
+        <h2 class="post-title">
+            2017-OKR
+        </h2>
+        
+        <div class="post-content-preview">
+            目标1：锻炼
+
+
+  KR1：一年总共跑步1000公里   完成40%+
+  KR2：一次能跑10公里
+  KR3：学会自由泳  没完成
+
+
+目标2：完成旅行计划
+
+
+  KR1：出国一次，暂定巴厘岛 感觉非常值，决定每年至少出去一次。
+  KR2：600公里以上自驾游一次，达达线 原计划8月份去，老婆怀孕了，取消！
+  KR3：学习照片管理和处理软件LightRoom  没完成  暂时放弃...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2017-02-06
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/07/31/improve-ability-of-innovating/">
+        <h2 class="post-title">
+            提升创新能力
+        </h2>
+        
+        <h3 class="post-subtitle">
+            《成为技术领导者》读书笔记
+        </h3>
+        
+        <div class="post-content-preview">
+            提升创新能力有三个方法：犯错，剽窃, 交配
+
+犯错的意思是说要去试错，有创意的犯错，从犯错中发现创新想法。
+
+剽窃的意思是借鉴别人的思路，别人的想法，形成自己的创新想法。
+
+交配是指让多种不同的想法进行“交配”产生新的创新想法。
+
+这三者和“创新的三大障碍”是一一对应的。如果不能认识到自己，那就不能意识到自己在犯错。更别提从犯错中发现创新想法了。
+
+如果只相信自己，各种问题都给出自己习惯上的...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2016-07-31
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/07/29/effective-leadership/">
+        <h2 class="post-title">
+            有效领导
+        </h2>
+        
+        <h3 class="post-subtitle">
+            领导力进阶之有效领导
+        </h3>
+        
+        <div class="post-content-preview">
+            知识点
+
+
+  没有最好的药，只有对症的药。没有最好的领导方式，只有最有效的领导方式
+  员工大都能放进 意愿和能力 两个维度组成的4个象限里
+  领导方式大都能放进 支持和指导 两个维度组成的4个象限里
+  低能力高意愿vs高指导低支持   低能力低意愿vs高指导高支持  高能力低意愿vs低指导高支持 高能力高意愿vs低指导低支持
+
+
+体会
+
+
+  不同阶段的员工应该用不同的领导风格对待
+...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2016-07-29
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/07/29/culture-is-air/">
+        <h2 class="post-title">
+            企业文化就是周围的空气
+        </h2>
+        
+        <h3 class="post-subtitle">
+            领导力进阶之文化大讲堂
+        </h3>
+        
+        <div class="post-content-preview">
+            领导力培训里有一个环节叫“文化大讲堂”，我听到这个名称的第一反应就是“这一定是这个培训中最无聊的部分了。”，做讲堂的老师是一个HR高管，由于时间冲突，第一天还没讲成。我心里还阴暗的想，“果不其然！”
+
+但是听完智晖总一个小时的演讲。我已经被深深的折服了。这显然是这次培训中最精彩的部分
+
+她首先从她个人经历出发，讲了她的家庭，她的职业经历，为什么在千橡最低谷的时候来北京，最后，她让我们猜，她这...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2016-07-29
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/07/27/three-obstacles-of-innovating/">
+        <h2 class="post-title">
+            创新的三大障碍
+        </h2>
+        
+        <h3 class="post-subtitle">
+            《成为技术领导者》笔记
+        </h3>
+        
+        <div class="post-content-preview">
+            关于创新，总共有三大障碍，首当其冲的就是不能正确认知自己，看不到自己。这个怎么说？我们在做事时，往往不能跳出来审视自己正在做的事情是否值得，是否有足够的产出。比如作家一直在纠结写一个惊艳的开头，或者干脆对着稿纸发呆而不动笔；又比如程序员对一个问题调试跟踪了一周，也没想起来问问别人；再比如我们总是忙于开各种各样的会议却不知道是为了什么，会议的结果是什么。
+
+自己很难发现这些问题，越是效率低下时...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2016-07-27
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/07/27/manager-leader-coach/">
+        <h2 class="post-title">
+            经理、领导、教练
+        </h2>
+        
+        <h3 class="post-subtitle">
+            领导力进阶之角色转换
+        </h3>
+        
+        <div class="post-content-preview">
+            我们在自己的专业领域，一开始往往都是孤军奋战，一个人搞定各种事儿，对团队做出贡献。这时候叫 个人贡献者。然后我们从优秀的个人贡献者被提拔为 管理者
+
+我们作为管理者，每天所做的各种管理行为，其实背后是由3种角色来支撑的——经理，领导，教练。
+
+经理，对应的英文是 manager 是man+age+r， 哈哈，这貌似是说一个人上了年纪就可以当经理了！其实真的差不多。 经理关注的是事儿，关注的是...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2016-07-27
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/07/16/i-cant-beacause/">
+        <h2 class="post-title">
+            《成为技术领导者》
+        </h2>
+        
+        <div class="post-content-preview">
+            在成长的过程中，通常伴随着痛苦！而我们会找各种理由来逃避这些痛苦。同时，也逃避了成长！
+以下是一些最典型的借口：
+
+我不是主管
+最常见的借口莫过于说我不是主管，我没有头衔，所以我不能（不用）领导。实际上，_潜在的领导_比_被任命的领导_要多得多。
+人们往往把最薄弱的的环节和最最关键的的环节弄混淆。比如，发动机中火花塞最容易坏，他是最薄弱的环节，但不是最关键的环节。设计良好的发动机，可能就没有...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2016-07-16
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/">&larr; Newer Posts</a>
+    </li>
+    
+    
+    <li class="next">
+        <a href="/page3">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+
+    		</div>
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                            
+                                <a href="/tags/#mac" title="mac" rel="1">
+                                    mac
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#java" title="java" rel="1">
+                                    java
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#区块链" title="区块链" rel="1">
+                                    区块链
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#分布式" title="分布式" rel="1">
+                                    分布式
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#总结" title="总结" rel="1">
+                                    总结
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#OKR" title="OKR" rel="1">
+                                    OKR
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#理财" title="理财" rel="1">
+                                    理财
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#收益计算" title="收益计算" rel="1">
+                                    收益计算
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#思维模式" title="思维模式" rel="1">
+                                    思维模式
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#尝试" title="尝试" rel="1">
+                                    尝试
+                                </a>
+                            
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        
+                            <img src="/img/avatar.jpg" />
+                        
+                        
+                            <p>世界那么大，我想去看看。</p>
+                        
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            
+                            <li>
+                                <a href="/feed.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://www.zhihu.com/people/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa  fa-stack-1x fa-inverse">知</i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="http://weibo.com/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://github.com/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://su.gallery/">Su</a></li>
+                    
+                        <li><a href="http://mida.re/">乱序</a></li>
+                    
+                        <li><a href="http://qianduan.guru/">前端外刊评论</a></li>
+                    
+                        <li><a href="http://lingyu.wang/">天镶的博客</a></li>
+                    
+                        <li><a href="http://hmqk1995.github.io">Luke 的自留地</a></li>
+                    
+                        <li><a href="http://ebnbin.com/">Ebn's Blog</a></li>
+                    
+                        <li><a href="http://blog.smdcn.net">SmdCn's Blog</a></li>
+                    
+                        <li><a href="http://xieminis.me/">解旻的博客</a></li>
+                    
+                        <li><a href="http://dhong.co">DHong Say</a></li>
+                    
+                        <li><a href="http://ingf.github.io/">尹峰以为</a></li>
+                    
+                        <li><a href="http://wepiaofei.github.io/blog/">前端神盾局</a></li>
+                    
+                </ul>
+                
+    		</div>
+	</div>
+</div>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/laichendong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="http://weibo.com/laichendong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+
+                    
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/laichendong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/laichendong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 咖啡不苦 2019 |
+                    Theme by <a target="_blank" href="http://huangxuan.me">Hux</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+<!-- Baidu 统计 -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = '3e6b8690197257a33a1814bd8d395361';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+<!-- Side Catalog -->
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="赖晨东的博客 | 咖啡不苦">
+    <meta name="keywords"  content="咖啡不苦, 赖晨东, laichendong, 博客, 个人网站, 互联网">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <title>咖啡不苦</title>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js "></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">咖啡不苦</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/">Categories</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>咖啡不苦</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading">世界那么大，我想去看看。</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+    <!-- PostList Container -->
+    		<div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+    			
+<div class="post-preview">
+    <a href="/2016/07/12/paradise-lost/">
+        <h2 class="post-title">
+            失乐园
+        </h2>
+        
+        <div class="post-content-preview">
+            看完的书需要有一些收获也好，有些念想也好。我想每看完一本，至少应该留下些什么吧。
+这次看完渡边淳一的《失乐园》，心情还是挺复杂的。不是很舒服，很虐心的感觉。
+两个人相爱，或者说被性吸引，以至于叛离现实生活，众叛亲离，最后一起自杀赴死！感觉人的感情实在太强大了。让人害怕。
+另外感觉日本小说都有一种魔力，能够构建起某种场，在阅读的时候一直是某种氛围或者某种情愫萦绕其上。
+很平实的词汇，很真实的细...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2016-07-12
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/07/11/server-side-html-to-image/">
+        <h2 class="post-title">
+            在服务端将HTML转成图片
+        </h2>
+        
+        <div class="post-content-preview">
+            有一些场景，需要将网页转换成图篇。比如为了兼容性把网页图表生成截图随邮件发送，网页热力图的底图等等。
+
+我想总不能搞个浏览器，将网页放进去然后截图吧。浏览器还不一定开放了这种接口呢。出于效率和规模的考虑，也不现实啊。
+
+然后搜了一下。发现一些办法：
+
+1. 使用awt或者swing
+思路基本上是现在 AWT or Swing 的Panel上显示网页，在把Panel输出为 image 文件。j...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2016-07-11
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/07/08/export-csv-and-open-in-ms-excel/">
+        <h2 class="post-title">
+            导出的CSV在excel中打开乱码
+        </h2>
+        
+        <div class="post-content-preview">
+            在项目中经常会遇到需要到导出excel的场景，为了简化和兼容性，常常会变成“导出csv”。
+这其中发现一个怪现象：UTF-8编码的csv文件用excel打开会乱码，而GBK编码的不会。
+作为高端大气的应用，显然不希望生成个GBK编码的文件啊。（GBK在我mac下用sublime打开也会是乱码的）
+在网上查到说excel是使用ANSI编码打开文件的。而ANSI在大陆就是GBK。so，貌似问题无...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2016-07-08
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/06/20/shell-software-how-to-auto-upgrade-with-github/">
+        <h2 class="post-title">
+            zsh等shell软件如何通过github实现自动更新功能
+        </h2>
+        
+        <div class="post-content-preview">
+            我的shell装了zsh,不用说，这是一个很棒的shell增强软件。注意到他和其他一些基于github的软件一样，貌似直接把github当成更新服务器了。这让我觉得很cool啊。就看了下大概是怎么实现的。
+
+1、如何检测更新
+要自动更新自然就要先能检测到软件有更新。如果自动升级选项开启的话，zsh会首先执行$ZSH/tools/check_for_upgrade.sh文件来检查是否有更新。
+...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2016-06-20
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/10/25/python/">
+        <h2 class="post-title">
+            东东学python
+        </h2>
+        
+        <div class="post-content-preview">
+            这是我看a byte of python的笔记，如果你也是java程序员，希望你能感到亲切。
+
+
+  单引号和双引号都可以做字符串字面量，三引号更强，里面可以随意使用单引号和双引号，还可以换行，用于文档字符串
+  格式化占位符用{位置|名字}，格式指定类似c，比如'{0:.3f}'.format(1.0/3)
+  命名习惯用下划线连接，而非驼峰方式或其他
+  分号可以用来分割行（语句），但强...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2015-10-25
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/09/09/set-syntax-highlight-in-jekyll/">
+        <h2 class="post-title">
+            jekyll设置语法高亮
+        </h2>
+        
+        <div class="post-content-preview">
+            2015年09月11日，重要更新：
+以下都是扯淡。现在jekyll已经原生支持语法高亮了。
+直接将代码放到  {% highlight language %} 和 {% endhighlight %} 之间就ok了。
+
+
+
+
+使用jekyll的人，我想大部分都应该经常和代码打交道吧。那代码高亮自然少不了，今天就讲讲如何在jekyll中配置代码高亮。
+
+代码高亮的工具有很多。jekyll原生支...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2015-09-09
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/09/06/thinking-on-work-over-time-2/">
+        <h2 class="post-title">
+            加班记（二）
+        </h2>
+        
+        <div class="post-content-preview">
+            今天又去公司处理了一个线上问题：我们依赖的一个接口可用率为0了！
+
+故事大概是这样的：我们依赖的一个写接口，最早主键是int类型的。虽然我们的sequence工具生成的是long型的数，但是为了“适应”接口就强转成int后再调用接口了。某一天，接口提供方意识到用int类型做为主键，随着业务发展很可能突破上限而造成麻烦。于是接口提供方将入参类型改成了long。于是我们的某位码农又将int强转成...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2015-09-06
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/08/29/write-your-blog-with-jekyll-and-github-pages/">
+        <h2 class="post-title">
+            用jekyll和github pages写博客
+        </h2>
+        
+        <div class="post-content-preview">
+            题外话，在当今这个微博都还没来得及高兴一下就被朋友圈拉下神坛的年代，说如何搭建自己的博客系统似乎已经太过于过时了。
+如果你有这样的想法，恐怕这篇文章不是非常适合你了。建议你把它关了去刷朋友圈。如果你和我一样，还是愿意折腾，并且愿意将折腾记录下来。那么，我们交个朋友吧。一起去刷朋友圈。
+
+工欲善其事，必先利其器。介绍一下我们要用到的两个工具。
+首先登场的是：github pages是githu...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2015-08-29
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/08/26/thinking-on-work-over-time/">
+        <h2 class="post-title">
+            加班记
+        </h2>
+        
+        <div class="post-content-preview">
+            故事还得从一个需求说起。
+某一天，运营提出一个需求要对某些商家下的所有商品打上某一个特殊标识用于做某个维度的销量统计。
+今天，线上出现了一些价格极低的商品，被下了很多订单。出事故了！
+这两者之间有什么关联？对，这两者之间并没什么卵关系。
+
+一
+关于批量处理数据。我想这是一个不能避免的东西。在业务的发展过程中肯定会存在对历史数据的批量处理，迁移甚至是处理+迁移的需要。
+如果是一个小得系统。就是...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2015-08-26
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2015/08/25/set-JAVA_HOME-on-mac/">
+        <h2 class="post-title">
+            mac下设置JAVA_HOME
+        </h2>
+        
+        <div class="post-content-preview">
+            应该是我装了xcode的原因，我没有显式安装java，mac里也有java的环境了。然后当我想在命令行下运行mvn的命令时。就提示我要设置JAVA_HOME了。
+当我去找JAVA_HOME在哪的时候。发现是“乱七八糟”的。高冷的mac怎么会那么烂？我肯定是错过了什么。于是求助于万能的google。果然：
+可以这样
+
+export JAVA_HOME="$(/usr/libexec/java_...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2015-08-25
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/page2">&larr; Newer Posts</a>
+    </li>
+    
+    
+    <li class="next">
+        <a href="/page4">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+
+    		</div>
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                            
+                                <a href="/tags/#mac" title="mac" rel="1">
+                                    mac
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#java" title="java" rel="1">
+                                    java
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#区块链" title="区块链" rel="1">
+                                    区块链
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#分布式" title="分布式" rel="1">
+                                    分布式
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#总结" title="总结" rel="1">
+                                    总结
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#OKR" title="OKR" rel="1">
+                                    OKR
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#理财" title="理财" rel="1">
+                                    理财
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#收益计算" title="收益计算" rel="1">
+                                    收益计算
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#思维模式" title="思维模式" rel="1">
+                                    思维模式
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#尝试" title="尝试" rel="1">
+                                    尝试
+                                </a>
+                            
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        
+                            <img src="/img/avatar.jpg" />
+                        
+                        
+                            <p>世界那么大，我想去看看。</p>
+                        
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            
+                            <li>
+                                <a href="/feed.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://www.zhihu.com/people/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa  fa-stack-1x fa-inverse">知</i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="http://weibo.com/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://github.com/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://su.gallery/">Su</a></li>
+                    
+                        <li><a href="http://mida.re/">乱序</a></li>
+                    
+                        <li><a href="http://qianduan.guru/">前端外刊评论</a></li>
+                    
+                        <li><a href="http://lingyu.wang/">天镶的博客</a></li>
+                    
+                        <li><a href="http://hmqk1995.github.io">Luke 的自留地</a></li>
+                    
+                        <li><a href="http://ebnbin.com/">Ebn's Blog</a></li>
+                    
+                        <li><a href="http://blog.smdcn.net">SmdCn's Blog</a></li>
+                    
+                        <li><a href="http://xieminis.me/">解旻的博客</a></li>
+                    
+                        <li><a href="http://dhong.co">DHong Say</a></li>
+                    
+                        <li><a href="http://ingf.github.io/">尹峰以为</a></li>
+                    
+                        <li><a href="http://wepiaofei.github.io/blog/">前端神盾局</a></li>
+                    
+                </ul>
+                
+    		</div>
+	</div>
+</div>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/laichendong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="http://weibo.com/laichendong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+
+                    
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/laichendong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/laichendong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 咖啡不苦 2019 |
+                    Theme by <a target="_blank" href="http://huangxuan.me">Hux</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+<!-- Baidu 统计 -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = '3e6b8690197257a33a1814bd8d395361';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+<!-- Side Catalog -->
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

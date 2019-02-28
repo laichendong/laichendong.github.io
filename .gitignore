@@ -1,6 +1,6 @@
 .idea/
 ### Jekyll template
-_site/
+#_site/
 .sass-cache/
 .jekyll-metadata
 crypt_posts.sh

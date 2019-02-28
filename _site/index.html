@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="赖晨东的博客 | 咖啡不苦">
+    <meta name="keywords"  content="咖啡不苦, 赖晨东, laichendong, 博客, 个人网站, 互联网">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <title>咖啡不苦</title>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js "></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">咖啡不苦</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/">Categories</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>咖啡不苦</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading">世界那么大，我想去看看。</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+    <!-- PostList Container -->
+    		<div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+    			
+<div class="post-preview">
+    <a href="/2019/02/14/unflattening/">
+        <h2 class="post-title">
+            思维模式决定了我们的眼界
+        </h2>
+        
+        <div class="post-content-preview">
+            思维模式决定了我们的眼界
+
+https://book.douban.com/subject/30327868/
+
+是哥伦比亚大学一篇教育学专业的博士生论文，用漫画的方式呈现。
+
+
+  社会给每个人固定的角色，我们被分门别类，放置在轨道上接受指令，按部就班的过完平面化的一生。单一的视角，狭隘而僵化的思维，使我们无法突破自己的局限，无限的潜能也被遏制，我们如同《平面国》中的居民，从不理解更高维度...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2019-02-14
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2018/08/06/sequence-generator/">
+        <h2 class="post-title">
+            Sequence Generator
+        </h2>
+        
+        <div class="post-content-preview">
+            Sequence（唯一id） 生成器
+
+在如今的分布式场景下，MySql分库分表非常常见。我们不能用MySql的auto increment字段，这是单表的。我们需要保证一个逻辑表的若干物理表里的数据的主键互相不重复。因为如果存在重复的情况，当物理表扩容或缩容导致数据移动并进一步导致两条拥有相同ID的数据进入到一张表里时，就会造成主键冲突。所以，我们需要一个全局的，高性能的唯一主键生成器。
+...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2018-08-06
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2018/02/24/interest-rate/">
+        <h2 class="post-title">
+            收益率，年化收益率，年利率，日息，三分利傻傻分不清楚
+        </h2>
+        
+        <div class="post-content-preview">
+            现在互联网理财的东西实在太多了，而各种概念对于我这种资质愚钝的人来说也是傻傻分不清楚，帮自己整理记录一下。
+
+本金
+
+本金好说，就是你投进去的真金白银。一般计为C
+
+收益
+
+收益也好说，就是用投资结束时拿到的钱V减去当初的本金。所以收益P= V-C
+
+收益率
+
+所以收益率就比较好理解了，就是收益占本金的比例。收益率K= P/C= (V-C)/C = V/C -1。
+
+这里注意，这个收益率前面...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2018-02-24
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2018/02/21/2018-okr/">
+        <h2 class="post-title">
+            2018 Okr
+        </h2>
+        
+        <div class="post-content-preview">
+            Objective 1 ：完成团队打造的目标
+
+
+  KR 1：将“从Why出发”，“不设限”，“Be Professional”的理念传递到每一个团队成员心里。
+  KR 2：丰富能力，补齐短板。团队拥有数据挖掘和AI建模的能力。
+  KR 3：打造自驱型团队，能在没有我的情况下按预期的良好运转10天以上。
+
+
+Objective 2 ： 完成自我学习的目标
+
+
+  KR 1：看（听）书不...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2018-02-21
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2018/02/21/2017-summary/">
+        <h2 class="post-title">
+            2017年总结：变化
+        </h2>
+        
+        <div class="post-content-preview">
+            变化
+
+总说这个世界上，唯一不变的就是变化。2017年，我的关键词就是变化。在这短短的一年里， 对我个人来说，发生了很多变化。为了跟上和适应这些变化，也收获良多。首先工作上，和大家一样经历了从（刚刚适应，或许还没完全适应的）事业部变到独立的一级部门平台生态部，又在年底从平台生态部升级成为现在的无界零售赋能事业部。部门变了，定位变了随着工作思路和方法也变化。和大家不一样的是从8月21号，我开始...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2018-02-21
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2018/02/12/blockchain/">
+        <h2 class="post-title">
+            比特币与区块链
+        </h2>
+        
+        <div class="post-content-preview">
+            现在的区块链，已经火到必须蹭一波热度的程度了。网上有太多的关于比特币和区块链的文章，但把事情说得通俗明白的没几个（可能是我太low看不懂？）下面我也来尝试说说看。一方面希望能说得更明白，另一方面也整理一下自己的思路。
+
+基本原理
+
+首先明确两个概念：比特币它是一种电子货币，你可以和人民币，美元什么的类比。不同的是他是去中心化的，人民币央行说印多少就印多少，而比特币没有一个“央行”来印钱。至于...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2018-02-12
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2018/02/11/offer/">
+        <h2 class="post-title">
+            薪水，奖金，红包和股票
+        </h2>
+        
+        <div class="post-content-preview">
+            公司给员工的金钱报酬中，大概可以分为常见四类形式：薪水，奖金，红包和股票。这些不同的形式是有不同的作用的。
+
+薪水
+
+薪水是最基本的。是公司付给员工当前工作的酬劳。说白了就是现在干的活值多少钱。钱多钱少基本是由所做的工作内容决定的。岗位+级别决定薪水范围。
+
+奖金
+
+奖金和薪水不同，是额外的，奖励给工作做得出色的人的。只有做得好的人才有，不能吃大锅饭。奖金可以作为公司价值观的指挥棒。
+
+红包...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2018-02-11
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2018/02/02/Performance/">
+        <h2 class="post-title">
+            绩效
+        </h2>
+        
+        <div class="post-content-preview">
+            虽然18年都已经过去一个月又几天了，但国人还是更倾向于使用农历来定义一年。所以现在是年底，适合总结规划的年底，浮躁的年底，绩效考评的年底。
+
+以前，我作为个人贡献者，心比较大。奉行的是 但行好事，莫问前程。 的策略。一心只想着做好工作，老大不会亏待我的，事实也确实证明，这个世界总体上是趋于公平的。几年下来，绩效貌似也还不错。现在开始管理一个团队，开始要给别人打绩效了。才开始认真的思考这个问题...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2018-02-02
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2017/06/22/fix-messy-code-in-idea-tomcat-output/">
+        <h2 class="post-title">
+            解决 IntelliJ IDEA Tomcat 控制台中文输出乱码问题
+        </h2>
+        
+        <div class="post-content-preview">
+            先说办法，再说原理！
+
+办法
+
+修改tomcat启动脚本：catalina.sh文件，找到JAVA_OPTS 增加文件编码参数：
+
+JAVA_OPTS="$JAVA_OPTS -Dfile.encoding=UTF-8"
+
+
+就ok了。
+
+或者，在idea启动tomcat时，设置这个参数：
+
+
+
+原理
+
+Idea控制台里的日志默认是从tomcat的localhost.log 和 catali...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2017-06-22
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/">
+        <h2 class="post-title">
+            用快捷键在Finder里显示隐藏文件
+        </h2>
+        
+        <div class="post-content-preview">
+            在 macOS Sierra 之前，要在 Finder 中查看隐藏文件，都要输入一大坨命令：
+
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
+
+用完之后还要再输入一坨再隐藏起来，关键因为用的频率不高，所以每次要用之前还要把命令找出来，太过麻烦，以至于后面我都不用它看隐藏文件了，用ls -a反而更方便些。
+
+燃鹅，现...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2017-05-05
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    
+    <li class="next">
+        <a href="/page2">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+
+    		</div>
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                            
+                                <a href="/tags/#mac" title="mac" rel="1">
+                                    mac
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#java" title="java" rel="1">
+                                    java
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#区块链" title="区块链" rel="1">
+                                    区块链
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#分布式" title="分布式" rel="1">
+                                    分布式
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#总结" title="总结" rel="1">
+                                    总结
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#OKR" title="OKR" rel="1">
+                                    OKR
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#理财" title="理财" rel="1">
+                                    理财
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#收益计算" title="收益计算" rel="1">
+                                    收益计算
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#思维模式" title="思维模式" rel="1">
+                                    思维模式
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#尝试" title="尝试" rel="1">
+                                    尝试
+                                </a>
+                            
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        
+                            <img src="/img/avatar.jpg" />
+                        
+                        
+                            <p>世界那么大，我想去看看。</p>
+                        
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            
+                            <li>
+                                <a href="/feed.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://www.zhihu.com/people/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa  fa-stack-1x fa-inverse">知</i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="http://weibo.com/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://github.com/laichendong">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://su.gallery/">Su</a></li>
+                    
+                        <li><a href="http://mida.re/">乱序</a></li>
+                    
+                        <li><a href="http://qianduan.guru/">前端外刊评论</a></li>
+                    
+                        <li><a href="http://lingyu.wang/">天镶的博客</a></li>
+                    
+                        <li><a href="http://hmqk1995.github.io">Luke 的自留地</a></li>
+                    
+                        <li><a href="http://ebnbin.com/">Ebn's Blog</a></li>
+                    
+                        <li><a href="http://blog.smdcn.net">SmdCn's Blog</a></li>
+                    
+                        <li><a href="http://xieminis.me/">解旻的博客</a></li>
+                    
+                        <li><a href="http://dhong.co">DHong Say</a></li>
+                    
+                        <li><a href="http://ingf.github.io/">尹峰以为</a></li>
+                    
+                        <li><a href="http://wepiaofei.github.io/blog/">前端神盾局</a></li>
+                    
+                </ul>
+                
+    		</div>
+	</div>
+</div>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/laichendong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="http://weibo.com/laichendong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+
+                    
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/laichendong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/laichendong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 咖啡不苦 2019 |
+                    Theme by <a target="_blank" href="http://huangxuan.me">Hux</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+<!-- Baidu 统计 -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = '3e6b8690197257a33a1814bd8d395361';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+<!-- Side Catalog -->
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
