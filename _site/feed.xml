@@ -5,8 +5,8 @@
     <description>赖晨东的博客 | 咖啡不苦</description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 28 Feb 2019 16:27:16 +0800</pubDate>
-    <lastBuildDate>Thu, 28 Feb 2019 16:27:16 +0800</lastBuildDate>
+    <pubDate>Thu, 28 Feb 2019 16:28:27 +0800</pubDate>
+    <lastBuildDate>Thu, 28 Feb 2019 16:28:27 +0800</lastBuildDate>
     <generator>Jekyll v3.8.1</generator>
     
       <item>
@@ -143,6 +143,48 @@
         <category>思维模式</category>
         
         <category>尝试</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>2019-flags</title>
+        <description>&lt;h4 id=&quot;自我修炼--兴趣爱好&quot;&gt;自我修炼 &amp;amp; 兴趣爱好&lt;/h4&gt;
+
+&lt;h5 id=&quot;看书&quot;&gt;看书：&lt;/h5&gt;
+&lt;p&gt;总数：6/9/12 本 
+追踪豆瓣读书，把2019年最受关注的书读了！&lt;/p&gt;
+
+&lt;h5 id=&quot;摄影&quot;&gt;摄影：&lt;/h5&gt;
+&lt;p&gt;买一个定焦镜头（55 1.8？），在图虫上发照片，&lt;strong&gt;系统的学习一下人像摄影&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;跑步&quot;&gt;跑步：&lt;/h5&gt;
+&lt;p&gt;总里程：300/500/700 km
+报名并完成一次半马&lt;/p&gt;
+
+&lt;h5 id=&quot;游泳&quot;&gt;游泳：&lt;/h5&gt;
+&lt;p&gt;能一口气完成50m蛙泳
+踩水10分钟以上
+学会自由泳姿势&lt;/p&gt;
+
+&lt;h4 id=&quot;生活&quot;&gt;生活：&lt;/h4&gt;
+
+&lt;h5 id=&quot;旅行-&quot;&gt;旅行 ：&lt;/h5&gt;
+&lt;p&gt;一次出国旅行，带上儿子
+上一次高原&lt;/p&gt;
+
+&lt;h5 id=&quot;资产增长&quot;&gt;资产增长：&lt;/h5&gt;
+&lt;p&gt;天津买房：总价110以内。中上学区  or  外围新房120以上
+摇到号换车：总价40W左右   glc 260&lt;/p&gt;
+
+&lt;h4 id=&quot;工作&quot;&gt;工作：&lt;/h4&gt;
+
+</description>
+        <pubDate>Tue, 01 Jan 2019 00:00:00 +0800</pubDate>
+        <link>http://laichendong.com/2019/01/01/2019-flags/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/01/01/2019-flags/</guid>
+        
+        <category>OKR</category>
         
         
       </item>
@@ -634,30 +676,6 @@
         <pubDate>Thu, 22 Jun 2017 00:00:00 +0800</pubDate>
         <link>http://laichendong.com/2017/06/22/fix-messy-code-in-idea-tomcat-output/</link>
         <guid isPermaLink="true">http://laichendong.com/2017/06/22/fix-messy-code-in-idea-tomcat-output/</guid>
-        
-        
-        <category>Programing</category>
-        
-      </item>
-    
-      <item>
-        <title>用快捷键在Finder里显示隐藏文件</title>
-        <description>&lt;p&gt;在 macOS Sierra 之前，要在 Finder 中查看隐藏文件，都要输入一大坨命令：&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults write com.apple.finder AppleShowAllFiles &lt;span class=&quot;nt&quot;&gt;-bool&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;用完之后还要再输入一坨再隐藏起来，关键因为用的频率不高，所以每次要用之前还要把命令找出来，太过麻烦，以至于后面我都不用它看隐藏文件了，用&lt;code class=&quot;highlighter-rouge&quot;&gt;ls -a&lt;/code&gt;反而更方便些。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;燃鹅&lt;/strong&gt;，现在不一样了。&lt;/p&gt;
-
-&lt;p&gt;在 macOS Sierra，我们可以使用快捷键&lt;code class=&quot;highlighter-rouge&quot;&gt;⌘⇧.&lt;/code&gt;(&lt;code class=&quot;highlighter-rouge&quot;&gt;Command + Shift + .&lt;/code&gt;) 来快速（在 Finder 中）显示和隐藏隐藏文件了。&lt;/p&gt;
-
-&lt;p&gt;简直不能更方便。&lt;/p&gt;
-</description>
-        <pubDate>Fri, 05 May 2017 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</link>
-        <guid isPermaLink="true">http://laichendong.com/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</guid>
         
         
         <category>Programing</category>
