@@ -3,10 +3,10 @@
   <channel>
     <title>咖啡不苦</title>
     <description>赖晨东的博客 | 咖啡不苦</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 28 Feb 2019 14:50:32 +0800</pubDate>
-    <lastBuildDate>Thu, 28 Feb 2019 14:50:32 +0800</lastBuildDate>
+    <link>http://laichendong.com/</link>
+    <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 28 Feb 2019 15:05:26 +0800</pubDate>
+    <lastBuildDate>Thu, 28 Feb 2019 15:05:26 +0800</lastBuildDate>
     <generator>Jekyll v3.8.1</generator>
     
       <item>
@@ -137,8 +137,8 @@
 
 </description>
         <pubDate>Thu, 14 Feb 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/02/14/unflattening/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/02/14/unflattening/</guid>
+        <link>http://laichendong.com/2019/02/14/unflattening/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/02/14/unflattening/</guid>
         
         <category>思维模式</category>
         
@@ -305,8 +305,8 @@
 &lt;p&gt;都看到这了，说明是真爱！那就给个赠品吧。flickr的Ticket Server设计。这我们这个设计有许多相似之处。供参考：http://code.flickr.net/2010/02/08/ticket-servers-distributed-unique-primary-keys-on-the-cheap/&lt;/p&gt;
 </description>
         <pubDate>Mon, 06 Aug 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/08/06/sequence-generator/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/08/06/sequence-generator/</guid>
+        <link>http://laichendong.com/2018/08/06/sequence-generator/</link>
+        <guid isPermaLink="true">http://laichendong.com/2018/08/06/sequence-generator/</guid>
         
         
       </item>
@@ -348,8 +348,8 @@
 &lt;p&gt;日息万3 = 年化 3/10000 * 365 =  10.95%；余额宝直接就是年化5%； 1分利上面算过了，年化12%； 而央行贷款利率也就是指的年化利率4.9%。这就比较清楚了。这么看，央行的基准贷款利率其实还是挺低的，就是银行按基准利率把钱贷给你和你把钱放到余额宝的收益是差不多的。&lt;/p&gt;
 </description>
         <pubDate>Sat, 24 Feb 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/24/interest-rate/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/24/interest-rate/</guid>
+        <link>http://laichendong.com/2018/02/24/interest-rate/</link>
+        <guid isPermaLink="true">http://laichendong.com/2018/02/24/interest-rate/</guid>
         
         <category>理财</category>
         
@@ -384,8 +384,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 21 Feb 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/21/2018-okr/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/21/2018-okr/</guid>
+        <link>http://laichendong.com/2018/02/21/2018-okr/</link>
+        <guid isPermaLink="true">http://laichendong.com/2018/02/21/2018-okr/</guid>
         
         <category>OKR</category>
         
@@ -434,8 +434,8 @@
 
 </description>
         <pubDate>Wed, 21 Feb 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/21/2017-summary/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/21/2017-summary/</guid>
+        <link>http://laichendong.com/2018/02/21/2017-summary/</link>
+        <guid isPermaLink="true">http://laichendong.com/2018/02/21/2017-summary/</guid>
         
         <category>总结</category>
         
@@ -523,8 +523,8 @@
 
 </description>
         <pubDate>Mon, 12 Feb 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/12/blockchain/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/12/blockchain/</guid>
+        <link>http://laichendong.com/2018/02/12/blockchain/</link>
+        <guid isPermaLink="true">http://laichendong.com/2018/02/12/blockchain/</guid>
         
         <category>区块链</category>
         
@@ -558,8 +558,8 @@
 &lt;p&gt;所以，看起来不同类型的人，应该给不同的报酬组合。比如能力好潜力不高的给多薪水少股票，潜力好而能力还不行的给多股票少薪水。但在实际操作中，貌似能力好决定的是入职的薪水，然后能力好+价值观好，能同时得到奖金，股票和加薪。能力和潜力往往同时体现同一个人身上。&lt;/p&gt;
 </description>
         <pubDate>Sun, 11 Feb 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/11/offer/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/11/offer/</guid>
+        <link>http://laichendong.com/2018/02/11/offer/</link>
+        <guid isPermaLink="true">http://laichendong.com/2018/02/11/offer/</guid>
         
         
         <category>Team Management</category>
@@ -581,8 +581,8 @@
 &lt;p&gt;打分，只是绩效管理的一小部分，只打分是完全不能完成绩效管理的目标的。更重要的是绩效沟通。上面提到，我认为绩效本质上就是一个沟通工具。具体执行上沟通分两步，第一步是在季度之初，应该明确每位同学的目标与期望。第二步是季度末，结合目标期望和实际表现，对给出的分值做出解释。并提供下一步的行动建议。做的好的继续，哪里不够完美该怎么改进。对研发的管理，可以参考google的OKR。&lt;/p&gt;
 </description>
         <pubDate>Fri, 02 Feb 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/02/Performance/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/02/Performance/</guid>
+        <link>http://laichendong.com/2018/02/02/Performance/</link>
+        <guid isPermaLink="true">http://laichendong.com/2018/02/02/Performance/</guid>
         
         
         <category>Team Management</category>
@@ -632,8 +632,8 @@
 
 </description>
         <pubDate>Thu, 22 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/06/22/fix-messy-code-in-idea-tomcat-output/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/22/fix-messy-code-in-idea-tomcat-output/</guid>
+        <link>http://laichendong.com/2017/06/22/fix-messy-code-in-idea-tomcat-output/</link>
+        <guid isPermaLink="true">http://laichendong.com/2017/06/22/fix-messy-code-in-idea-tomcat-output/</guid>
         
         
         <category>Programing</category>
@@ -656,8 +656,8 @@
 &lt;p&gt;简直不能更方便。&lt;/p&gt;
 </description>
         <pubDate>Fri, 05 May 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</guid>
+        <link>http://laichendong.com/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</link>
+        <guid isPermaLink="true">http://laichendong.com/2017/05/05/shortcuts-to-show-hiden-files-in-macos-sierra/</guid>
         
         
         <category>Programing</category>
