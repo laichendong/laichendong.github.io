@@ -5,4 +5,5 @@ _posts/s/
 .sass-cache/
 .jekyll-metadata
 crypt_posts.sh
+push.sh
 .DS_Store
