@@ -1,4 +1,11 @@
-# 非平面
+---
+layout: post
+title: 思维模式决定了我们的眼界
+sub-title: 《非平面》读书笔记
+tags: ["思维模式", "尝试"]
+---
+
+# 思维模式决定了我们的眼界
 
 https://book.douban.com/subject/30327868/
 
