@@ -5,9 +5,45 @@
     <description>赖晨东的博客 | 咖啡不苦</description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 15 Apr 2019 14:45:21 +0800</pubDate>
-    <lastBuildDate>Mon, 15 Apr 2019 14:45:21 +0800</lastBuildDate>
+    <pubDate>Mon, 15 Apr 2019 20:51:06 +0800</pubDate>
+    <lastBuildDate>Mon, 15 Apr 2019 20:51:06 +0800</lastBuildDate>
     <generator>Jekyll v3.8.1</generator>
+    
+      <item>
+        <title>怎么用gitpages还能藏住秘密</title>
+        <description>&lt;p&gt;我们用gitpages写博客，但假设，你想把他当做笔记来使用，有些内容并不希望公开，别人看不了，只有你能看，该怎么办呢？&lt;/p&gt;
+
+&lt;p&gt;最直接的，我们想到，需要输入一个密码，才可以看到相应的内容。但整个gitpages是全静态的。你的密码以及验证程序不可避免的明文下载到浏览器端。即使做一个js代码混淆，基本上还是掩耳盗铃。&lt;/p&gt;
+
+&lt;p&gt;某天偶然发现一个叫static crypt的东西，他号称能用密码保护一个html。 &lt;a href=&quot;https://robinmoisson.github.io/staticrypt/&quot;&gt;https://robinmoisson.github.io/staticrypt/&lt;/a&gt; , 他基于&lt;a href=&quot;https://github.com/brix/crypto-js&quot;&gt;https://github.com/brix/crypto-js&lt;/a&gt; ，用 AES-256加密你的html文件，然后把加密过的内容发送到浏览器端，浏览器看到的是一个密码输入框，输入密码，解密，把解密后的html显示出来。大功告成！这个东西还提供命令行版本和npm模块支持。这就方便了我们和gitpages以及jekyll结合。&lt;/p&gt;
+
+&lt;p&gt;首先，确定什么东西是秘密的，不想让人看见，不能push到github的。&lt;/p&gt;
+
+&lt;h4 id=&quot;笔记原文&quot;&gt;&lt;strong&gt;笔记原文&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;正常情况下，文章已md格式放在_posts 或 _drafts 下。但是我们的笔记，应该不能用原文md push到github上。不然人家直接去github看就好了。为了方便起见，我们在 _posts 文件夹下建一个s文件夹。方便加入 .gitignore 和脚本操作&lt;/p&gt;
+
+&lt;h4 id=&quot;秘钥&quot;&gt;秘钥&lt;/h4&gt;
+
+&lt;p&gt;AES是对称加密方法。秘钥，也是我们在浏览器上看笔记时要输入密码，所以这个东西不能push上去简直是废话。&lt;/p&gt;
+
+&lt;p&gt;那如何做到不把这些东西放上去，我们还能在浏览器上看到我们的笔记呢？&lt;/p&gt;
+
+&lt;p&gt;1、首先，我们在网站的更目录里新建一个叫s的文件夹。方便我们找到所有加密过的笔记。&lt;/p&gt;
+
+&lt;p&gt;2、写一个脚本 crypt_posts.sh ; 首先这个脚本调用jekyll  bilud。将我们的笔记md源文件编译成带样式的html；然后对这些html挨个调用staticrypt对其加密(秘钥也在这个文件里制定)；再然后将加密生成的文件替换掉原来编译出来的带明文信息的文件。最后，在这个过程中，可生成一个index.html。 方便在访问${domain}/s 时提供加密文件的索引。当然，这个文件必须加入 .gitignore列表&lt;/p&gt;
+
+&lt;p&gt;3、额，没有第三步，好尴尬~&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 15 Apr 2019 00:00:00 +0800</pubDate>
+        <link>http://laichendong.com/2019/04/15/password-protect-a-static-html-page/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/04/15/password-protect-a-static-html-page/</guid>
+        
+        <category>前端加密</category>
+        
+        
+      </item>
     
       <item>
         <title>简历</title>
@@ -679,37 +715,6 @@
         
         
         <category>Program</category>
-        
-      </item>
-    
-      <item>
-        <title>薪水，奖金，红包和股票</title>
-        <description>&lt;p&gt;公司给员工的金钱报酬中，大概可以分为常见四类形式：薪水，奖金，红包和股票。这些不同的形式是有不同的作用的。&lt;/p&gt;
-
-&lt;h1 id=&quot;薪水&quot;&gt;薪水&lt;/h1&gt;
-
-&lt;p&gt;薪水是最基本的。是公司付给员工当前工作的酬劳。说白了就是现在干的活值多少钱。钱多钱少基本是由所做的工作内容决定的。岗位+级别决定薪水范围。&lt;/p&gt;
-
-&lt;h1 id=&quot;奖金&quot;&gt;奖金&lt;/h1&gt;
-
-&lt;p&gt;奖金和薪水不同，是额外的，奖励给工作做得出色的人的。只有做得好的人才有，不能吃大锅饭。奖金可以作为公司价值观的指挥棒。&lt;/p&gt;
-
-&lt;h1 id=&quot;红包&quot;&gt;红包&lt;/h1&gt;
-
-&lt;p&gt;并不是所有公司都会有红包机制。红包和奖金一样都是除薪水以外的“现金”。但和奖金不同的是红包应该是全员的。触发点是公司本身遇到值得庆祝的事儿。比如提前超额完成业务目标等等。是为了感谢员工而设置的。&lt;/p&gt;
-
-&lt;h1 id=&quot;股票&quot;&gt;股票&lt;/h1&gt;
-
-&lt;p&gt;互联网公司一般都有股票期权机制了。一般都是一次授予，分若干次（年）到账，所以他的最大的特点在于延时性。所以激励的是员工未来的发展与潜力。另外股票的j价值和公司的业绩挂钩，也能激励员工忠诚和敬业。&lt;/p&gt;
-
-&lt;p&gt;所以，看起来不同类型的人，应该给不同的报酬组合。比如能力好潜力不高的给多薪水少股票，潜力好而能力还不行的给多股票少薪水。但在实际操作中，貌似能力好决定的是入职的薪水，然后能力好+价值观好，能同时得到奖金，股票和加薪。能力和潜力往往同时体现同一个人身上。&lt;/p&gt;
-</description>
-        <pubDate>Sun, 11 Feb 2018 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2018/02/11/offer/</link>
-        <guid isPermaLink="true">http://laichendong.com/2018/02/11/offer/</guid>
-        
-        
-        <category>Team Management</category>
         
       </item>
     
