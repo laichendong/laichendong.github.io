@@ -40,8 +40,18 @@ layout: default
             ">
                 <!-- BaiDu Search -->
                 <section class="visible-md visible-lg">
-                    <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">Search</a></h5>
-                    <div class="search"></div>
+                    <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">SEARCH</a></h5>
+                    <div class="search">
+                        <form action="http://www.baidu.com/s" id="baiduForm" target="_blank">
+                            <input type="text" name="wd" />
+                            <input type="submit" value="搜索" class="search-btn" />
+                        </form>
+                    </div>
+                    <script type="text/javascript">
+                        $("#baiduForm").submit(function(){
+                            $(".search input[name=wd]").val("site:laichendong.com " + $(".search input[name=wd]").val());
+                        })
+                    </script>
                 </section>
 
                 <!-- Featured Tags -->
