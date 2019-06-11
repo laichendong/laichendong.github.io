@@ -3,20 +3,65 @@
   <channel>
     <title>咖啡不苦</title>
     <description>赖晨东的博客 | 咖啡不苦</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 11 Jun 2019 10:17:46 +0800</pubDate>
-    <lastBuildDate>Tue, 11 Jun 2019 10:17:46 +0800</lastBuildDate>
+    <link>http://laichendong.com/</link>
+    <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 11 Jun 2019 15:45:18 +0800</pubDate>
+    <lastBuildDate>Tue, 11 Jun 2019 15:45:18 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>足迹地图</title>
-        <description>&lt;script async=&quot;&quot; src=&quot;//jsfiddle.net/laichendong/ubnhk9jy/embed/result/&quot;&gt;&lt;/script&gt;
+        <description>&lt;div id=&quot;main&quot; style=&quot;width: 700px; height: 500px; &quot;&gt;&lt;/div&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://www.echartsjs.com/gallery/vendors/echarts/map/js/china.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+window.onload=function(){
+	var mydata = [
+		{name: '北京',value: 1 },{name: '天津',value: 1 },
+	{name: '上海',value: 1 },{name: '重庆',value: 1 },
+	{name: '河北',value: 1 },{name: '河南',value: 10 },
+	{name: '云南',value: 10 },{name: '辽宁',value: 10 },
+	{name: '黑龙江',value: 10 },{name: '湖南',value: 10 },
+	{name: '安徽',value: 10 },{name: '山东',value: 1 },
+	{name: '新疆',value: 10 },{name: '江苏',value: 1 },
+	{name: '浙江',value: 1 },{name: '江西',value: 1 },
+	{name: '湖北',value: 1 },{name: '广西',value: 10 },
+	{name: '甘肃',value: 10 },{name: '山西',value: 10 },
+	{name: '内蒙古',value: 10 },{name: '陕西',value: 1 },
+	{name: '吉林',value: 10 },{name: '福建',value: 1 },
+	{name: '贵州',value: 10 },{name: '广东',value: 1 },
+	{name: '青海',value: 10 },{name: '西藏',value: 10 },
+	{name: '四川',value: 1 },{name: '宁夏',value: 10 },
+	{name: '海南',value: 10 },{name: '台湾',value: 10 },
+	{name: '香港',value: 10 },{name: '澳门',value: 10 }
+	];
+var option = {
+		visualMap: {
+			show : false,
+			splitList: [ 
+				{start: 5, end:10},{start: 1, end: 2}
+			],
+			color: ['#ccc', '#0f0']
+		},
+		series: [{
+		  type: 'map',
+		  mapType: 'china', 
+		  roam: false,
+		  data:mydata
+		}]
+	};
+var chart = echarts.init(document.getElementById('main'));
+chart.setOption(option);
+}
+&lt;/script&gt;
 
 </description>
         <pubDate>Tue, 11 Jun 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/11/footprints/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/11/footprints/</guid>
+        <link>http://laichendong.com/2019/06/11/footprints/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/06/11/footprints/</guid>
         
         
         <category>生活</category>
@@ -50,8 +95,8 @@
 &lt;p&gt;同样的道理，当我们处于沟通双方比较强势的一方时，需要谨慎的区分对方是被暂时的说服了，被你的淫威压制了，还是真正的你的思想被对方认可了。&lt;/p&gt;
 </description>
         <pubDate>Thu, 16 May 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/05/16/effective-communication/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/05/16/effective-communication/</guid>
+        <link>http://laichendong.com/2019/05/16/effective-communication/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/05/16/effective-communication/</guid>
         
         
         <category>读书笔记</category>
@@ -113,8 +158,8 @@
 
 </description>
         <pubDate>Sun, 05 May 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/05/05/inspired/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/05/05/inspired/</guid>
+        <link>http://laichendong.com/2019/05/05/inspired/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/05/05/inspired/</guid>
         
         
         <category>Reading</category>
@@ -149,8 +194,8 @@
 
 </description>
         <pubDate>Mon, 15 Apr 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/04/15/password-protect-a-static-html-page/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/04/15/password-protect-a-static-html-page/</guid>
+        <link>http://laichendong.com/2019/04/15/password-protect-a-static-html-page/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/04/15/password-protect-a-static-html-page/</guid>
         
         <category>前端加密</category>
         
@@ -194,8 +239,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 28 Feb 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/02/28/lcd/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/02/28/lcd/</guid>
+        <link>http://laichendong.com/2019/02/28/lcd/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/02/28/lcd/</guid>
         
         
       </item>
@@ -244,8 +289,8 @@
 
 </description>
         <pubDate>Thu, 28 Feb 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/02/28/what-do-you-think-of-the-company/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/02/28/what-do-you-think-of-the-company/</guid>
+        <link>http://laichendong.com/2019/02/28/what-do-you-think-of-the-company/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/02/28/what-do-you-think-of-the-company/</guid>
         
         <category>工作</category>
         
@@ -382,8 +427,8 @@
 
 </description>
         <pubDate>Thu, 14 Feb 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/02/14/unflattening/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/02/14/unflattening/</guid>
+        <link>http://laichendong.com/2019/02/14/unflattening/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/02/14/unflattening/</guid>
         
         <category>思维模式</category>
         
@@ -434,8 +479,8 @@
 
 </description>
         <pubDate>Tue, 01 Jan 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/01/01/2019-flags/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/01/01/2019-flags/</guid>
+        <link>http://laichendong.com/2019/01/01/2019-flags/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/01/01/2019-flags/</guid>
         
         <category>OKR</category>
         
@@ -600,8 +645,8 @@
 &lt;p&gt;都看到这了，说明是真爱！那就给个赠品吧。flickr的Ticket Server设计。这我们这个设计有许多相似之处。供参考：http://code.flickr.net/2010/02/08/ticket-servers-distributed-unique-primary-keys-on-the-cheap/&lt;/p&gt;
 </description>
         <pubDate>Mon, 06 Aug 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/08/06/sequence-generator/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/08/06/sequence-generator/</guid>
+        <link>http://laichendong.com/2018/08/06/sequence-generator/</link>
+        <guid isPermaLink="true">http://laichendong.com/2018/08/06/sequence-generator/</guid>
         
         
       </item>
@@ -643,8 +688,8 @@
 &lt;p&gt;日息万3 = 年化 3/10000 * 365 =  10.95%；余额宝直接就是年化5%； 1分利上面算过了，年化12%； 而央行贷款利率也就是指的年化利率4.9%。这就比较清楚了。这么看，央行的基准贷款利率其实还是挺低的，就是银行按基准利率把钱贷给你和你把钱放到余额宝的收益是差不多的。&lt;/p&gt;
 </description>
         <pubDate>Sat, 24 Feb 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/24/interest-rate/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/24/interest-rate/</guid>
+        <link>http://laichendong.com/2018/02/24/interest-rate/</link>
+        <guid isPermaLink="true">http://laichendong.com/2018/02/24/interest-rate/</guid>
         
         <category>理财</category>
         
