@@ -7,7 +7,7 @@ category: 生活
 
 
 
-<div id="main" style="width: 700px; height: 500px; " ></div>
+<div id="main" style="height:40em"></div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts.min.js"></script>
 <script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts/map/js/china.js"></script>
