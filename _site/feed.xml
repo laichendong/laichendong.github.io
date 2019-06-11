@@ -3,11 +3,25 @@
   <channel>
     <title>咖啡不苦</title>
     <description>赖晨东的博客 | 咖啡不苦</description>
-    <link>http://laichendong.com/</link>
-    <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 10 Jun 2019 15:35:16 +0800</pubDate>
-    <lastBuildDate>Mon, 10 Jun 2019 15:35:16 +0800</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 11 Jun 2019 10:17:46 +0800</pubDate>
+    <lastBuildDate>Tue, 11 Jun 2019 10:17:46 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>足迹地图</title>
+        <description>&lt;script async=&quot;&quot; src=&quot;//jsfiddle.net/laichendong/ubnhk9jy/embed/result/&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Tue, 11 Jun 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/06/11/footprints/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/11/footprints/</guid>
+        
+        
+        <category>生活</category>
+        
+      </item>
     
       <item>
         <title>达到了沟通的目的才算有效沟通</title>
@@ -36,8 +50,8 @@
 &lt;p&gt;同样的道理，当我们处于沟通双方比较强势的一方时，需要谨慎的区分对方是被暂时的说服了，被你的淫威压制了，还是真正的你的思想被对方认可了。&lt;/p&gt;
 </description>
         <pubDate>Thu, 16 May 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/05/16/effective-communication/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/05/16/effective-communication/</guid>
+        <link>http://localhost:4000/2019/05/16/effective-communication/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/05/16/effective-communication/</guid>
         
         
         <category>读书笔记</category>
@@ -99,8 +113,8 @@
 
 </description>
         <pubDate>Sun, 05 May 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/05/05/inspired/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/05/05/inspired/</guid>
+        <link>http://localhost:4000/2019/05/05/inspired/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/05/05/inspired/</guid>
         
         
         <category>Reading</category>
@@ -135,8 +149,8 @@
 
 </description>
         <pubDate>Mon, 15 Apr 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/04/15/password-protect-a-static-html-page/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/04/15/password-protect-a-static-html-page/</guid>
+        <link>http://localhost:4000/2019/04/15/password-protect-a-static-html-page/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/04/15/password-protect-a-static-html-page/</guid>
         
         <category>前端加密</category>
         
@@ -180,8 +194,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 28 Feb 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/02/28/lcd/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/02/28/lcd/</guid>
+        <link>http://localhost:4000/2019/02/28/lcd/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/02/28/lcd/</guid>
         
         
       </item>
@@ -230,8 +244,8 @@
 
 </description>
         <pubDate>Thu, 28 Feb 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/02/28/what-do-you-think-of-the-company/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/02/28/what-do-you-think-of-the-company/</guid>
+        <link>http://localhost:4000/2019/02/28/what-do-you-think-of-the-company/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/02/28/what-do-you-think-of-the-company/</guid>
         
         <category>工作</category>
         
@@ -368,8 +382,8 @@
 
 </description>
         <pubDate>Thu, 14 Feb 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/02/14/unflattening/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/02/14/unflattening/</guid>
+        <link>http://localhost:4000/2019/02/14/unflattening/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/02/14/unflattening/</guid>
         
         <category>思维模式</category>
         
@@ -420,8 +434,8 @@
 
 </description>
         <pubDate>Tue, 01 Jan 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/01/01/2019-flags/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/01/01/2019-flags/</guid>
+        <link>http://localhost:4000/2019/01/01/2019-flags/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/01/01/2019-flags/</guid>
         
         <category>OKR</category>
         
@@ -586,8 +600,8 @@
 &lt;p&gt;都看到这了，说明是真爱！那就给个赠品吧。flickr的Ticket Server设计。这我们这个设计有许多相似之处。供参考：http://code.flickr.net/2010/02/08/ticket-servers-distributed-unique-primary-keys-on-the-cheap/&lt;/p&gt;
 </description>
         <pubDate>Mon, 06 Aug 2018 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2018/08/06/sequence-generator/</link>
-        <guid isPermaLink="true">http://laichendong.com/2018/08/06/sequence-generator/</guid>
+        <link>http://localhost:4000/2018/08/06/sequence-generator/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/08/06/sequence-generator/</guid>
         
         
       </item>
@@ -629,46 +643,12 @@
 &lt;p&gt;日息万3 = 年化 3/10000 * 365 =  10.95%；余额宝直接就是年化5%； 1分利上面算过了，年化12%； 而央行贷款利率也就是指的年化利率4.9%。这就比较清楚了。这么看，央行的基准贷款利率其实还是挺低的，就是银行按基准利率把钱贷给你和你把钱放到余额宝的收益是差不多的。&lt;/p&gt;
 </description>
         <pubDate>Sat, 24 Feb 2018 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2018/02/24/interest-rate/</link>
-        <guid isPermaLink="true">http://laichendong.com/2018/02/24/interest-rate/</guid>
+        <link>http://localhost:4000/2018/02/24/interest-rate/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/24/interest-rate/</guid>
         
         <category>理财</category>
         
         <category>收益计算</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>2018 Okr</title>
-        <description>&lt;h1 id=&quot;objective-1-完成团队打造的目标&quot;&gt;Objective 1 ：完成团队打造的目标&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;KR 1：将“从Why出发”，“不设限”，“Be Professional”的理念传递到每一个团队成员心里。&lt;/li&gt;
-  &lt;li&gt;KR 2：丰富能力，补齐短板。团队拥有数据挖掘和AI建模的能力。&lt;/li&gt;
-  &lt;li&gt;KR 3：打造自驱型团队，能在没有我的情况下按预期的良好运转10天以上。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;objective-2--完成自我学习的目标&quot;&gt;Objective 2 ： 完成自我学习的目标&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;KR 1：看（听）书不少于20本，有体会，心得的不少于10本&lt;/li&gt;
-  &lt;li&gt;KR 2：博客更新不少于20篇&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;objective-3-完成关于生活的目标&quot;&gt;Objective 3 ：完成关于生活的目标&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;KR 1：10.1一家人去泰国&lt;/li&gt;
-  &lt;li&gt;KR 2：自驾草原天路 达达线&lt;/li&gt;
-  &lt;li&gt;KR 3：完成半马，年总跑量达到1000公里&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Wed, 21 Feb 2018 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2018/02/21/2018-okr/</link>
-        <guid isPermaLink="true">http://laichendong.com/2018/02/21/2018-okr/</guid>
-        
-        <category>OKR</category>
         
         
       </item>
