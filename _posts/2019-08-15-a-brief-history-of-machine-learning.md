@@ -1,7 +1,5 @@
 ---
 layout: post
-category: 
-tags:[机器学习]
 title: 机器学习简史
 
 ---
