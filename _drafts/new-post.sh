@@ -1,4 +1,11 @@
 #! /bin/bash 
+
+if [ $# != 1 ] ; then 
+echo "USAGE: $0 file_name" 
+echo " e.g.: $0 hello_world" 
+exit 1; 
+fi 
+
 f=$1".md"
 if [[ -f $f ]]; then
 	echo "$f 已存在，请更换文件名"
