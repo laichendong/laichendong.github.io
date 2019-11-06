@@ -5,9 +5,68 @@
     <description>赖晨东的博客 | 咖啡不苦</description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 17 Sep 2019 10:34:03 +0800</pubDate>
-    <lastBuildDate>Tue, 17 Sep 2019 10:34:03 +0800</lastBuildDate>
+    <pubDate>Wed, 06 Nov 2019 10:46:43 +0800</pubDate>
+    <lastBuildDate>Wed, 06 Nov 2019 10:46:43 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>ddd</title>
+        <description>&lt;p&gt;随着微服务和中台的兴起，领域驱动设计被越来越多的提起。&lt;/p&gt;
+
+&lt;h2 id=&quot;设计与过程密不可分否则设计就是纸上谈兵&quot;&gt;&lt;strong&gt;设计与过程密不可分，否则设计就是纸上谈兵。&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;系统的架构设计或者领域模型是动态的，是演化而来并且将继续演化的。不是静态设计出来的。所以要“每个月过一下架构图”。&lt;/li&gt;
+  &lt;li&gt;面对一个新系统（新人入职，交接过来一个系统。。。）时，应该先了解他的演化过程，有些东西看起来一坨，可能并没有想象的那么糟糕，他还是切实的在解决业务问题，对一些老旧系统，谨慎的“推到重来”。这时候，系统里的“老人”会显得很重要，因为他们了解演化过程，也有比较深层次的领域知识。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;领域驱动设计的实质就是消化吸收大量知识最后产生一个反应深层次领域知识并聚焦于关键概念的模型&quot;&gt;&lt;strong&gt;领域驱动设计的实质，就是&lt;em&gt;消化吸收大量知识&lt;/em&gt;，最后产生一个反应&lt;em&gt;深层次领域知识&lt;/em&gt;并聚焦于&lt;em&gt;关键概念&lt;/em&gt;的&lt;em&gt;模型&lt;/em&gt;。&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;这里面有几个关键词。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;首先是&lt;strong&gt;消化知识&lt;/strong&gt;，这里指的知识说的是领域知识，或者说业务知识。比如“京东所有处罚商家的规定，首先至少要向所有商家公示7天以上才可以被执行，否则会有法律风险。”这就是奖惩领域的知识。&lt;/li&gt;
+  &lt;li&gt;然后是&lt;strong&gt;关键概念&lt;/strong&gt;，根据刚刚消化得到的知识，我们会提取几个概念：条例=京东颁布的处罚商家的规定。公示期=条例已经被颁布但还不能被执行的时间区间。然后我们就用这些概念来组成我们的领域模型，也用这些概念来互相交流。&lt;/li&gt;
+  &lt;li&gt;最后是模型，那模型是什么呢？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;模型是一种简化它是对现实的解释&quot;&gt;&lt;strong&gt;模型是一种简化，它是对现实的解释。&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;首先，&lt;strong&gt;现实是有无数面的&lt;/strong&gt;，我们观察到的永远是现实的某种解释，而不是现实本身。模&lt;strong&gt;型就是把与解决问题密切相关的方面抽象出来，而忽略无关的细节的那种解释&lt;/strong&gt;。比如，我们人类看到树是绿的，火是红的，但狗的眼睛构造与人不同，看不到这些光谱，它们看到的树是偏黄的，火是偏褐色的。那么问题来了，树和火到底是什么颜色？根本就不知道，甚至，颜色这个概念本身，也是一种模型，也是一种对现实的解释。&lt;/li&gt;
+  &lt;li&gt;所以，&lt;strong&gt;领域模型，不是某种架构图&lt;/strong&gt;。而是图要传达出来的思想，也可以不用图，用文档表示，甚至可以用代码表示（极限编程XP推崇的就是——代码即文档）。&lt;/li&gt;
+  &lt;li&gt;领域模型也不单单是领域专家（业务人员）头脑中的知识，只有大家共同认知到并且认可的知识才是领域模型。所以我们在实际工作中，一项非常难但非常重要的工作就是统一业务，产品，研发。。。所有参与人员对领域模型的认知。我理解，这也正是我们采用和推动领域驱动设计的一个重要原因。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;有效建模的要素&quot;&gt;有效建模的要素&lt;/h2&gt;
+
+&lt;p&gt;那我们如何有效的建立我们的领域模型呢？&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;模型和实现的绑定&lt;/strong&gt;。就如第一点所说，我们设计的模型，一定要和代码实现绑定，别讨论的时候说的好像很有道理很完美，实现的时候又这里一个特殊逻辑那里一个实现不了。就成了所谓的PPT架构师了。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;建立了一种基于模型的语言&lt;/strong&gt;。我觉得这是最重要的要素没有之一。模型是团队所有成员使用的通用语言的中枢。只有当业产研都使用同一套语言来沟通的时候，效率才会高，摩擦才会少。&lt;/li&gt;
+  &lt;li&gt;开发一个蕴含丰富知识的模型&lt;/li&gt;
+  &lt;li&gt;提炼模型&lt;/li&gt;
+  &lt;li&gt;头脑风暴和实验&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;不同的团队成员使用不同的术语而不自知&quot;&gt;不同的团队成员使用不同的术语而不自知&lt;/h2&gt;
+
+&lt;p&gt;很多时候，业务使用业务的语言，产品使用产品的语言，研发使用研发的语言在讨论问题，讨论了半天也没结果，或者讨论出来了一个带有歧义的结果。甚至，同一个词，在不同语言里表达的概念完全不同，比如“中台”比如“组件化”。这个时候需要共事的团队使用同一种公共语言，然而任何一方的语言都不能成为公共语言。需要融合提炼一套公共语言。确保团队在内部是的所有交流，以及代码中坚持使用这种语言。在画图，写文档，写代码，特别是讲话时也要使用这种语言。&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 06 Nov 2019 00:00:00 +0800</pubDate>
+        <link>http://laichendong.com/2019/11/06/ddd/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/11/06/ddd/</guid>
+        
+        <category>领域驱动设计</category>
+        
+        <category>架构师</category>
+        
+        
+        <category>读书笔记</category>
+        
+      </item>
     
       <item>
         <title>高绩效教练</title>
@@ -453,144 +512,6 @@ chart.setOption(option);
         <category>工作</category>
         
         <category>思维</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>思维模式决定了我们的眼界</title>
-        <description>&lt;h1 id=&quot;思维模式决定了我们的眼界&quot;&gt;思维模式决定了我们的眼界&lt;/h1&gt;
-
-&lt;p&gt;https://book.douban.com/subject/30327868/&lt;/p&gt;
-
-&lt;p&gt;是哥伦比亚大学一篇教育学专业的博士生论文，用漫画的方式呈现。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;社会给每个人固定的角色，我们被分门别类，放置在轨道上接受指令，按部就班的过完平面化的一生。单一的视角，狭隘而僵化的思维，使我们无法突破自己的局限，无限的潜能也被遏制，我们如同《平面国》中的居民，从不理解更高维度的存在。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;平面&quot;&gt;平面&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;人们被塞进统一化的凹槽里，大家因此形成了可互换的个体&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;人这种活力四射的生物本应该有更多的潜能，现在却抑制自我，疲于行动，空余单调的“平面”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;平面国&quot;&gt;平面国&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;人们已退化至已确立的话语和行为领域&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;发现全新的视角，为各种可能性开拓空间，为觉醒和复苏寻找“全新的方法”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;想找到不同的观察方式，就要从对“所见”的思考开始&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;多视角观察的重要性&quot;&gt;多视角观察的重要性&lt;/h2&gt;
-
-&lt;p&gt;两只眼睛因为视角有不同，看到的东西有略微差别。结合起来才看到立体的东西&lt;/p&gt;
-
-&lt;p&gt;狗在黑夜中可以在树林中穿行，除了视觉，更多的依靠嗅觉。比人只靠视觉拥有了更多的维度&lt;/p&gt;
-
-&lt;h2 id=&quot;我们的思维方式&quot;&gt;我们的思维方式&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;语言是我们整理经验和形成思想体系的工具，使我们吸入的氧气和赖以生存的海洋。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;我们是自身所继承的语言的囚徒，这种语言嵌入了祖先的思维模式&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;思维模式决定了眼界&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;漫画，兼具文字和图像，兼具连续性和零散性，是一种很好的突破限制的工具。&lt;/p&gt;
-
-&lt;h2 id=&quot;运动的身体&quot;&gt;运动的身体&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;理解是抓住；绘画是一种精心编排的自我交流方式。绘画不是用手转录头脑中的想法，而是为了追寻更深层次的理解。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;并不存在一种单一而客观的视角。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;第五维度&quot;&gt;第五维度&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;事实上，在我们看不见的地方有着无限的可能性。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;想象力让我们突破难以跨越的界限，发现不存在或者说存在于无法接触的维度里的认知&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;以多重世界作为参考框架，可以看到同个世界的不同面，让熟悉的东西变得陌生，穿过这些门，改变的可能性便出现了。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;陈规&quot;&gt;陈规&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;涓流汇成小溪，附庸者聚集在一起，力量不断加强，我们走在前人走过的路上。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;每个人都会加入一条存在已久，似乎本该如此的队伍&lt;/strong&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;刚开始不适应的事情，很快就变成了第二本能。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;每天走不同的路线去上班！&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;尽管雨会一直下，陈规也会一直不断出现。但我们必须歌唱，跳舞，寻找逃离的办法&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;系着的线&quot;&gt;系着的线&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;每天，他都像发条装置一般，忠实地遵循着自己的日常行为模式。他在该醒来的时候醒来，该吃饭的时候吃饭。他出色且高效的扮演着自己的角色，一直如此，并且还会继续。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;航向&quot;&gt;航向&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;想放飞自我，不能简单的割断系线，因为摆脱他们只会让我们漂泊无依，失去那些成就我们的东西。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;解放，不是脱离束缚，而是找到更好的依靠。&lt;/p&gt;
-
-  &lt;p&gt;我们应该保留这些绳子，认清这些附属物并非限制，而是可以利用的力量。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;觉醒&quot;&gt;觉醒&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;我们时常陷入一个陷阱，认为你的成长和你的未来是受外部环境影响而不是有自己掌握。认为你的思想一定是别人给予的。你没有意识到其实你自始至终都不需要别人给与你什么，你得自己找到他。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Thu, 14 Feb 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/02/14/unflattening/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/02/14/unflattening/</guid>
-        
-        <category>思维模式</category>
-        
-        <category>尝试</category>
         
         
       </item>

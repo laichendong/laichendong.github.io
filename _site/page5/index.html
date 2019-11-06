@@ -176,6 +176,26 @@
             ">
     			
 <div class="post-preview">
+    <a href="/2015/08/25/set-JAVA_HOME-on-mac/">
+        <h2 class="post-title">
+            mac下设置JAVA_HOME
+        </h2>
+        
+        <div class="post-content-preview">
+            应该是我装了xcode的原因，我没有显式安装java，mac里也有java的环境了。然后当我想在命令行下运行mvn的命令时。就提示我要设置JAVA_HOME了。
+当我去找JAVA_HOME在哪的时候。发现是“乱七八糟”的。高冷的mac怎么会那么烂？我肯定是错过了什么。于是求助于万能的google。果然：
+可以这样
+
+export JAVA_HOME="$(/usr/libexec/java_...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 咖啡不苦 on 2015-08-25
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     <a href="/2015/08/24/open-terminal-here-in-mac-os-finder/">
         <h2 class="post-title">
             Open Terminal Here In Mac Os Finder
@@ -403,6 +423,18 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
                             
                                 <a href="/tags/#读书笔记" title="读书笔记" rel="1">
                                     读书笔记
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#领域驱动设计" title="领域驱动设计" rel="1">
+                                    领域驱动设计
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#架构师" title="架构师" rel="1">
+                                    架构师
                                 </a>
                             
                         
