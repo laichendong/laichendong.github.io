@@ -5,12 +5,12 @@
     <description>赖晨东的博客 | 咖啡不苦</description>
     <link>http://laichendong.com/</link>
     <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 09 Jun 2020 11:37:26 +0800</pubDate>
-    <lastBuildDate>Tue, 09 Jun 2020 11:37:26 +0800</lastBuildDate>
+    <pubDate>Tue, 09 Jun 2020 11:41:36 +0800</pubDate>
+    <lastBuildDate>Tue, 09 Jun 2020 11:41:36 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title></title>
+        <title>一篇聊透跨域</title>
         <description>&lt;p&gt;前几天面试一小哥哥，说到跨域问题，说的语焉不详的。所以将相关知识点整理了一下，成文如下：&lt;/p&gt;
 
 &lt;h2 id=&quot;什么是跨域问题&quot;&gt;什么是跨域问题&lt;/h2&gt;
@@ -135,9 +135,13 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 &lt;p&gt;除了Allow Origin这种源的白名单机制，cors还可以通过cookie实现对用户的身份认证，在请求头上加上 &lt;code class=&quot;highlighter-rouge&quot;&gt;credentials: 'include'&lt;/code&gt; 可以让请求带上cookie发送， 为了安全考虑，cors规定如果用了，则&lt;code class=&quot;highlighter-rouge&quot;&gt;Access-Control-Allow-Origin&lt;/code&gt;必须指定具体的值，不能为&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 09 Jun 2020 11:37:26 +0800</pubDate>
-        <link>http://laichendong.com/2020/06/09/2020-06-09-cross_domain/</link>
-        <guid isPermaLink="true">http://laichendong.com/2020/06/09/2020-06-09-cross_domain/</guid>
+        <pubDate>Tue, 09 Jun 2020 00:00:00 +0800</pubDate>
+        <link>http://laichendong.com/2020/06/09/cross_domain/</link>
+        <guid isPermaLink="true">http://laichendong.com/2020/06/09/cross_domain/</guid>
+        
+        <category>web</category>
+        
+        <category>跨域</category>
         
         
       </item>
