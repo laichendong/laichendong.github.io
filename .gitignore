@@ -7,3 +7,5 @@ _posts/s/
 crypt_posts.sh
 push.sh
 .DS_Store
+node_modules/
+.jekell-cache/
