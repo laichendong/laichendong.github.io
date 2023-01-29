@@ -3,10 +3,10 @@
   <channel>
     <title>咖啡不苦</title>
     <description>赖晨东的博客 | 咖啡不苦</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 05 Jan 2023 18:03:24 +0800</pubDate>
-    <lastBuildDate>Thu, 05 Jan 2023 18:03:24 +0800</lastBuildDate>
+    <link>http://laichendong.com/</link>
+    <atom:link href="http://laichendong.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 29 Jan 2023 15:21:47 +0800</pubDate>
+    <lastBuildDate>Sun, 29 Jan 2023 15:21:47 +0800</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -136,8 +136,8 @@
 &lt;h1 id=&quot;投资理财&quot;&gt;投资理财&lt;/h1&gt;
 </description>
         <pubDate>Tue, 04 Jan 2022 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2022/01/04/2022-flags/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/01/04/2022-flags/</guid>
+        <link>http://laichendong.com/2022/01/04/2022-flags/</link>
+        <guid isPermaLink="true">http://laichendong.com/2022/01/04/2022-flags/</guid>
         
         <category>OKR</category>
         
@@ -228,8 +228,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 16 Dec 2021 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2021/12/16/150-successful-ML-models/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/12/16/150-successful-ML-models/</guid>
+        <link>http://laichendong.com/2021/12/16/150-successful-ML-models/</link>
+        <guid isPermaLink="true">http://laichendong.com/2021/12/16/150-successful-ML-models/</guid>
         
         <category>翻译</category>
         
@@ -243,8 +243,8 @@
         <description>
 </description>
         <pubDate>Thu, 02 Dec 2021 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2021/12/02/listening/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/12/02/listening/</guid>
+        <link>http://laichendong.com/2021/12/02/listening/</link>
+        <guid isPermaLink="true">http://laichendong.com/2021/12/02/listening/</guid>
         
         <category>管理修炼</category>
         
@@ -258,8 +258,8 @@
         <description>&lt;p&gt;沟通的第一定律：在沟通的过程中，人最本能的关注点都是自己&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 Dec 2021 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2021/12/02/communication/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/12/02/communication/</guid>
+        <link>http://laichendong.com/2021/12/02/communication/</link>
+        <guid isPermaLink="true">http://laichendong.com/2021/12/02/communication/</guid>
         
         <category>管理修炼</category>
         
@@ -284,8 +284,8 @@
 
 </description>
         <pubDate>Tue, 23 Jun 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2020/06/23/log-2020-06-23/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/06/23/log-2020-06-23/</guid>
+        <link>http://laichendong.com/2020/06/23/log-2020-06-23/</link>
+        <guid isPermaLink="true">http://laichendong.com/2020/06/23/log-2020-06-23/</guid>
         
         
       </item>
@@ -417,8 +417,8 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 </description>
         <pubDate>Tue, 09 Jun 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2020/06/09/cross_domain/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/06/09/cross_domain/</guid>
+        <link>http://laichendong.com/2020/06/09/cross_domain/</link>
+        <guid isPermaLink="true">http://laichendong.com/2020/06/09/cross_domain/</guid>
         
         <category>web</category>
         
@@ -493,8 +493,8 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 </description>
         <pubDate>Tue, 07 Jan 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2020/01/07/mathematics/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/01/07/mathematics/</guid>
+        <link>http://laichendong.com/2020/01/07/mathematics/</link>
+        <guid isPermaLink="true">http://laichendong.com/2020/01/07/mathematics/</guid>
         
         <category>数学通识</category>
         
@@ -537,8 +537,8 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 </description>
         <pubDate>Fri, 29 Nov 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/11/29/2020-flags/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/29/2020-flags/</guid>
+        <link>http://laichendong.com/2019/11/29/2020-flags/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/11/29/2020-flags/</guid>
         
         <category>OKR</category>
         
@@ -592,8 +592,8 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 </description>
         <pubDate>Wed, 06 Nov 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/11/06/ddd/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/06/ddd/</guid>
+        <link>http://laichendong.com/2019/11/06/ddd/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/11/06/ddd/</guid>
         
         <category>领域驱动设计</category>
         
@@ -648,8 +648,8 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 
 </description>
         <pubDate>Tue, 17 Sep 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/09/17/coaching_for_performance/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/09/17/coaching_for_performance/</guid>
+        <link>http://laichendong.com/2019/09/17/coaching_for_performance/</link>
+        <guid isPermaLink="true">http://laichendong.com/2019/09/17/coaching_for_performance/</guid>
         
         <category>读书笔记</category>
         

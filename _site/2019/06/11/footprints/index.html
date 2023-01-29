@@ -211,12 +211,12 @@ window.onload=function(){
 	{name: '浙江',value: 1 },{name: '江西',value: 1 },
 	{name: '湖北',value: 1 },{name: '广西',value: 10 },
 	{name: '甘肃',value: 1 },{name: '山西',value: 10 },
-	{name: '内蒙古',value: 10 },{name: '陕西',value: 1 },
+	{name: '内蒙古',value: 1 },{name: '陕西',value: 1 },
 	{name: '吉林',value: 10 },{name: '福建',value: 1 },
 	{name: '贵州',value: 10 },{name: '广东',value: 1 },
 	{name: '青海',value: 1 },{name: '西藏',value: 10 },
 	{name: '四川',value: 1 },{name: '宁夏',value: 10 },
-	{name: '海南',value: 10 },{name: '台湾',value: 10 },
+	{name: '海南',value: 1 },{name: '台湾',value: 10 },
 	{name: '香港',value: 10 },{name: '澳门',value: 10 }
 	];
 var option = {
@@ -230,7 +230,9 @@ var option = {
 		series: [{
 		  type: 'map',
 		  mapType: 'china', 
-		  roam: false,
+		  label: {
+		  	show:true
+		  },
 		  data:mydata
 		}]
 	};
