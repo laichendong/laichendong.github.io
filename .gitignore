@@ -9,3 +9,4 @@ node_modules/
 crypt_posts.sh
 push.sh
 .DS_Store
+Gemfile.lock

@@ -245,16 +245,16 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 * 工具函数，往页面里插入一个指定src的script标签，以发起请求
 * 其实也可以发起ajax请，很多三方库（比如jQuery）都有封装
 */</span>
-<span class="kd">function</span> <span class="nx">addScriptTag</span><span class="p">(</span><span class="nx">src</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">script</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">script</span><span class="dl">'</span><span class="p">);</span>
-  <span class="nx">script</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">text/javascript</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">function</span> <span class="nf">addScriptTag</span><span class="p">(</span><span class="nx">src</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">script</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">script</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">script</span><span class="p">.</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">text/javascript</span><span class="dl">"</span><span class="p">);</span>
   <span class="nx">script</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">src</span><span class="p">;</span>
-  <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">script</span><span class="p">);</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nf">appendChild</span><span class="p">(</span><span class="nx">script</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="nf">function </span><span class="p">()</span> <span class="p">{</span>
   <span class="c1">// 调用工具函数，发起请求，并告诉服务端，回调函数名字叫foo</span>
-  <span class="nx">addScriptTag</span><span class="p">(</span><span class="dl">'</span><span class="s1">http://example.com/ip?callback=foo</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nf">addScriptTag</span><span class="p">(</span><span class="dl">'</span><span class="s1">http://example.com/ip?callback=foo</span><span class="dl">'</span><span class="p">);</span>
   <span class="c1">// 服务端返回JSON格式的数据，并 放在一个叫 foo的函数调用的入参里，如下：</span>
   <span class="c1">// foo({"ip": "8.8.8.8"});</span>
 <span class="p">}</span>
@@ -262,8 +262,8 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 <span class="cm">/**
 * 回调函数，服务端返回的内容，会回调这个函数，并且把数据作为参数传入，这样就实现了跨源数据共享的目的
 */</span>
-<span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Your public IP address is: </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">data</span><span class="p">.</span><span class="nx">ip</span><span class="p">);</span>
+<span class="kd">function</span> <span class="nf">foo</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Your public IP address is: </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">data</span><span class="p">.</span><span class="nx">ip</span><span class="p">);</span>
 <span class="p">};</span>
 </code></pre></div></div>
 
@@ -274,8 +274,8 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
 <p>如果通过JSONP获取的数据是敏感数据（比如用户登录之后才能读取到的数据），攻击者可以构造一个这样的请求，藏在某个页面里，如果用户在登录的情况下访问了那个页面（攻击者可以引诱被攻击者访问），就会在不知情的情况下将自己的数据泄露。比如</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
-<span class="kd">function</span> <span class="nx">wooyun</span><span class="p">(</span><span class="nx">v</span><span class="p">){</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="nx">v</span><span class="p">.</span><span class="nx">username</span><span class="p">);</span>
+<span class="kd">function</span> <span class="nf">wooyun</span><span class="p">(</span><span class="nx">v</span><span class="p">){</span>
+    <span class="nf">alert</span><span class="p">(</span><span class="nx">v</span><span class="p">.</span><span class="nx">username</span><span class="p">);</span>
   	<span class="c1">// 这里可以干坏事，比如将用户的用户名，邮箱等发送到指定的地址， </span>
     <span class="c1">// 把这坨代码放注入到360的某个子域的页面里，就等着有人上钩了</span>
 <span class="p">}</span>
@@ -422,6 +422,14 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
         				
                             
         				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
         			</div>
                 </section>
                 
@@ -562,7 +570,7 @@ http://a.abc.com 和 http://b.abc.com 也不同源，域名不同
                     
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; 咖啡不苦 2023 |
+                    Copyright &copy; 咖啡不苦 2024 |
                     Theme by <a target="_blank" href="http://huangxuan.me">Hux</a>
                 </p>
             </div>

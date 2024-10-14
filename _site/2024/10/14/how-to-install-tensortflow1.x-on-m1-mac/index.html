@@ -10,7 +10,7 @@
     <meta name="keywords"  content="咖啡不苦, 赖晨东, laichendong, 博客, 个人网站, 互联网">
     <link rel="shortcut icon" href="/favicon.ico">
 
-    <title>加班记（二） - 咖啡不苦</title>
+    <title>如何在Apple芯片的mac上安装tensorflow 1.x - 咖啡不苦</title>
 
 
     <!-- Bootstrap Core CSS -->
@@ -169,13 +169,21 @@
                 <div class="post-heading">
                     <div class="tags">
                         
+                        <a class="tag" href="/tags/#tensorflow" title="tensorflow">tensorflow</a>
+                        
+                        <a class="tag" href="/tags/#rosetta" title="rosetta">rosetta</a>
+                        
+                        <a class="tag" href="/tags/#m1" title="m1">m1</a>
+                        
+                        <a class="tag" href="/tags/#m2" title="m2">m2</a>
+                        
                     </div>
-                    <h1>加班记（二）</h1>
+                    <h1>如何在Apple芯片的mac上安装tensorflow 1.x</h1>
                     
                     
                     <h2 class="subheading"></h2>
                     
-                    <span class="meta">Posted by 咖啡不苦 on 2015-09-06</span>
+                    <span class="meta">Posted by 咖啡不苦 on 2024-10-14</span>
                 </div>
             </div>
         </div>
@@ -193,21 +201,48 @@
                 col-md-8 col-md-offset-2
                 post-container">
 
-				<p>今天又去公司处理了一个线上问题：我们依赖的一个接口可用率为0了！</p>
+				<p>有时候我们需要再mac上跑一些老的用tensorflow 1.x的代码。但由于历史发展原因，各种依赖的版本无法对齐。无法直接安装，参考以下步骤。</p>
 
-<p>故事大概是这样的：我们依赖的一个写接口，最早主键是int类型的。虽然我们的sequence工具生成的是long型的数，但是为了“适应”接口就强转成int后再调用接口了。某一天，接口提供方意识到用int类型做为主键，随着业务发展很可能突破上限而造成麻烦。于是接口提供方将入参类型改成了long。于是我们的某位码农又将int强转成long给了接口！今天，就在今天。终于这个sequence的值超过了21亿+，就是有符号整形的最大值。然后将这个值强转成int后（其实是个负数）。用这个负数去调接口，然后就都out of range了。然后就没有然后了。</p>
+<p>以tensorflow 1.15为例。 tensorflow 1.15 要求 python 3.7。而python 3.7时期还没有m芯片。所以不能直接conda install python==3.7 安装。需要先安装罗塞塔（rosetta 2），来支持Intel芯片的程序</p>
 
-<p>解决的办法当然是将“画蛇添足”的程序逻辑修正。去掉long-&gt;int-&gt;long的过程，另外也发现数据库的字段类型是int(10)，顺手改成了bigint(20)。一切妥当后，可用率恢复。</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>softwareupdate <span class="nt">--install-rosetta</span> <span class="nt">--agree-to-license</span>
+</code></pre></div></div>
 
-<p>现在回过头来复盘，发现可以改进甚至避免这场“灾难”的地方太多了。</p>
+<p>然后用conda安装python 3.7</p>
 
-<p>在最初期，需要调用一个以int作为主键的接口时应该就是最好的避免灾难的时刻。这个时候如果调用方（我们）能提出疑问并协调修改的话。应该就不会有后面的事儿了。一方面，说明我们有业务主键类型最好别用int的意识。另一方面，又说明我们可能有“各人自扫门前雪，莫管他人瓦上霜”的坏毛病。或者，这可能是由于“跨部门合作太难了”之类的借口。但那真的是借口。更多的是自己的懒惰，不愿意推动罢了。</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## 创建一个空环境</span>
+conda create <span class="nt">-n</span> tf1
 
-<p>然后是当接口提供方意识到问题，将入参类型进行了调整之后。我们的做法居然又是在入口做了一次强转！这几乎是一个不能容忍的低级错误!至于解决方案，除了强调，宣贯，恐怕就只能招有更好的习惯的人了,（当然，招人带来的其他一系列问题不在今天的讨论范围内）</p>
+<span class="c">## 激活</span>
+conda activate tf1
 
-<p>再然后是为什么我要跑到公司去处理这个问题。还好我去公司还算方便，十几分钟车程便到。但作为一个码农，这种工作方式还是挺丢人的。我的借口是公司的vpn难用，难申请。自己找的小软件又关键时刻掉链子。擦，这些都是借口好吗。回去上班第一件事儿就先把vpn申请下来吧！</p>
+<span class="c">## 设置使用 x86_64 架构的通道</span>
+conda config <span class="nt">--env</span> <span class="nt">--set</span> subdir osx-64
 
-<p>最后又是一个鄙视自己的地方了。都不好意思在这说，我改完代码，预发验证，通过，上正式，遗憾的是期待的可用率飙升并没有到来。百思不得其解之际down了一下刚上线的包。纳尼，竟然没有我刚改的代码！wtf，在git里只commit而没有push就build线上包了！好吧，自己面壁去了。</p>
+<span class="c">## 正常安装 python, 其他包同理</span>
+conda <span class="nb">install </span><span class="nv">python</span><span class="o">==</span>3.7 
+</code></pre></div></div>
+
+<p>安装tensorflow</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install</span> <span class="nt">-c</span> apple <span class="nv">tensorflow</span><span class="o">==</span>1.15
+</code></pre></div></div>
+
+<p>到这基本就完成了，但可能还会遇到一些包版本不匹配的情况，自己再手动安装对应正确的版本就好了。比如</p>
+
+<p>1、ImportError: cannot import name ‘trace’</p>
+
+<p>是因为conda安装tf1.15时，其中tensorflow-estimator库的版本可能不正确，可以手动重新安装该库</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>tensorflow-estimator<span class="o">==</span>1.15.1
+</code></pre></div></div>
+
+<p>2、numpy版本过高</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span><span class="nv">numpy</span><span class="o">==</span>1.16.5
+</code></pre></div></div>
+
+<p>​</p>
 
 
                 <hr>
@@ -217,19 +252,12 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2015/08/29/write-your-blog-with-jekyll-and-github-pages/" data-toggle="tooltip" data-placement="top" title="用jekyll和github pages写博客">
+                        <a href="/2022/01/04/2022-flags/" data-toggle="tooltip" data-placement="top" title="2022-flags">
                         Previous<br>
-                        <span>用jekyll和github pages写博客</span>
+                        <span>2022-flags</span>
                         </a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/2015/09/09/set-syntax-highlight-in-jekyll/" data-toggle="tooltip" data-placement="top" title="jekyll设置语法高亮">
-                        Next<br>
-                        <span>jekyll设置语法高亮</span>
-                        </a>
-                    </li>
                     
                 </ul>
             </div>
